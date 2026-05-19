@@ -1,8 +1,8 @@
+<h1 align="center">🖥️ Windows Installation Guide</h1>
+
 <p align="center">
   <img src="https://i.postimg.cc/FHhtdt7v/microsoft-windowswallpaper.jpg" alt="microsoft windows wallpaper">
 </p>
-
-<h1 align="center">🖥️ Windows Installation Guide</h1>
 
 ---
 
@@ -61,7 +61,7 @@ Full installation process with BIOS boot setup and Windows configuration.
 
 ---
 
-# 📂 Repository Structure
+## 📂 Repository Structure
 
 ```txt
 Windows-Installation-Guide/
@@ -80,7 +80,7 @@ Windows-Installation-Guide/
 
 ---
 
-# 🎯 Why This Repository?
+## 🎯 Why This Repository?
 
 - Beginner-friendly step-by-step learning
 - Clean and organized documentation
@@ -90,7 +90,7 @@ Windows-Installation-Guide/
 
 ---
 
-# ⚠️ Important Notes
+## ⚠️ Important Notes
 
 - Always back up your important data before installation
 - Use at least an 8GB USB drive
@@ -99,13 +99,13 @@ Windows-Installation-Guide/
 
 ---
 
-# 🚀 Getting Started
+## 🚀 Getting Started
 
 👉 Start here:  
 `01-Windows-ISO-Download/README.md`
 
 ---
 
-# ⭐ Support
+## ⭐ Support
 
 If this project helps you, don’t forget to ⭐ star the repository!
