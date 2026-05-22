@@ -60,7 +60,7 @@ Important note Must select —
 
 
 <p align="center">
-  <img src="https://i.postimg.cc/7hZMdgxL/Rufus-4.png" alt="Windows 11 ISO file boot by pen drive">
+  <img src="https://i.postimg.cc/7hZMdgxL/Rufus-4.png" alt="#">
 </p>
 
 <p align="center">
@@ -70,10 +70,71 @@ Important note Must select —
 
 ---
 
-<!-- <p align="center">
-  <img src="https://i.postimg.cc/jSwCB68S/Screenshot-2026-05-20-213258.png" alt="Windows 11 ISO file boot by pen drive">
+### Step 4 — Stat
+**For Windows 10 :**
+Do not tik mark any check box just click **"OK"**. 
+
+<p align="center">
+  <img src="https://i.postimg.cc/cHv01z1b/Rufus-5.png" alt="#">
 </p>
 
 <p align="center">
-    <i>Windows 11 ISO file boot by pen drive</i>
-</p> -->
+    <i>#</i>
+</p>
+
+
+
+**For Windows 11 :**
+Do not change default tik mark and Do not tik mark any other check box next click **"OK"**. 
+
+<p align="center">
+  <img src="https://i.postimg.cc/5NK0J8m5/Rufus-9.png" alt="#">
+</p>
+
+<p align="center">
+    <i>#</i>
+</p>
+
+
+
+After click **"OK"** showing a warning "Pen drive all date going to clear"
+
+<p align="center">
+  <img src="https://i.postimg.cc/X7GG12fJ/Rufus-6.png" alt="#">
+</p>
+
+<p align="center">
+    <i>#</i>
+</p>
+
+
+
+Start coping **ISO** file to pen drive.
+
+<p align="center">
+  <img src="https://i.postimg.cc/SxGMcnLQ/Rufus-7.png" alt="#">
+</p>
+
+<p align="center">
+    <i>#</i>
+</p>
+
+
+Now pen drive for windows setup.
+
+<p align="center">
+  <img src="https://i.postimg.cc/4xYD9cRH/Rufus-8.png" alt="Windows 10 Ready ISO file boot by pen drive">
+</p>
+
+<p align="center">
+    <i>Windows 10 Ready ISO file boot by pen drive</i>
+</p>
+
+
+<p align="center">
+  <img src="https://i.postimg.cc/jSwCB68S/Screenshot-2026-05-20-213258.png" alt="Windows 11 Ready ISO file boot by pen drive">
+</p>
+
+<p align="center">
+    <i>Windows 11 Ready ISO file boot by pen drive</i>
+</p> 
