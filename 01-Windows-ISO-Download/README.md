@@ -30,7 +30,7 @@
 </p>
 
 
-### Step 2 - Select the product language
+### Step 2 - Select the product language:
 <p align="center">
   <img src="https://i.postimg.cc/kgNtYgVb/win-11-2.png" alt="Select the product language">
 </p>
@@ -40,7 +40,7 @@
 </p>
 
 
-### Step 3 - Download - Windows 11 English
+### Step 3 - Download - Windows 11 English:
 <p align="center">
   <img src="https://i.postimg.cc/59Z3Zj0M/win-11-3.png" alt="Download - Windows 11 English">
 </p>
