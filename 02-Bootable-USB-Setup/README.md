@@ -6,13 +6,19 @@
 
 ---
 
-# 📥 Download Rufus
-
 ## 🔧 What is Rufus?
 
-**Rufus** is a lightweight and powerful tool used to create bootable USB drives for Windows installation, Linux installation, BIOS updates, and more.
+**Rufus** is a lightweight and powerful utility used to create bootable USB drives for:
+
+- Windows installation
+- Linux installation
+- BIOS updates
+- Recovery tools
+- Other bootable operating systems
 
 It helps you quickly prepare a USB flash drive for installing operating systems like **Windows 10** and **Windows 11**.
+
+## 📥 Download Rufus
 
 🔗 **Official Rufus Website:** [Download Rufus Latest Release](https://rufus.ie/en/)
 
@@ -26,18 +32,18 @@ It helps you quickly prepare a USB flash drive for installing operating systems 
 
 ---
 
-# 💻 Rufus Bootable USB Full Process
+# 💻 Create a Bootable USB Drive Using Rufus
 
 ## ✅ Step 1 — Open Rufus
 
-After downloading **Rufus**, double-click the application to open it.
+After downloading **Rufus**, double-click the application to launch it.
 
 <p align="center">
-  <img src="https://i.postimg.cc/B6zKV2kT/Rufus-2.png" alt="Open Rufus application">
+  <img src="https://i.postimg.cc/B6zKV2kT/Rufus-2.png" alt="Launch Rufus application">
 </p>
 
 <p align="center">
-  <i>Open the Rufus application</i>
+  <i>Launch the Rufus application</i>
 </p>
 
 ---
@@ -91,7 +97,7 @@ Carefully configure the following options before starting the process.
 </p>
 
 <p align="center">
-  <i>Configure Rufus settings and start bootable USB creation</i>
+  <i>Configure Rufus settings and start creating the bootable USB drive</i>
 </p>
 
 ---
@@ -139,16 +145,16 @@ After clicking **"OK"**, Rufus will display a warning message that all data on t
 Make sure to back up important files before continuing.
 
 <p align="center">
-  <img src="https://i.postimg.cc/X7GG12fJ/Rufus-6.png" alt="USB data erase warning">
+  <img src="https://i.postimg.cc/X7GG12fJ/Rufus-6.png" alt="USB drive formatting warning message">
 </p>
 
 <p align="center">
-  <i>USB drive data erase warning</i>
+  <i>Warning message before formatting the USB drive</i>
 </p>
 
 ---
 
-## ✅ Step 5 — Creating Bootable USB Drive
+## ✅ Step 5 — Creating the Bootable USB Drive
 
 Rufus will now start copying the Windows ISO files to the USB flash drive.
 
@@ -157,7 +163,7 @@ Rufus will now start copying the Windows ISO files to the USB flash drive.
 </p>
 
 <p align="center">
-  <i>Creating bootable Windows USB drive</i>
+  <i>Creating the bootable Windows USB drive</i>
 </p>
 
 ---
@@ -195,7 +201,7 @@ Once the process is completed, your bootable Windows USB drive will be ready for
 > Your bootable USB drive is now ready.  
 > The next step is to boot your PC or laptop from the USB drive and start the Windows installation process.
 >
-> 👉 Follow the complete step-by-step Windows installation guide here:  [03-Windows-Installation](https://github.com/Shariar-Ahamed/Windows-Installation-Guide/blob/main/03-Windows-Installation/README.md)
+> 👉 Follow the complete step-by-step Windows installation guide here: [03-Windows-Installation](https://github.com/Shariar-Ahamed/Windows-Installation-Guide/blob/main/03-Windows-Installation/README.md)
 
 ---
 
@@ -205,8 +211,8 @@ Once the process is completed, your bootable Windows USB drive will be ready for
 - All existing data on the USB drive will be erased during the process.
 - Always download Rufus from the official website.
 - Choose the correct **Partition Scheme (GPT/MBR)** carefully.
-- Keep all unnecessary Rufus settings as default unless you understand them.
+- Keep unnecessary Rufus settings as default unless you fully understand them.
 
 ---
 
-<h2 align="center">🎉 Rufus Bootable USB Setup Completed Successfully</h2>
+<h2 align="center">🎉 Bootable USB Drive Created Successfully</h2>
