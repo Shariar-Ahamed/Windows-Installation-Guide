@@ -24,6 +24,9 @@
   <img src="https://img.shields.io/github/forks/Shariar-Ahamed/Windows-Installation-Guide?style=social">
 </p>
 
+<p align="center">
+<a href="https://wakatime.com/badge/user/c7433bc5-6f12-4c97-baea-430790fa608c/project/89483e20-f757-4aff-b9da-3a0683ef6fab"><img src="https://wakatime.com/badge/user/c7433bc5-6f12-4c97-baea-430790fa608c/project/89483e20-f757-4aff-b9da-3a0683ef6fab.svg" alt="wakatime"></a>
+</p>
 
 ---
 
