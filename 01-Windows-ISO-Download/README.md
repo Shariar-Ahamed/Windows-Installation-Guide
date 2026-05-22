@@ -51,7 +51,7 @@ Go to the folder where the downloaded file is located on your computer, and run 
 
 
 <p align="center">
-  <img src="#" alt="Exe file Run administrator">
+  <img src="https://i.postimg.cc/xTmRYmpc/Screenshot-2026-05-22-070928.png" alt="Exe file Run administrator">
 </p>
 
 <p align="center">
