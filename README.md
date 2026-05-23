@@ -44,7 +44,7 @@ This repository is organized into 3 simple steps:
 Learn how to download the official Windows ISO file from Microsoft safely.
 
 📂 Folder:  
-`01-Windows-ISO-Download/`
+[01-Windows-ISO-Download](https://github.com/Shariar-Ahamed/Windows-Installation-Guide/tree/main/01-Windows-ISO-Download)
 
 ---
 
@@ -52,7 +52,7 @@ Learn how to download the official Windows ISO file from Microsoft safely.
 Step-by-step guide to create a bootable USB using the ISO file.
 
 📂 Folder:  
-`02-Bootable-USB-Setup/`
+[02-Bootable-USB-Setup](https://github.com/Shariar-Ahamed/Windows-Installation-Guide/blob/main/02-Bootable-USB-Setup/README.md)
 
 ---
 
@@ -60,7 +60,7 @@ Step-by-step guide to create a bootable USB using the ISO file.
 Full installation process with BIOS boot setup and Windows configuration.
 
 📂 Folder:  
-`03-Windows-Installation/`
+[03-Windows-Installation](https://github.com/Shariar-Ahamed/Windows-Installation-Guide/blob/main/03-Windows-Installation/README.md)
 
 ---
 
