@@ -183,3 +183,222 @@ Choose the Windows 11 just simple mouse left single click.
 
 
 ---
+
+
+## Step 11 - Showing Install presentence 
+
+wait for installing complete 100% and Your Computer may restart a few times. Must be keep on your computer.
+
+<p align="center">
+  <img src="#" alt="#">
+</p>
+
+<p align="center">
+  <i>#</i>
+</p>
+
+
+---
+
+
+## Step 12 - Showing Just a moment 
+
+After finished restart showing **"Just a moment"** message.
+
+<p align="center">
+  <img src="#" alt="#">
+</p>
+
+<p align="center">
+  <i>#</i>
+</p>
+
+
+---
+
+
+## Step 13 - Windows icon
+After loading the process showing Windows icon.
+
+<p align="center">
+  <img src="#" alt="#">
+</p>
+
+<p align="center">
+  <i>#</i>
+</p>
+
+
+---
+
+
+## Step 14 - Select Region
+now select your regin and click **"Yes"**
+
+<p align="center">
+  <img src="#" alt="#">
+</p>
+
+<p align="center">
+  <i>#</i>
+</p>
+
+
+---
+
+## Step 15 - Select Keyboard layout 
+Select keyboard layout **"US"** then click **"Yes"**.
+
+<p align="center">
+  <img src="#" alt="#">
+</p>
+
+<p align="center">
+  <i>#</i>
+</p>
+
+
+---
+
+
+## Step 16 - Select second Keyboard layout 
+it select **"Skip"**
+
+<p align="center">
+  <img src="#" alt="#">
+</p>
+
+<p align="center">
+  <i>#</i>
+</p>
+
+
+---
+
+## Step 17 - Network connect 
+
+skip network connection select **"I don't have internet"** then click **"Next"**.
+
+
+<p align="center">
+  <img src="#" alt="#">
+</p>
+
+<p align="center">
+  <i>#</i>
+</p>
+
+
+---
+
+
+## Step 18 - Who's going to use this device?
+
+Enter your name and click **"Next"**.
+
+<p align="center">
+  <img src="#" alt="#">
+</p>
+
+<p align="center">
+  <i>#</i>
+</p>
+
+
+---
+
+
+## Step 19 - Create a super memorable password
+
+Set your password then click **"Next"**
+
+<p align="center">
+  <img src="#" alt="#">
+</p>
+
+<p align="center">
+  <i>#</i>
+</p>
+
+
+---
+
+
+## Step 20 - Chose some privacy setting
+No change any setting just follow default setting then click **"Accept"**.
+
+<p align="center">
+  <img src="#" alt="#">
+</p>
+
+<p align="center">
+  <i>#</i>
+</p>
+
+
+---
+
+## Step 21 -  After showing some message 
+
+- **"Hi"** message showing.
+
+<p align="center">
+  <img src="#" alt="#">
+</p>
+
+<p align="center">
+  <i>#</i>
+</p>
+
+
+
+- **"Getting thing ready for you"** message shoeing.
+
+<p align="center">
+  <img src="#" alt="#">
+</p>
+
+<p align="center">
+  <i>#</i>
+</p>
+
+
+- This might take a few minutes. Don't turn off PC.
+
+<p align="center">
+  <img src="#" alt="#">
+</p>
+
+<p align="center">
+  <i>#</i>
+</p>
+
+
+
+- Almost there.
+
+<p align="center">
+  <img src="#" alt="#">
+</p>
+
+<p align="center">
+  <i>#</i>
+</p>
+
+
+---
+
+## Step 22 - Finally Windows setup complete done.
+
+Now showing your windows home page.
+
+<p align="center">
+  <img src="#" alt="#">
+</p>
+
+<p align="center">
+  <i>#</i>
+</p>
+
+
+---
