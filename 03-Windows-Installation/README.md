@@ -1,404 +1,509 @@
-## Step 1 — Select language setting 
-
-Language to install: **English (United States)**  
-Time and currency formate: **English (United States)**  
-select time and language and click **Next**
-
+<h1 align="center">💻 Windows 11 Installation Guide</h1>
 
 <p align="center">
-  <img src="#" alt="#">
+  Complete step-by-step guide to install Windows 11 using a bootable USB drive.
 </p>
-
-<p align="center">
-  <i>#</i>
-</p>
-
 
 ---
 
+# 🚀 Windows 11 Installation Full Process
 
-## Step 2 — Select keyboard settings
+## ✅ Step 1 — Open Boot Menu
 
-Keyboard or input method select **US** then click **Next**
+Restart your PC and continuously press your motherboard boot menu key to open the boot menu.
 
+### Example:
+
+- **Motherboard:** Gigabyte B450 AORUS PRO WIFI AMD ATX Motherboard
+- **Boot Menu Key:** F12
+
+> 💡 Note:  
+> If you do not know your motherboard boot menu key, simply search Google using your motherboard or laptop model name.
 
 <p align="center">
-  <img src="#" alt="#">
+  <img src="#" alt="Open motherboard boot menu" width="100%">
 </p>
 
 <p align="center">
-  <i>#</i>
+  <i>Open motherboard boot menu</i>
 </p>
-
 
 ---
 
+## ✅ Step 2 — Select Boot Device
 
-## Step 3 — Select setup option 
-Install the latest version of Windows 11, or repair your PC. If you're installing Windows 11, please note your files, apps,
-and settings will be deleted. I select **"Install Windows 11"** and tik mark **"I agree every thing will be deleted including, files, apps, and setting"**. Then click **"Next"**
+From the boot menu, select your bootable USB flash drive.
 
+### Example:
+
+> **UEFI: USB3.0 FLASH DRIVE PMAP, Partition 1**
 
 <p align="center">
-  <img src="#" alt="#">
+  <img src="#" alt="Select bootable USB device" width="100%">
 </p>
 
 <p align="center">
-  <i>#</i>
+  <i>Select bootable USB device</i>
 </p>
-
 
 ---
 
+## ✅ Step 3 — Select Language Settings
 
-## Step 4 — Product key
-You have product key enter product key or other wise skip, i select **"I don't have a product key"** then click **"Next"**
+Choose the following settings:
 
+- **Language to install:** English (United States)
+- **Time and currency format:** English (United States)
+
+After selecting the correct language and region settings, click **"Next"**.
 
 <p align="center">
-  <img src="#" alt="#">
+  <img src="#" alt="Select language and regional settings" width="100%">
 </p>
 
 <p align="center">
-  <i>#</i>
+  <i>Select language and regional settings</i>
 </p>
-
 
 ---
 
-## Step 5 — Select Image 
+## ✅ Step 4 — Select Keyboard Settings
 
-Here Choose any version, i select **Windows 11 Pro** and select **"Next"**
+Choose:
+
+- **Keyboard or input method:** US
+
+Then click **"Next"**.
 
 <p align="center">
-  <img src="#" alt="#">
+  <img src="#" alt="Select keyboard layout settings" width="100%">
 </p>
 
 <p align="center">
-  <i>#</i>
+  <i>Select keyboard layout settings</i>
 </p>
-
 
 ---
 
+## ✅ Step 5 — Select Setup Option
 
-## Step 6 — Applicable notices license terms 
-Read terms and condition then click **"Accept"**
+You will see options to:
+
+- Install the latest version of Windows 11
+- Repair your PC
+
+Select:
+
+> **Install Windows 11**
+
+Then check:
+
+> **I agree everything will be deleted including files, apps, and settings**
+
+Finally, click **"Next"**.
 
 <p align="center">
-  <img src="#" alt="#">
+  <img src="#" alt="Select Windows 11 installation option" width="100%">
 </p>
 
 <p align="center">
-  <i>#</i>
+  <i>Select Windows 11 installation option</i>
 </p>
-
 
 ---
 
-## Step 7 - Select location to install Windows 11
+## ✅ Step 6 — Product Key
 
-- Select primary partition 
+If you have a Windows product key, enter it.
+
+Otherwise, select:
+
+> **I don't have a product key**
+
+Then click **"Next"**.
 
 <p align="center">
-  <img src="#" alt="#">
+  <img src="#" alt="Windows 11 product key setup" width="100%">
 </p>
 
 <p align="center">
-  <i>#</i>
+  <i>Windows 11 product key setup</i>
 </p>
-
-
-- Now format partition
-
-<p align="center">
-  <img src="#" alt="#">
-</p>
-
-<p align="center">
-  <i>#</i>
-</p>
-
-
-- Again select primary partition for Install Windows and then click **"Next"**
-
-
-<p align="center">
-  <img src="#" alt="#">
-</p>
-
-<p align="center">
-  <i>#</i>
-</p>
-
 
 ---
 
-## Step 8 - Ready to install 
+## ✅ Step 7 — Select Windows Edition
 
-Install windows 11 pro keep nothing just click **"Install"**
+Choose your preferred Windows edition.
+
+Example:
+
+> **Windows 11 Pro**
+
+Then click **"Next"**.
 
 <p align="center">
-  <img src="#" alt="#">
+  <img src="#" alt="Select Windows 11 edition" width="100%">
 </p>
 
 <p align="center">
-  <i>#</i>
+  <i>Select Windows 11 edition</i>
 </p>
-
 
 ---
 
+## ✅ Step 8 — Accept License Terms
 
-## Step 9 - Installing Windows 11
+Carefully read the license terms and conditions.
 
-Showing Your PC restart several times. This might take a while.
-
-showing 100% complete.
-
+Then click **"Accept"**.
 
 <p align="center">
-  <img src="#" alt="#">
+  <img src="#" alt="Accept Windows 11 license terms" width="100%">
 </p>
 
 <p align="center">
-  <i>#</i>
+  <i>Accept Windows 11 license terms</i>
 </p>
-
 
 ---
 
+## ✅ Step 9 — Select Drive for Windows Installation
 
-## Step 10 - Choose an operating system
-Choose the Windows 11 just simple mouse left single click.
+### 🔹 Select Primary Partition
 
+Choose the primary partition where you want to install Windows.
 
 <p align="center">
-  <img src="#" alt="#">
+  <img src="#" alt="Select primary partition for Windows installation" width="100%">
 </p>
 
 <p align="center">
-  <i>#</i>
+  <i>Select primary partition for Windows installation</i>
 </p>
-
 
 ---
 
+### 🔹 Format the Partition
 
-## Step 11 - Showing Install presentence 
-
-wait for installing complete 100% and Your Computer may restart a few times. Must be keep on your computer.
+Click **"Format"** to erase previous system files and prepare the drive for a clean installation.
 
 <p align="center">
-  <img src="#" alt="#">
+  <img src="#" alt="Format partition before Windows installation" width="100%">
 </p>
 
 <p align="center">
-  <i>#</i>
+  <i>Format partition before Windows installation</i>
 </p>
-
 
 ---
 
+### 🔹 Select Partition Again & Continue
 
-## Step 12 - Showing Just a moment 
-
-After finished restart showing **"Just a moment"** message.
+After formatting, select the primary partition again and click **"Next"**.
 
 <p align="center">
-  <img src="#" alt="#">
+  <img src="#" alt="Select formatted partition and continue installation" width="100%">
 </p>
 
 <p align="center">
-  <i>#</i>
+  <i>Select formatted partition and continue installation</i>
 </p>
-
 
 ---
 
+## ✅ Step 10 — Ready to Install
 
-## Step 13 - Windows icon
-After loading the process showing Windows icon.
+You will now see the installation summary.
+
+Select:
+
+> **Install Windows 11 Pro — Keep nothing**
+
+Then click **"Install"**.
 
 <p align="center">
-  <img src="#" alt="#">
+  <img src="#" alt="Ready to install Windows 11" width="100%">
 </p>
 
 <p align="center">
-  <i>#</i>
+  <i>Ready to install Windows 11</i>
 </p>
-
 
 ---
 
+## ✅ Step 11 — Installing Windows 11
 
-## Step 14 - Select Region
-now select your regin and click **"Yes"**
+Windows installation will now begin.
+
+Your PC may restart several times during this process.
+
+Wait until the installation reaches **100% complete**.
 
 <p align="center">
-  <img src="#" alt="#">
+  <img src="#" alt="Installing Windows 11 progress" width="100%">
 </p>
 
 <p align="center">
-  <i>#</i>
+  <i>Installing Windows 11 progress</i>
 </p>
-
 
 ---
 
-## Step 15 - Select Keyboard layout 
-Select keyboard layout **"US"** then click **"Yes"**.
+## ✅ Step 12 — Choose an Operating System
+
+If multiple operating systems appear, select:
+
+> **Windows 11**
+
+Simply click it once to continue.
 
 <p align="center">
-  <img src="#" alt="#">
+  <img src="#" alt="Choose Windows 11 operating system" width="100%">
 </p>
 
 <p align="center">
-  <i>#</i>
+  <i>Choose Windows 11 operating system</i>
 </p>
-
 
 ---
 
+## ✅ Step 13 — Completing Installation Process
 
-## Step 16 - Select second Keyboard layout 
-it select **"Skip"**
+Windows will continue setting up your device.
+
+Your computer may restart a few more times.
+
+Please keep your PC powered on during the entire process.
 
 <p align="center">
-  <img src="#" alt="#">
+  <img src="#" alt="Windows installation finishing process" width="100%">
 </p>
 
 <p align="center">
-  <i>#</i>
+  <i>Windows installation finishing process</i>
 </p>
-
 
 ---
 
-## Step 17 - Network connect 
+## ✅ Step 14 — Just a Moment Screen
 
-skip network connection select **"I don't have internet"** then click **"Next"**.
+After restarting, Windows will display a:
 
+> **Just a moment**
+
+message while preparing your system.
 
 <p align="center">
-  <img src="#" alt="#">
+  <img src="#" alt="Windows 11 just a moment screen" width="100%">
 </p>
 
 <p align="center">
-  <i>#</i>
+  <i>Windows 11 just a moment screen</i>
 </p>
-
 
 ---
 
+## ✅ Step 15 — Windows Logo Screen
 
-## Step 18 - Who's going to use this device?
-
-Enter your name and click **"Next"**.
+After loading, the Windows logo will appear.
 
 <p align="center">
-  <img src="#" alt="#">
+  <img src="#" alt="Windows 11 startup logo" width="100%">
 </p>
 
 <p align="center">
-  <i>#</i>
+  <i>Windows 11 startup logo</i>
 </p>
-
 
 ---
 
+## ✅ Step 16 — Select Region
 
-## Step 19 - Create a super memorable password
+Choose your country or region.
 
-Set your password then click **"Next"**
+Then click **"Yes"**.
 
 <p align="center">
-  <img src="#" alt="#">
+  <img src="#" alt="Select Windows region settings" width="100%">
 </p>
 
 <p align="center">
-  <i>#</i>
+  <i>Select Windows region settings</i>
 </p>
-
 
 ---
 
+## ✅ Step 17 — Select Keyboard Layout
 
-## Step 20 - Chose some privacy setting
-No change any setting just follow default setting then click **"Accept"**.
+Choose:
+
+> **US**
+
+Then click **"Yes"**.
 
 <p align="center">
-  <img src="#" alt="#">
+  <img src="#" alt="Select Windows keyboard layout" width="100%">
 </p>
 
 <p align="center">
-  <i>#</i>
+  <i>Select Windows keyboard layout</i>
 </p>
-
 
 ---
 
-## Step 21 -  After showing some message 
+## ✅ Step 18 — Add Second Keyboard Layout
 
-- **"Hi"** message showing.
+If you do not want to add another keyboard layout, click:
+
+> **Skip**
 
 <p align="center">
-  <img src="#" alt="#">
+  <img src="#" alt="Skip second keyboard layout" width="100%">
 </p>
 
 <p align="center">
-  <i>#</i>
+  <i>Skip second keyboard layout</i>
 </p>
-
-
-
-- **"Getting thing ready for you"** message shoeing.
-
-<p align="center">
-  <img src="#" alt="#">
-</p>
-
-<p align="center">
-  <i>#</i>
-</p>
-
-
-- This might take a few minutes. Don't turn off PC.
-
-<p align="center">
-  <img src="#" alt="#">
-</p>
-
-<p align="center">
-  <i>#</i>
-</p>
-
-
-
-- Almost there.
-
-<p align="center">
-  <img src="#" alt="#">
-</p>
-
-<p align="center">
-  <i>#</i>
-</p>
-
 
 ---
 
-## Step 22 - Finally Windows setup complete done.
+## ✅ Step 19 — Network Connection
 
-Now showing your windows home page.
+To continue without internet, select:
+
+> **I don't have internet**
+
+Then click **"Next"**.
 
 <p align="center">
-  <img src="#" alt="#">
+  <img src="#" alt="Skip internet connection during setup" width="100%">
 </p>
 
 <p align="center">
-  <i>#</i>
+  <i>Skip internet connection during setup</i>
 </p>
-
 
 ---
+
+## ✅ Step 20 — Who's Going to Use This Device?
+
+Enter your preferred username.
+
+Then click **"Next"**.
+
+<p align="center">
+  <img src="#" alt="Create Windows user account" width="100%">
+</p>
+
+<p align="center">
+  <i>Create Windows user account</i>
+</p>
+
+---
+
+## ✅ Step 21 — Create a Password
+
+Set a password for your Windows account.
+
+Then click **"Next"**.
+
+<p align="center">
+  <img src="#" alt="Create Windows account password" width="100%">
+</p>
+
+<p align="center">
+  <i>Create Windows account password</i>
+</p>
+
+---
+
+## ✅ Step 22 — Choose Privacy Settings
+
+Keep the default privacy settings if you do not want to change anything.
+
+Then click **"Accept"**.
+
+<p align="center">
+  <img src="#" alt="Windows privacy settings" width="100%">
+</p>
+
+<p align="center">
+  <i>Windows privacy settings</i>
+</p>
+
+---
+
+## ✅ Step 23 — Final Setup Messages
+
+During the final setup process, Windows may display several messages such as:
+
+### 🔹 Hi
+
+<p align="center">
+  <img src="#" alt="Windows setup hi message" width="100%">
+</p>
+
+<p align="center">
+  <i>Windows setup welcome message</i>
+</p>
+
+---
+
+### 🔹 Getting Things Ready for You
+
+<p align="center">
+  <img src="#" alt="Getting things ready for you message" width="100%">
+</p>
+
+<p align="center">
+  <i>Preparing Windows for first use</i>
+</p>
+
+---
+
+### 🔹 This Might Take a Few Minutes
+
+Do not turn off your PC during this process.
+
+<p align="center">
+  <img src="#" alt="Windows setup loading process" width="100%">
+</p>
+
+<p align="center">
+  <i>Windows setup loading process</i>
+</p>
+
+---
+
+### 🔹 Almost There
+
+<p align="center">
+  <img src="#" alt="Windows setup almost complete" width="100%">
+</p>
+
+<p align="center">
+  <i>Windows installation almost complete</i>
+</p>
+
+---
+
+## ✅ Step 24 — Windows Installation Completed
+
+Congratulations! 🎉
+
+Windows 11 setup is now completed successfully.
+
+You will now see the Windows desktop home screen.
+
+<p align="center">
+  <img src="#" alt="Windows 11 desktop home screen" width="100%">
+</p>
+
+<p align="center">
+  <i>Windows 11 desktop home screen</i>
+</p>
+
+---
+
+<h2 align="center">🎉 Windows 11 Installation Completed Successfully</h2>
