@@ -86,7 +86,7 @@ Choose:
 Then click **"Next"**.
 
 <p align="center">
-  <img src="#" alt="Select keyboard layout settings">
+  <img src="https://i.postimg.cc/rw6Tf9mm/IMG-20260524-080311.png" alt="Select keyboard layout settings">
 </p>
 
 <p align="center">
@@ -113,7 +113,7 @@ Then check:
 Finally, click **"Next"**.
 
 <p align="center">
-  <img src="#" alt="Select Windows 11 installation option">
+  <img src="https://i.postimg.cc/9FbS7t7v/IMG-20260524-081346.png" alt="Select Windows 11 installation option">
 </p>
 
 <p align="center">
@@ -133,7 +133,7 @@ Otherwise, select:
 Then click **"Next"**.
 
 <p align="center">
-  <img src="#" alt="Windows 11 product key setup">
+  <img src="https://i.postimg.cc/DfHmKLZt/IMG-20260524-082414.png" alt="Windows 11 product key setup">
 </p>
 
 <p align="center">
@@ -153,7 +153,7 @@ Example:
 Then click **"Next"**.
 
 <p align="center">
-  <img src="#" alt="Select Windows 11 edition">
+  <img src="https://i.postimg.cc/3JZR0611/IMG-20260524-083120.png" alt="Select Windows 11 edition">
 </p>
 
 <p align="center">
