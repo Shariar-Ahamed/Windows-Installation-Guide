@@ -169,7 +169,7 @@ Carefully read the license terms and conditions.
 Then click **"Accept"**.
 
 <p align="center">
-  <img src="#" alt="Accept Windows 11 license terms">
+  <img src="https://i.postimg.cc/RCspCV5d/IMG-20260524-084251.png" alt="Accept Windows 11 license terms">
 </p>
 
 <p align="center">
