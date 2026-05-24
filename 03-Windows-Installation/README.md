@@ -21,7 +21,7 @@ Restart your PC and continuously press your motherboard boot menu key to open th
 > If you do not know your motherboard boot menu key, simply search Google using your motherboard or laptop model name.
 
 <p align="center">
-  <img src="#" alt="Open motherboard boot menu" width="100%">
+  <img src="#" alt="Open motherboard boot menu">
 </p>
 
 <p align="center">
@@ -38,8 +38,18 @@ From the boot menu, select your bootable USB flash drive.
 
 > **UEFI: USB3.0 FLASH DRIVE PMAP, Partition 1**
 
+
 <p align="center">
-  <img src="#" alt="Select bootable USB device" width="100%">
+  <img src="https://i.postimg.cc/05cW3LV7/IMG-20260519-090109.png" alt="Select bootable USB device">
+</p>
+
+<p align="center">
+  <i>Select bootable USB device</i>
+</p>
+
+
+<p align="center">
+  <img src="https://i.postimg.cc/htKy4JZf/IMG-20260524-074822.png" alt="Select bootable USB device">
 </p>
 
 <p align="center">
@@ -58,7 +68,7 @@ Choose the following settings:
 After selecting the correct language and region settings, click **"Next"**.
 
 <p align="center">
-  <img src="#" alt="Select language and regional settings" width="100%">
+  <img src="https://i.postimg.cc/kMVLLtLF/IMG-20260524-074430.png" alt="Select language and regional settings">
 </p>
 
 <p align="center">
@@ -76,7 +86,7 @@ Choose:
 Then click **"Next"**.
 
 <p align="center">
-  <img src="#" alt="Select keyboard layout settings" width="100%">
+  <img src="#" alt="Select keyboard layout settings">
 </p>
 
 <p align="center">
@@ -103,7 +113,7 @@ Then check:
 Finally, click **"Next"**.
 
 <p align="center">
-  <img src="#" alt="Select Windows 11 installation option" width="100%">
+  <img src="#" alt="Select Windows 11 installation option">
 </p>
 
 <p align="center">
@@ -123,7 +133,7 @@ Otherwise, select:
 Then click **"Next"**.
 
 <p align="center">
-  <img src="#" alt="Windows 11 product key setup" width="100%">
+  <img src="#" alt="Windows 11 product key setup">
 </p>
 
 <p align="center">
@@ -143,7 +153,7 @@ Example:
 Then click **"Next"**.
 
 <p align="center">
-  <img src="#" alt="Select Windows 11 edition" width="100%">
+  <img src="#" alt="Select Windows 11 edition">
 </p>
 
 <p align="center">
@@ -159,7 +169,7 @@ Carefully read the license terms and conditions.
 Then click **"Accept"**.
 
 <p align="center">
-  <img src="#" alt="Accept Windows 11 license terms" width="100%">
+  <img src="#" alt="Accept Windows 11 license terms">
 </p>
 
 <p align="center">
@@ -175,7 +185,7 @@ Then click **"Accept"**.
 Choose the primary partition where you want to install Windows.
 
 <p align="center">
-  <img src="#" alt="Select primary partition for Windows installation" width="100%">
+  <img src="#" alt="Select primary partition for Windows installation">
 </p>
 
 <p align="center">
@@ -189,7 +199,7 @@ Choose the primary partition where you want to install Windows.
 Click **"Format"** to erase previous system files and prepare the drive for a clean installation.
 
 <p align="center">
-  <img src="#" alt="Format partition before Windows installation" width="100%">
+  <img src="#" alt="Format partition before Windows installation">
 </p>
 
 <p align="center">
@@ -203,7 +213,7 @@ Click **"Format"** to erase previous system files and prepare the drive for a cl
 After formatting, select the primary partition again and click **"Next"**.
 
 <p align="center">
-  <img src="#" alt="Select formatted partition and continue installation" width="100%">
+  <img src="#" alt="Select formatted partition and continue installation">
 </p>
 
 <p align="center">
@@ -223,7 +233,7 @@ Select:
 Then click **"Install"**.
 
 <p align="center">
-  <img src="#" alt="Ready to install Windows 11" width="100%">
+  <img src="#" alt="Ready to install Windows 11">
 </p>
 
 <p align="center">
@@ -241,7 +251,7 @@ Your PC may restart several times during this process.
 Wait until the installation reaches **100% complete**.
 
 <p align="center">
-  <img src="#" alt="Installing Windows 11 progress" width="100%">
+  <img src="#" alt="Installing Windows 11 progress">
 </p>
 
 <p align="center">
@@ -259,7 +269,7 @@ If multiple operating systems appear, select:
 Simply click it once to continue.
 
 <p align="center">
-  <img src="#" alt="Choose Windows 11 operating system" width="100%">
+  <img src="#" alt="Choose Windows 11 operating system">
 </p>
 
 <p align="center">
@@ -277,7 +287,7 @@ Your computer may restart a few more times.
 Please keep your PC powered on during the entire process.
 
 <p align="center">
-  <img src="#" alt="Windows installation finishing process" width="100%">
+  <img src="#" alt="Windows installation finishing process">
 </p>
 
 <p align="center">
@@ -295,7 +305,7 @@ After restarting, Windows will display a:
 message while preparing your system.
 
 <p align="center">
-  <img src="#" alt="Windows 11 just a moment screen" width="100%">
+  <img src="#" alt="Windows 11 just a moment screen">
 </p>
 
 <p align="center">
@@ -309,7 +319,7 @@ message while preparing your system.
 After loading, the Windows logo will appear.
 
 <p align="center">
-  <img src="#" alt="Windows 11 startup logo" width="100%">
+  <img src="#" alt="Windows 11 startup logo">
 </p>
 
 <p align="center">
@@ -325,7 +335,7 @@ Choose your country or region.
 Then click **"Yes"**.
 
 <p align="center">
-  <img src="#" alt="Select Windows region settings" width="100%">
+  <img src="#" alt="Select Windows region settings">
 </p>
 
 <p align="center">
@@ -343,7 +353,7 @@ Choose:
 Then click **"Yes"**.
 
 <p align="center">
-  <img src="#" alt="Select Windows keyboard layout" width="100%">
+  <img src="#" alt="Select Windows keyboard layout">
 </p>
 
 <p align="center">
@@ -359,7 +369,7 @@ If you do not want to add another keyboard layout, click:
 > **Skip**
 
 <p align="center">
-  <img src="#" alt="Skip second keyboard layout" width="100%">
+  <img src="#" alt="Skip second keyboard layout">
 </p>
 
 <p align="center">
@@ -377,7 +387,7 @@ To continue without internet, select:
 Then click **"Next"**.
 
 <p align="center">
-  <img src="#" alt="Skip internet connection during setup" width="100%">
+  <img src="#" alt="Skip internet connection during setup">
 </p>
 
 <p align="center">
@@ -393,7 +403,7 @@ Enter your preferred username.
 Then click **"Next"**.
 
 <p align="center">
-  <img src="#" alt="Create Windows user account" width="100%">
+  <img src="#" alt="Create Windows user account">
 </p>
 
 <p align="center">
@@ -409,7 +419,7 @@ Set a password for your Windows account.
 Then click **"Next"**.
 
 <p align="center">
-  <img src="#" alt="Create Windows account password" width="100%">
+  <img src="#" alt="Create Windows account password">
 </p>
 
 <p align="center">
@@ -425,7 +435,7 @@ Keep the default privacy settings if you do not want to change anything.
 Then click **"Accept"**.
 
 <p align="center">
-  <img src="#" alt="Windows privacy settings" width="100%">
+  <img src="#" alt="Windows privacy settings">
 </p>
 
 <p align="center">
@@ -441,7 +451,7 @@ During the final setup process, Windows may display several messages such as:
 ### 🔹 Hi
 
 <p align="center">
-  <img src="#" alt="Windows setup hi message" width="100%">
+  <img src="#" alt="Windows setup hi message">
 </p>
 
 <p align="center">
@@ -453,7 +463,7 @@ During the final setup process, Windows may display several messages such as:
 ### 🔹 Getting Things Ready for You
 
 <p align="center">
-  <img src="#" alt="Getting things ready for you message" width="100%">
+  <img src="#" alt="Getting things ready for you message">
 </p>
 
 <p align="center">
@@ -467,7 +477,7 @@ During the final setup process, Windows may display several messages such as:
 Do not turn off your PC during this process.
 
 <p align="center">
-  <img src="#" alt="Windows setup loading process" width="100%">
+  <img src="#" alt="Windows setup loading process">
 </p>
 
 <p align="center">
@@ -479,7 +489,7 @@ Do not turn off your PC during this process.
 ### 🔹 Almost There
 
 <p align="center">
-  <img src="#" alt="Windows setup almost complete" width="100%">
+  <img src="#" alt="Windows setup almost complete">
 </p>
 
 <p align="center">
@@ -497,7 +507,7 @@ Windows 11 setup is now completed successfully.
 You will now see the Windows desktop home screen.
 
 <p align="center">
-  <img src="#" alt="Windows 11 desktop home screen" width="100%">
+  <img src="#" alt="Windows 11 desktop home screen">
 </p>
 
 <p align="center">
