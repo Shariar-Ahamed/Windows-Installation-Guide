@@ -21,7 +21,7 @@ Restart your PC and continuously press your motherboard boot menu key to open th
 > If you do not know your motherboard boot menu key, simply search Google using your motherboard or laptop model name.
 
 <p align="center">
-  <img src="#" alt="Open motherboard boot menu">
+  <img src="https://i.postimg.cc/5yyH7Bxd/IMG-20260524-092448.png" alt="Open motherboard boot menu">
 </p>
 
 <p align="center">
@@ -185,7 +185,7 @@ Then click **"Accept"**.
 Choose the primary partition where you want to install Windows.
 
 <p align="center">
-  <img src="#" alt="Select primary partition for Windows installation">
+  <img src="https://i.postimg.cc/fy8LYJXf/IMG-20260524-091130.png" alt="Select primary partition for Windows installation">
 </p>
 
 <p align="center">
@@ -199,7 +199,7 @@ Choose the primary partition where you want to install Windows.
 Click **"Format"** to erase previous system files and prepare the drive for a clean installation.
 
 <p align="center">
-  <img src="#" alt="Format partition before Windows installation">
+  <img src="https://i.postimg.cc/xdLF8HDR/IMG-20260524-093258.png" alt="Format partition before Windows installation">
 </p>
 
 <p align="center">
@@ -213,7 +213,7 @@ Click **"Format"** to erase previous system files and prepare the drive for a cl
 After formatting, select the primary partition again and click **"Next"**.
 
 <p align="center">
-  <img src="#" alt="Select formatted partition and continue installation">
+  <img src="https://i.postimg.cc/Hs4NTbm5/IMG-20260524-095148.png" alt="Select formatted partition and continue installation">
 </p>
 
 <p align="center">
@@ -233,7 +233,7 @@ Select:
 Then click **"Install"**.
 
 <p align="center">
-  <img src="#" alt="Ready to install Windows 11">
+  <img src="https://i.postimg.cc/T3Ph9qYj/IMG-20260524-101408.png" alt="Ready to install Windows 11">
 </p>
 
 <p align="center">
@@ -251,7 +251,7 @@ Your PC may restart several times during this process.
 Wait until the installation reaches **100% complete**.
 
 <p align="center">
-  <img src="#" alt="Installing Windows 11 progress">
+  <img src="https://i.postimg.cc/90Wqj3CW/IMG-20260524-102959.png" alt="Installing Windows 11 progress">
 </p>
 
 <p align="center">
@@ -269,7 +269,7 @@ If multiple operating systems appear, select:
 Simply click it once to continue.
 
 <p align="center">
-  <img src="#" alt="Choose Windows 11 operating system">
+  <img src="https://i.postimg.cc/02720XsT/IMG-20260524-103508.jpg" alt="Choose Windows 11 operating system">
 </p>
 
 <p align="center">
@@ -287,7 +287,7 @@ Your computer may restart a few more times.
 Please keep your PC powered on during the entire process.
 
 <p align="center">
-  <img src="#" alt="Windows installation finishing process">
+  <img src="https://i.postimg.cc/4xtttQ8w/IMG-20260524-104926.png" alt="Windows installation finishing process">
 </p>
 
 <p align="center">
@@ -305,7 +305,7 @@ After restarting, Windows will display a:
 message while preparing your system.
 
 <p align="center">
-  <img src="#" alt="Windows 11 just a moment screen">
+  <img src="https://i.postimg.cc/rw3cr7n7/IMG-20260524-110527.png" alt="Windows 11 just a moment screen">
 </p>
 
 <p align="center">
@@ -319,7 +319,7 @@ message while preparing your system.
 After loading, the Windows logo will appear.
 
 <p align="center">
-  <img src="#" alt="Windows 11 startup logo">
+  <img src="https://i.postimg.cc/ZKDzG1hG/IMG-20260524-110707.png" alt="Windows 11 startup logo">
 </p>
 
 <p align="center">
@@ -335,7 +335,7 @@ Choose your country or region.
 Then click **"Yes"**.
 
 <p align="center">
-  <img src="#" alt="Select Windows region settings">
+  <img src="https://i.postimg.cc/QCvGTTSG/IMG-20260524-113247.png" alt="Select Windows region settings">
 </p>
 
 <p align="center">
