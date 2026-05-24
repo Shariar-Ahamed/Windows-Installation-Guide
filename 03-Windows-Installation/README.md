@@ -353,7 +353,7 @@ Choose:
 Then click **"Yes"**.
 
 <p align="center">
-  <img src="#" alt="Select Windows keyboard layout">
+  <img src="https://i.postimg.cc/59LZ76Pz/IMG-20260524-114141.png" alt="Select Windows keyboard layout">
 </p>
 
 <p align="center">
@@ -369,7 +369,7 @@ If you do not want to add another keyboard layout, click:
 > **Skip**
 
 <p align="center">
-  <img src="#" alt="Skip second keyboard layout">
+  <img src="https://i.postimg.cc/nrNrhMDY/IMG-20260524-115320.png" alt="Skip second keyboard layout">
 </p>
 
 <p align="center">
@@ -387,7 +387,7 @@ To continue without internet, select:
 Then click **"Next"**.
 
 <p align="center">
-  <img src="#" alt="Skip internet connection during setup">
+  <img src="https://i.postimg.cc/qv4hhhFF/IMG-20260524-115907.png" alt="Skip internet connection during setup">
 </p>
 
 <p align="center">
@@ -403,7 +403,7 @@ Enter your preferred username.
 Then click **"Next"**.
 
 <p align="center">
-  <img src="#" alt="Create Windows user account">
+  <img src="https://i.postimg.cc/SKXyJmmW/IMG-20260524-120342.png" alt="Create Windows user account">
 </p>
 
 <p align="center">
@@ -419,7 +419,7 @@ Set a password for your Windows account.
 Then click **"Next"**.
 
 <p align="center">
-  <img src="#" alt="Create Windows account password">
+  <img src="https://i.postimg.cc/Pq62FkZ5/IMG-20260524-121440.png" alt="Create Windows account password">
 </p>
 
 <p align="center">
