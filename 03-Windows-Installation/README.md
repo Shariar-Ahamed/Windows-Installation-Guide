@@ -419,7 +419,7 @@ Set a password for your Windows account.
 Then click **"Next"**.
 
 <p align="center">
-  <img src="https://i.postimg.cc/Pq62FkZ5/IMG-20260524-121440.png" alt="Create Windows account password">
+  <img src="https://i.postimg.cc/dVVCNZ9v/IMG-20260524-121917.png" alt="Create Windows account password">
 </p>
 
 <p align="center">
@@ -435,7 +435,7 @@ Keep the default privacy settings if you do not want to change anything.
 Then click **"Accept"**.
 
 <p align="center">
-  <img src="#" alt="Windows privacy settings">
+  <img src="https://i.postimg.cc/0jZQ7ZFf/IMG-20260524-122157.png" alt="Windows privacy settings">
 </p>
 
 <p align="center">
@@ -451,7 +451,7 @@ During the final setup process, Windows may display several messages such as:
 ### 🔹 Hi
 
 <p align="center">
-  <img src="#" alt="Windows setup hi message">
+  <img src="https://i.postimg.cc/h4yFHHLV/IMG-20260524-125736.png" alt="Windows setup hi message">
 </p>
 
 <p align="center">
@@ -463,7 +463,7 @@ During the final setup process, Windows may display several messages such as:
 ### 🔹 Getting Things Ready for You
 
 <p align="center">
-  <img src="#" alt="Getting things ready for you message">
+  <img src="https://i.postimg.cc/TwtSvDD2/IMG-20260524-125839.png" alt="Getting things ready for you message">
 </p>
 
 <p align="center">
@@ -477,7 +477,7 @@ During the final setup process, Windows may display several messages such as:
 Do not turn off your PC during this process.
 
 <p align="center">
-  <img src="#" alt="Windows setup loading process">
+  <img src="https://i.postimg.cc/ZRnH3DC1/IMG-20260524-130025.png" alt="Windows setup loading process">
 </p>
 
 <p align="center">
@@ -489,7 +489,7 @@ Do not turn off your PC during this process.
 ### 🔹 Almost There
 
 <p align="center">
-  <img src="#" alt="Windows setup almost complete">
+  <img src="https://i.postimg.cc/pLB3J4LB/IMG-20260524-130212.png" alt="Windows setup almost complete">
 </p>
 
 <p align="center">
@@ -507,7 +507,7 @@ Windows 11 setup is now completed successfully.
 You will now see the Windows desktop home screen.
 
 <p align="center">
-  <img src="#" alt="Windows 11 desktop home screen">
+  <img src="https://i.postimg.cc/TY0c76n5/IMG-20260524-130538.png" alt="Windows 11 desktop home screen">
 </p>
 
 <p align="center">
