@@ -64,21 +64,32 @@ Full installation process with BIOS boot setup and Windows configuration.
 
 ---
 
+## 4️⃣ Microsoft Activation Scripts (MAS)
+
+Complete activation guide for Windows, Microsoft Office, and Extended Security Updates (ESU), including HWID, Ohook, TSforge, and Online KMS activation methods.
+
+📂 Folder:  
+[04-Microsoft-Activation-Scripts](https://github.com/Shariar-Ahamed/Windows-Installation-Guide/blob/main/04-Microsoft-Activation-Scripts/README.md)
+
+
+---
+
 ## 📂 Repository Structure
 
 ```txt
 Windows-Installation-Guide/
-│
-├── README.md
-│
-├── 01-Windows-ISO-Download/
+├── 01-Windows-ISO-Download
 │   └── README.md
-│
-├── 02-Bootable-USB-Setup/
+│ 
+├── 02-Bootable-USB-Setup
 │   └── README.md
-│
-└── 03-Windows-Installation/
-    └── README.md
+│ 
+├── 03-Windows-Installation
+│   └── README.md
+│ 
+├── 04-Microsoft-Activation-Scripts
+│   └── README.md
+└── README.md
 ```
 
 ---
