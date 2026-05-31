@@ -132,7 +132,6 @@ When the menu appears, select one of the **Green** activation options by enterin
 ---
 
 > [!TIP]
-
 > - Use **HWID** for permanent Windows activation whenever supported.
 > - Use **Ohook** for Microsoft Office activation.
 > - If one activation method fails, try another available method.
