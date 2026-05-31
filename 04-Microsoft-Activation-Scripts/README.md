@@ -2,6 +2,12 @@
 
 <p align="center">An open-source activation utility for Windows and Microsoft Office, featuring multiple activation methods including HWID, Ohook, TSforge, and Online KMS. It also provides advanced troubleshooting tools and diagnostic features to help resolve activation-related issues efficiently.</p>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Windows-8.1%20%7C%2010%20%7C%2011-blue" alt="Windows">
+  <img src="https://img.shields.io/badge/Office-Supported-green" alt="Office">
+  <img src="https://img.shields.io/badge/License-Open%20Source-orange" alt="License">
+</p>
+
 <hr>
   
 ## How to Activate Windows / Office / Extended Security Updates (ESU)?
@@ -17,6 +23,8 @@
 ```powershell
 irm https://get.activated.win | iex
 ```
+
+---
 
 ### 📷 Full process overview:
 
@@ -112,7 +120,36 @@ When the menu appears, select one of the **Green** activation options by enterin
 
 ---
 
+
+> [!NOTE]
+> - This guide is intended for educational and documentation purposes only.
+> - An active internet connection is required during the activation process.
+> - Temporarily disabling antivirus software may be necessary if it blocks the script execution.
+> - Always download scripts from official and trusted sources.
+> - Make sure you are running PowerShell with administrator privileges for best compatibility.
+> - Some activation methods are designed for specific Windows or Office editions. Choose the appropriate method according to your system requirements.
+
+---
+
+> [!TIP]
+
+> - Use **HWID** for permanent Windows activation whenever supported.
+> - Use **Ohook** for Microsoft Office activation.
+> - If one activation method fails, try another available method.
+> - Keep Windows and Office updated before running the activation script.
+> - Restart your computer after activation to ensure all changes are applied properly.
+> - Verify activation status after completion through Windows Settings or Office Account settings.
+
+---
+
 ## 🔗 Official Links
 
 ### Home - [https://massgrave.dev/](https://massgrave.dev/)
 ### GitHub - [Massgravel](https://github.com/massgravel/Microsoft-Activation-Scripts)
+
+
+---
+
+## ⚠ Disclaimer
+
+This repository is provided for informational and educational purposes only. Users are responsible for complying with Microsoft's licensing terms and applicable laws. The repository owner does not host, modify, or distribute any activation software and is not responsible for how third-party tools are used.
