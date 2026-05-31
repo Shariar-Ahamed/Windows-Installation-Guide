@@ -517,3 +517,21 @@ You will now see the Windows desktop home screen.
 ---
 
 <h2 align="center">🎉 Windows 11 Installation Completed Successfully</h2>
+
+
+---
+
+> ## 🚀 Next Step — Microsoft Activation
+>
+> Congratulations! Your Windows installation is now complete.
+>
+> To unlock all features and ensure proper licensing,
+> proceed with the activation process using Microsoft
+> Activation Scripts (MAS).
+>
+> The guide includes activation methods for Windows,
+> Microsoft Office, and Extended Security Updates (ESU),
+> along with screenshots and step-by-step instructions.
+>
+> 👉 Continue to:
+> [04-Microsoft-Activation-Scripts](https://github.com/Shariar-Ahamed/Windows-Installation-Guide/tree/main/04-Microsoft-Activation-Scripts)
