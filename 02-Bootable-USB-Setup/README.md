@@ -20,7 +20,7 @@ It helps you quickly prepare a USB flash drive for installing operating systems 
 
 ## 📥 Download Rufus
 
-🔗 **Official Rufus Website:** [Download Rufus Latest Release](https://rufus.ie/en/)
+🔗 **Official Rufus Website:** Download Rufus from the official Rufus website.
 
 <p align="center">
   <img src="https://i.postimg.cc/g0kLcMPL/Rufus-1.png" alt="Download Rufus for Windows">
@@ -201,7 +201,7 @@ Once the process is completed, your bootable Windows USB drive will be ready for
 > Your bootable USB drive is now ready.  
 > The next step is to boot your PC or laptop from the USB drive and start the Windows installation process.
 >
-> 👉 Follow the complete step-by-step Windows installation guide here: [03-Windows-Installation](https://github.com/Shariar-Ahamed/Windows-Installation-Guide/blob/main/03-Windows-Installation/README.md)
+> 👉 Follow the complete step-by-step Windows installation guide here: [03-Windows-Installation](https://github.com/Shariar-Ahamed/Windows-Installation-Guide/tree/main/03-Windows-Installation)
 
 ---
 
