@@ -41,56 +41,20 @@
 This repository is organized into 3 simple steps:
 
 ## 1️⃣ Download Windows ISO
-Learn how to download the official Windows ISO file from Microsoft safely.
-
 📂 Folder:  
 [01-Windows-ISO-Download](https://github.com/Shariar-Ahamed/Windows-Installation-Guide/tree/main/01-Windows-ISO-Download)
 
 ---
 
 ## 2️⃣ Create Bootable USB
-Step-by-step guide to create a bootable USB using the ISO file.
-
 📂 Folder:  
-[02-Bootable-USB-Setup](https://github.com/Shariar-Ahamed/Windows-Installation-Guide/blob/main/02-Bootable-USB-Setup/README.md)
+[02-Bootable-USB-Setup](https://github.com/Shariar-Ahamed/Windows-Installation-Guide/tree/main/02-Bootable-USB-Setup)
 
 ---
 
 ## 3️⃣ Install Windows
-Full installation process with BIOS boot setup and Windows configuration.
-
 📂 Folder:  
-[03-Windows-Installation](https://github.com/Shariar-Ahamed/Windows-Installation-Guide/blob/main/03-Windows-Installation/README.md)
-
----
-
-## 4️⃣ Microsoft Activation Scripts (MAS)
-
-Complete activation guide for Windows, Microsoft Office, and Extended Security Updates (ESU), including HWID, Ohook, TSforge, and Online KMS activation methods.
-
-📂 Repository:  
-[Microsoft-Activation-Scripts](https://github.com/Shariar-Ahamed/Microsoft-Activation-Scripts)
-
-
----
-
-## 📂 Repository Structure
-
-```txt
-Windows-Installation-Guide/
-├── 01-Windows-ISO-Download
-│   └── README.md
-│ 
-├── 02-Bootable-USB-Setup
-│   └── README.md
-│ 
-├── 03-Windows-Installation
-│   └── README.md
-│ 
-├── 04-Microsoft-Activation-Scripts
-│   └── README.md
-└── README.md
-```
+[03-Windows-Installation](https://github.com/Shariar-Ahamed/Windows-Installation-Guide/tree/main/03-Windows-Installation)
 
 ---
 
