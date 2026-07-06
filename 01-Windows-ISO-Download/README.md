@@ -10,7 +10,7 @@
 
 ## 🪟 Windows 10 ISO File
 
-🔗 **Official Microsoft Download Page:** [Download Windows 10 ISO](https://www.microsoft.com/en-us/software-download/windows10)
+🔗 **Official Microsoft Download Page:** Visit the official Microsoft Software Download page.
 
 <p align="center">
   <img src="https://i.postimg.cc/Fs4SySRM/win-11-0.png" alt="Create Windows 10 installation media">
@@ -176,7 +176,7 @@ Finally, check the downloaded ISO file on your computer to confirm the process c
 >
 > After downloading the Windows ISO file successfully, the next step is to create a bootable USB drive using **Rufus** and boot your PC from the USB drive.
 >
-> 👉 Follow the complete step-by-step guide here: [02-Bootable-USB-Setup](https://github.com/Shariar-Ahamed/Windows-Installation-Guide/blob/main/02-Bootable-USB-Setup/README.md)
+> 👉 Follow the complete step-by-step guide here: [02-Bootable-USB-Setup](https://github.com/Shariar-Ahamed/Windows-Installation-Guide/tree/main/02-Bootable-USB-Setup)
 
 ---
 
@@ -184,7 +184,7 @@ Finally, check the downloaded ISO file on your computer to confirm the process c
 
 ## 🪟 Windows 11 ISO File
 
-🔗 **Official Microsoft Download Page:** [Download Windows 11 ISO](https://www.microsoft.com/en-us/software-download/windows11)
+🔗 **Official Microsoft Download Page:** Visit the official Microsoft Software Download page.
 
 ---
 
@@ -256,7 +256,7 @@ Example file name:
 >
 > After downloading the Windows ISO file successfully, the next step is to create a bootable USB drive using **Rufus** and boot your PC from the USB drive.
 >
-> 👉 Follow the complete step-by-step guide here:  [02-Bootable-USB-Setup](https://github.com/Shariar-Ahamed/Windows-Installation-Guide/blob/main/02-Bootable-USB-Setup/README.md)
+> 👉 Follow the complete step-by-step guide here:  [02-Bootable-USB-Setup](https://github.com/Shariar-Ahamed/Windows-Installation-Guide/tree/main/02-Bootable-USB-Setup)
 
 ---
 
