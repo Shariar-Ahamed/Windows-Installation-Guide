@@ -6,32 +6,39 @@
 </p>
 
 <p align="center">
-  <strong>This guide has been moved to a dedicated repository for active development and regular updates.</strong>
-</p>
-
-<p align="center">
-  <a href="https://github.com/Shariar-Ahamed/Microsoft-Activation-Scripts">
-    <img src="https://img.shields.io/badge/Visit-MAS%20Repository-0078D6?style=for-the-badge&logo=github&logoColor=white" alt="Visit MAS Repository">
-  </a>
+  <strong>Documentation for Microsoft Activation Scripts (MAS).</strong>
 </p>
 
 ---
 
-### 📂 Repository Information
+## 📂 Repository Information
 
-* **Repository Link:** [Microsoft-Activation-Scripts](https://github.com/Shariar-Ahamed/Microsoft-Activation-Scripts)
-* **Developer/Author:** [@Shariar-Ahamed](https://github.com/Shariar-Ahamed)
-* **Topics covered:** HWID, Ohook, TSforge, Online KMS activation.
+This repository contains documentation related to **Microsoft Activation Scripts (MAS)**.
 
-Moving this guide to a dedicated repository allows us to maintain it independently, keep it updated with the latest methods, and track issues or discussions in a focused environment.
+It serves as a documentation resource covering supported activation technologies, related concepts, and reference information.
 
 ---
 
-### ⭐ Support the Project
-If this guide helps you, please consider **starring (⭐) the new repository** to show your support and stay updated with the latest changes!
+## 📚 Topics Covered
+
+- HWID Activation
+- Ohook Activation
+- TSforge Activation
+- Online KMS Activation
+- Windows Activation
+- Microsoft Office Activation
+- Extended Security Updates (ESU)
 
 ---
 
-<p align="center">
-  👉 <strong><a href="https://github.com/Shariar-Ahamed/Microsoft-Activation-Scripts">Click here to access the activation guide</a></strong> 👈
-</p>
+## 📖 Documentation
+
+This repository provides documentation and reference information related to the supported activation methods listed above.
+
+The documentation may include background information, explanations, screenshots, and other reference materials where applicable.
+
+---
+
+> **Note**
+>
+> This repository is currently under review. The documentation may be updated, expanded, reorganized, or revised in future releases.
