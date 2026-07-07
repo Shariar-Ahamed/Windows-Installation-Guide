@@ -42,7 +42,7 @@ This repository is organized into 3 simple steps:
 
 ## 1️⃣ Download Windows ISO
 📂 Folder:  
-[01-Windows-ISO-Download](https://github.com/Shariar-Ahamed/Windows-Installation-Guide/tree/main/01-Windows-ISO-Download)
+[01-Windows-ISO](https://github.com/Shariar-Ahamed/Windows-Installation-Guide/tree/main/01-Windows-ISO)
 
 ---
 
