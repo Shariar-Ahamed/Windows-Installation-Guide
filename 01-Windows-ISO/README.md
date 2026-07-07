@@ -1,274 +1,213 @@
-<h1 align="center">💿 Official Windows ISO Download Guide</h1>
+<h1 align="center">💿 Official Windows Installation Media Guide</h1>
 
 <p align="center">
-  Complete step-by-step guide to download official Windows 10 and Windows 11 ISO files directly from Microsoft.
+A beginner-friendly guide for obtaining official Windows installation media and preparing it for Windows installation.
 </p>
 
 ---
 
-# 📥 Download Official Windows ISO Files
+# 📖 Overview
 
-## 🪟 Windows 10 ISO File
+This guide explains how to prepare official Windows installation media using Microsoft's official tools.
 
-🔗 **Official Microsoft Download Page:** Visit the official Microsoft Software Download page.
+It includes documentation for:
+
+- Windows 10 installation media
+- Windows 11 installation media
+- Media Creation Tool workflow
+- ISO creation process
+
+---
+
+# 🪟 Windows 10 Installation Media
+
+Official Windows installation media is available from Microsoft.
 
 <p align="center">
-  <img src="https://i.postimg.cc/Fs4SySRM/win-11-0.png" alt="Create Windows 10 installation media">
+<img src="https://i.postimg.cc/Fs4SySRM/win-11-0.png" alt="Windows Installation Media">
 </p>
 
 <p align="center">
-  <i>Create Windows 10 installation media</i>
+<i>Windows installation media page</i>
 </p>
 
 ---
 
-# 💻 Windows 10 ISO Download Process
+# ⚙️ Windows 10 Media Creation Process
 
-## ✅ Step 1 — Run MediaCreationTool as Administrator
+## ✅ Step 1 — Launch Media Creation Tool
 
-Go to the folder where the downloaded file is located and run the **MediaCreationTool**.
+Run the **Media Creation Tool** with administrator privileges.
 
-If the **User Account Control (UAC)** window appears, click **"Yes"**.
-
-<p align="center">
-  <img src="https://i.postimg.cc/xTmRYmpc/Screenshot-2026-05-22-070928.png" alt="Run MediaCreationTool as administrator">
-</p>
+If the **User Account Control (UAC)** dialog appears, select **Yes**.
 
 <p align="center">
-  <i>Run MediaCreationTool as administrator</i>
+<img src="https://i.postimg.cc/xTmRYmpc/Screenshot-2026-05-22-070928.png" alt="Media Creation Tool">
 </p>
 
 ---
 
-## ✅ Step 2 — Accept License Terms
+## ✅ Step 2 — Accept the License Agreement
 
-Carefully read the application notices and license terms, then click **"Accept"**.
-
-<p align="center">
-  <img src="https://i.postimg.cc/2jJcr202/Iso-1.png" alt="Applicable notices and license terms">
-</p>
+Review the license agreement and continue.
 
 <p align="center">
-  <i>Applicable notices and license terms</i>
+<img src="https://i.postimg.cc/2jJcr202/Iso-1.png" alt="License Agreement">
 </p>
 
 ---
 
-## ✅ Step 3 — Choose What You Want to Do
+## ✅ Step 3 — Choose Installation Media
 
 Select:
 
 > **Create installation media (USB flash drive, DVD, or ISO file) for another PC**
 
-Then click **"Next"**.
+Then continue.
 
 <p align="center">
-  <img src="https://i.postimg.cc/BvVYbpqG/Iso-2.png" alt="Create installation media for another PC">
-</p>
-
-<p align="center">
-  <i>Create installation media for PC</i>
+<img src="https://i.postimg.cc/BvVYbpqG/Iso-2.png" alt="Installation Media">
 </p>
 
 ---
 
-## ✅ Step 4 — Select Language, Architecture & Edition
+## ✅ Step 4 — Select Your Preferences
 
-Choose your preferred:
+Choose:
 
 - Language
 - Architecture
 - Windows Edition
 
-Then click **"Next"**.
-
 <p align="center">
-  <img src="https://i.postimg.cc/7L0GJY4b/Iso-3.png" alt="Select language architecture and edition">
-</p>
-
-<p align="center">
-  <i>Select language, architecture, and edition</i>
+<img src="https://i.postimg.cc/7L0GJY4b/Iso-3.png" alt="Language and Edition">
 </p>
 
 ---
 
-## ✅ Step 5 — Choose Which Media to Use
+## ✅ Step 5 — Select Media Type
 
-### ⚠ Important Notes
-
-1. Your USB flash drive must be at least **8 GB**.
-2. All existing data on the USB drive will be erased during the process.
-3. Back up important files before continuing.
-
-Select **ISO file**, then click **"Next"**.
+Choose **ISO file** if you wish to create installation media.
 
 <p align="center">
-  <img src="https://i.postimg.cc/Hs8pkvHR/Iso-4.png" alt="Choose ISO file">
-</p>
-
-<p align="center">
-  <i>Select ISO file and click Next</i>
+<img src="https://i.postimg.cc/Hs8pkvHR/Iso-4.png" alt="ISO Selection">
 </p>
 
 ---
 
-## ✅ Step 6 — Choose Download Folder
+## ✅ Step 6 — Choose Save Location
 
-Select the folder where you want to save the ISO file.
-
-<p align="center">
-  <img src="https://i.postimg.cc/Dy82zqtx/Iso-5.png" alt="Select ISO download folder">
-</p>
+Select the destination folder for the ISO file.
 
 <p align="center">
-  <i>Select download folder</i>
+<img src="https://i.postimg.cc/Dy82zqtx/Iso-5.png" alt="Save Location">
 </p>
 
 ---
 
-## ✅ Step 7 — Downloading Windows ISO File
+## ✅ Step 7 — Media Preparation
 
-The Media Creation Tool will now begin downloading the Windows ISO file.
-
-<p align="center">
-  <img src="https://i.postimg.cc/Qd7ShySs/Iso-6.png" alt="Downloading Windows 10 ISO">
-</p>
+The Media Creation Tool will prepare the Windows installation media.
 
 <p align="center">
-  <i>Downloading Windows 10 ISO</i>
+<img src="https://i.postimg.cc/Qd7ShySs/Iso-6.png" alt="Preparing Media">
 </p>
 
 ---
 
-## ✅ Step 8 — Finish the Process
+## ✅ Step 8 — Complete the Process
 
-After the ISO download is completed successfully, click **"Finish"**.
-
-<p align="center">
-  <img src="https://i.postimg.cc/xTpTns8x/Iso-7.png" alt="Completed ISO file download">
-</p>
+Once preparation is finished, close the Media Creation Tool.
 
 <p align="center">
-  <i>Completed ISO file download</i>
+<img src="https://i.postimg.cc/xTpTns8x/Iso-7.png" alt="Completed">
 </p>
 
 ---
 
-## ✅ Step 9 — Verify ISO File Download
+## ✅ Step 9 — Verify the Installation Media
 
-Finally, check the downloaded ISO file on your computer to confirm the process completed successfully.
-
-<p align="center">
-  <img src="https://i.postimg.cc/3x26nRsk/Iso-8.png" alt="ISO file downloaded successfully">
-</p>
+Confirm that the Windows ISO file has been created successfully.
 
 <p align="center">
-  <i>ISO file downloaded successfully</i>
+<img src="https://i.postimg.cc/3x26nRsk/Iso-8.png" alt="ISO Verification">
 </p>
 
 ---
 
-<h3 align="center">🎉 Windows 10 ISO Download Process Completed Successfully</h3>
+<h3 align="center">✅ Windows 10 Installation Media Prepared</h3>
 
 ---
 
-> ## 🚀 Next Step — Create a Bootable USB Drive
+> ## ➜ Next Step
 >
-> After downloading the Windows ISO file successfully, the next step is to create a bootable USB drive using **Rufus** and boot your PC from the USB drive.
->
-> 👉 Follow the complete step-by-step guide here: **02-Bootable-USB-Setup**
+> Continue to the **02-Bootable-USB-Setup** section to learn how to prepare bootable installation media.
 
 ---
 
-# 📥 Download Official Windows ISO Files
+# 🪟 Windows 11 Installation Media
 
-## 🪟 Windows 11 ISO File
-
-🔗 **Official Microsoft Download Page:** Visit the official Microsoft Software Download page.
+Official Windows installation media is available from Microsoft.
 
 ---
 
-# 💻 Windows 11 ISO Download Process
+# ⚙️ Windows 11 Media Preparation
 
-## ✅ Step 1 — Download Windows 11 Disk Image (ISO) for x64 Devices
-
-<p align="center">
-  <img src="https://i.postimg.cc/kgSyJCBz/win-11-1.png" alt="Select Windows 11 (multi-edition ISO for x64 devices) and Confirm">
-</p>
+## ✅ Step 1 — Select Windows Edition
 
 <p align="center">
-  <i>Select Windows 11 (multi-edition ISO for x64 devices) and Confirm</i>
+<img src="https://i.postimg.cc/kgSyJCBz/win-11-1.png" alt="Windows 11 Edition">
 </p>
 
 ---
 
 ## ✅ Step 2 — Select Product Language
 
-Choose your preferred product language, then continue the process.
+Choose your preferred language.
 
 <p align="center">
-  <img src="https://i.postimg.cc/kgNtYgVb/win-11-2.png" alt="Select Windows 11 product language">
-</p>
-
-<p align="center">
-  <i>Select the product language</i>
+<img src="https://i.postimg.cc/kgNtYgVb/win-11-2.png" alt="Language">
 </p>
 
 ---
 
-## ✅ Step 3 — Download Windows 11 ISO File
+## ✅ Step 3 — Continue the Process
 
-Click the **64-bit Download** button to start downloading the Windows 11 ISO file.
-
-<p align="center">
-  <img src="https://i.postimg.cc/59Z3Zj0M/win-11-3.png" alt="64-bit Download Windows 11 ISO file">
-</p>
+Proceed through the remaining steps shown by Microsoft's installation media page.
 
 <p align="center">
-  <i>64-bit Download Windows 11 ISO file</i>
+<img src="https://i.postimg.cc/59Z3Zj0M/win-11-3.png" alt="Windows 11 Process">
 </p>
 
 ---
 
-## ✅ Step 4 — Verify Downloaded ISO File
+## ✅ Step 4 — Verify the ISO
 
-After the download starts, check your browser download history to verify the ISO file download.
-
-Example file name:
-
-> **Win11_25H2_English_x64_v2.iso**
+Verify that the installation media has been prepared successfully.
 
 <p align="center">
-  <img src="https://i.postimg.cc/tTV24RhD/win-11-4.png" alt="Verify Windows 11 ISO download">
-</p>
-
-<p align="center">
-  <i>Verify Windows 11 ISO file download</i>
+<img src="https://i.postimg.cc/tTV24RhD/win-11-4.png" alt="Verification">
 </p>
 
 ---
 
-<h3 align="center">🎉 Windows 11 ISO Download Process Completed Successfully</h3>
+<h3 align="center">✅ Windows 11 Installation Media Prepared</h3>
 
 ---
 
-> ## 🚀 Next Step — Create a Bootable USB Drive
+> ## ➜ Next Step
 >
-> After downloading the Windows ISO file successfully, the next step is to create a bootable USB drive using **Rufus** and boot your PC from the USB drive.
->
-> 👉 Follow the complete step-by-step guide here:  **02-Bootable-USB-Setup**
+> Continue to **02-Bootable-USB-Setup** for documentation on preparing bootable installation media.
 
 ---
 
-# 📌 Important Notes
+# 📌 Notes
 
-- Always download Windows ISO files from the official Microsoft website.
-- Ensure you have a stable internet connection during the download process.
-- Keep at least **8 GB** of free storage available.
-- You can use tools like **Rufus** or **Ventoy** to create a bootable USB drive using the downloaded ISO file.
-- Backup important files before creating bootable installation media.
+- Use Microsoft's official resources when preparing Windows installation media.
+- Ensure sufficient free disk space before beginning.
+- A USB drive with at least **8 GB** capacity is recommended.
+- Back up important data before creating installation media.
 
 ---
 
-<h2 align="center">✅ Official Windows ISO Download Guide Completed</h2>
-
+<h2 align="center">📚 End of Windows Installation Media Guide</h2>
