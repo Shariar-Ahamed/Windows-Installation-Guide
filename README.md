@@ -42,19 +42,19 @@ This repository is organized into 3 simple steps:
 
 ## 1️⃣ Windows ISO
 📂 Folder:  
-[01-Windows-ISO]
+**01-Windows-ISO**
 
 ---
 
 ## 2️⃣ Create Bootable USB
 📂 Folder:  
-[02-Bootable-USB-Setup]
+**02-Bootable-USB-Setup**
 
 ---
 
 ## 3️⃣ Install Windows
 📂 Folder:  
-[03-Windows-Installation]
+**03-Windows-Installation**
 
 ---
 
