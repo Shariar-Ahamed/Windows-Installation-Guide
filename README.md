@@ -10,7 +10,7 @@
   <img src="https://img.shields.io/badge/Windows-Installation%20Guide-0078D6?style=for-the-badge&logo=windows&logoColor=white">
   <img src="https://img.shields.io/badge/Step--By--Step-Guide-success?style=for-the-badge">
   <img src="https://img.shields.io/badge/Bootable-USB-orange?style=for-the-badge">
-  <img src="https://img.shields.io/badge/ISO-Download-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Official-ISO%20Guide-blue?style=for-the-badge">
 </p>
 
 <p align="center">
@@ -31,7 +31,7 @@
 ---
 
 <p align="center">
-    A complete beginner-friendly guide for downloading official Windows <b>ISO</b> files, creating a <b>bootable USB</b> drive, and installing <b>Windows</b> step by step.
+    A complete beginner-friendly guide for obtaining official Windows installation media, creating a bootable USB drive, and installing Windows step by step.
 </p>
 
 ---
@@ -62,7 +62,7 @@ This repository is organized into 3 simple steps:
 
 - Beginner-friendly step-by-step learning
 - Clean and organized documentation
-- Safe official Windows ISO download guide
+- Official Windows ISO documentation
 - USB boot creation explained simply
 - Complete installation workflow
 
@@ -80,7 +80,7 @@ This repository is organized into 3 simple steps:
 ## 🚀 Getting Started
 
 👉 Start here:  
-`01-Windows-ISO-Download/README.md`
+`01-Windows-ISO/README.md`
 
 ---
 
