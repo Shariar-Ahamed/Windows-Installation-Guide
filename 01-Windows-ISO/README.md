@@ -176,7 +176,7 @@ Finally, check the downloaded ISO file on your computer to confirm the process c
 >
 > After downloading the Windows ISO file successfully, the next step is to create a bootable USB drive using **Rufus** and boot your PC from the USB drive.
 >
-> 👉 Follow the complete step-by-step guide here: [02-Bootable-USB-Setup](https://github.com/Shariar-Ahamed/Windows-Installation-Guide/tree/main/02-Bootable-USB-Setup)
+> 👉 Follow the complete step-by-step guide here: [02-Bootable-USB-Setup]
 
 ---
 
@@ -256,7 +256,7 @@ Example file name:
 >
 > After downloading the Windows ISO file successfully, the next step is to create a bootable USB drive using **Rufus** and boot your PC from the USB drive.
 >
-> 👉 Follow the complete step-by-step guide here:  [02-Bootable-USB-Setup](https://github.com/Shariar-Ahamed/Windows-Installation-Guide/tree/main/02-Bootable-USB-Setup)
+> 👉 Follow the complete step-by-step guide here:  [02-Bootable-USB-Setup]
 
 ---
 
