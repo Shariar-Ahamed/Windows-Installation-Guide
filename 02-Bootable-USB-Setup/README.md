@@ -201,7 +201,7 @@ Once the process is completed, your bootable Windows USB drive will be ready for
 > Your bootable USB drive is now ready.  
 > The next step is to boot your PC or laptop from the USB drive and start the Windows installation process.
 >
-> 👉 Follow the complete step-by-step Windows installation guide here: [03-Windows-Installation](https://github.com/Shariar-Ahamed/Windows-Installation-Guide/tree/main/03-Windows-Installation)
+> 👉 Follow the complete step-by-step Windows installation guide here: **03-Windows-Installation**
 
 ---
 
