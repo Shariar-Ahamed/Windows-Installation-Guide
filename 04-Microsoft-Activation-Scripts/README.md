@@ -1,44 +1,78 @@
 # 🖥️ Microsoft Activation Scripts (MAS)
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Windows-Activation-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows Activation">
-  <img src="https://img.shields.io/badge/Office-Activation-23c55e?style=for-the-badge&logo=microsoftoffice&logoColor=white" alt="Office Activation">
+  <img src="https://img.shields.io/badge/Windows-Documentation-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows Documentation">
+  <img src="https://img.shields.io/badge/Microsoft-Reference-23c55e?style=for-the-badge&logo=microsoft&logoColor=white" alt="Microsoft Reference">
 </p>
 
 <p align="center">
-  <strong>Documentation for Microsoft Activation Scripts (MAS).</strong>
+  <strong>A documentation-focused repository for Microsoft Activation Scripts (MAS).</strong>
 </p>
 
 ---
 
-## 📂 Repository Information
+# 📖 Overview
 
-This repository contains documentation related to **Microsoft Activation Scripts (MAS)**.
+This repository is intended for documentation and educational reference related to **Microsoft Activation Scripts (MAS)**.
 
-It serves as a documentation resource covering supported activation technologies, related concepts, and reference information.
+The content focuses on explaining concepts, supported technologies, screenshots, and general reference material.
+
+It does **not** distribute activation software or executable files.
 
 ---
 
-## 📚 Topics Covered
+# 📚 Documentation Topics
 
-- HWID Activation
-- Ohook Activation
-- TSforge Activation
-- Online KMS Activation
-- Windows Activation
-- Microsoft Office Activation
+This repository may include documentation covering topics such as:
+
+- HWID
+- Ohook
+- TSforge
+- Online KMS
+- Windows licensing concepts
+- Microsoft Office licensing concepts
 - Extended Security Updates (ESU)
+- Screenshots and interface references
+- General technical explanations
 
 ---
 
-## 📖 Documentation
+# 📂 Repository Purpose
 
-This repository provides documentation and reference information related to the supported activation methods listed above.
+The goal of this repository is to provide organized documentation that helps readers understand various technologies and concepts associated with Microsoft Activation Scripts.
 
-The documentation may include background information, explanations, screenshots, and other reference materials where applicable.
+Documentation may include:
+
+- Explanations
+- Screenshots
+- Reference notes
+- Technical information
+- Version differences
+- General documentation
 
 ---
 
-> **Note**
->
-> This repository is currently under review. The documentation may be updated, expanded, reorganized, or revised in future releases.
+# ⚠️ Disclaimer
+
+This repository is provided for **documentation and educational purposes only**.
+
+It does not contain activation binaries, executable files, or software intended to bypass software licensing.
+
+Users are responsible for complying with Microsoft's licensing terms and applicable laws.
+
+---
+
+# 🚧 Repository Status
+
+This documentation is actively being improved.
+
+Future updates may include:
+
+- Additional screenshots
+- Improved documentation
+- Better organization
+- Updated reference information
+
+---
+
+<h2 align="center">📚 End of Documentation</h2>
