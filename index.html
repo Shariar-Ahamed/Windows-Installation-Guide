@@ -1,0 +1,1488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows Installation & Activation Guide | Unified Wiki</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%230072ff' d='M12 2L2 5v6c0 5.5 4.5 10 10 11 5.5-1 10-5.5 10-11V5l-10-3z'/%3E%3Cpath fill='%2300c6ff' d='M10 15.5l-4-4 1.5-1.5L10 12.5l6.5-6.5 1.5 1.5-8 8z'/%3E%3C/svg%3E">
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="A comprehensive, beginner-friendly step-by-step documentation guide to obtain official Windows ISOs, create bootable USB drives, install Windows 11, and perform MAS activation.">
+    <meta name="keywords" content="Windows 11, Windows Installation, Rufus, Bootable USB, MAS, Activation Scripts, HWID, Ohook, KMS, Windows ISO">
+    <meta name="author" content="Shariar-Ahamed">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Glow Blobs -->
+    <div class="glow-wrapper" aria-hidden="true">
+        <div class="glow-blob blob-1"></div>
+        <div class="glow-blob blob-2"></div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="header-left">
+                <button class="menu-toggle-btn" onclick="toggleSidebar()" aria-label="Toggle Navigation Sidebar">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <a href="#home" class="logo-link">
+                    <div class="logo">
+                        <i class="fab fa-windows logo-icon"></i>
+                        <span>WinGuide</span>
+                    </div>
+                </a>
+            </div>
+            <nav class="nav-links">
+                <button class="theme-toggle-btn" id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+                    <i class="fas fa-sun" id="theme-icon"></i>
+                </button>
+                <a href="https://github.com/Shariar-Ahamed/Windows-Installation-Guide" target="_blank" class="github-btn">
+                    <i class="fab fa-github"></i> <span>GitHub Repository</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Sidebar Backdrop -->
+    <div class="sidebar-backdrop" id="sidebar-backdrop" onclick="closeSidebar()" aria-hidden="true"></div>
+
+    <!-- Left Navigation Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <ul class="sidebar-nav-list">
+            <li class="sidebar-nav-item">
+                <a href="#home" class="sidebar-nav-link active">
+                    <i class="fas fa-home"></i> <span>Activate Windows / Office</span>
+                </a>
+            </li>
+            
+            <li class="sidebar-divider"></li>
+            
+            <!-- Category: Guides -->
+            <li class="sidebar-nav-item category-item expanded">
+                <div class="category-header" onclick="toggleCategory(this)">
+                    <div class="category-header-left">
+                        <i class="fas fa-book-open"></i> <span>Installation Guides</span>
+                    </div>
+                    <i class="fas fa-chevron-right category-caret" style="transform: rotate(90deg);"></i>
+                </div>
+                <ul class="category-content">
+                    <li>
+                        <a href="#iso" class="sidebar-nav-link">
+                            <i class="fas fa-arrow-down"></i> <span>1. Official Windows ISO</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#usb" class="sidebar-nav-link">
+                            <i class="fas fa-compact-disc"></i> <span>2. Bootable USB Setup</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#install" class="sidebar-nav-link">
+                            <i class="fas fa-laptop-code"></i> <span>3. Windows 11 Install</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#activation" class="sidebar-nav-link">
+                            <i class="fas fa-shield-alt"></i> <span>4. Microsoft Activation</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="sidebar-divider"></li>
+            
+            <!-- Category: Support -->
+            <li class="sidebar-nav-item category-item">
+                <div class="category-header" onclick="toggleCategory(this)">
+                    <div class="category-header-left">
+                        <i class="fas fa-info-circle"></i> <span>Resources & Info</span>
+                    </div>
+                    <i class="fas fa-chevron-right category-caret"></i>
+                </div>
+                <ul class="category-content">
+                    <li>
+                        <a href="https://github.com/massgravel/Microsoft-Activation-Scripts" target="_blank" class="sidebar-nav-link">
+                            <i class="fab fa-github"></i> <span>MAS GitHub</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Shariar-Ahamed" target="_blank" class="sidebar-nav-link">
+                            <i class="fas fa-user-edit"></i> <span>Author Profile</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </aside>
+
+    <!-- Main Content Panel -->
+    <div class="main-wrapper">
+        <main class="content-area" id="content-area">
+
+            <!-- ==========================================================================
+                 SECTION: HOME / WELCOME DASHBOARD
+                 ========================================================================== -->
+            <section id="home" class="content-section active">
+                <div class="home-banner-wrapper" style="margin-bottom: 30px; border-radius: 16px; overflow: hidden; border: 1px solid var(--border-color); box-shadow: 0 10px 30px var(--shadow-card);">
+                    <img src="01-Windows-ISO/Picture-1.png" alt="Windows Installation & Activation Banner" style="width: 100%; height: auto; display: block;">
+                </div>
+                <span class="badge"><i class="fas fa-star"></i> Beginner Friendly Wiki</span>
+                <h1 class="page-title">Windows Installation & <br><span class="gradient-text">Activation Guide</span></h1>
+                <p class="page-subtitle">
+                    A clean, comprehensive, step-by-step walkthrough to safely download official Microsoft Windows, create bootable flash media, install the OS, and activate Microsoft products.
+                </p>
+
+                <div class="intro-banner">
+                    <p><strong>Welcome to the unified installation wiki!</strong> This website consolidates all phases of system setup into a single, clean workspace modeled after the official MAS documentation.</p>
+                    <p>No software download links or external mirrors are hosted here. All resources direct you to Microsoft's official servers and original code repositories to ensure absolute safety and integrity.</p>
+                </div>
+
+                <div class="welcome-grid">
+                    <!-- Step 1 -->
+                    <div class="welcome-card">
+                        <div class="welcome-card-icon"><i class="fas fa-arrow-down"></i></div>
+                        <h3>1. Windows ISO</h3>
+                        <p>Obtain untouched, official Windows 10 & 11 ISO files directly from Microsoft.</p>
+                        <a href="#iso" class="btn btn-secondary btn-sm">View Guide</a>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="welcome-card">
+                        <div class="welcome-card-icon"><i class="fas fa-compact-disc"></i></div>
+                        <h3>2. Bootable USB</h3>
+                        <p>Configure Rufus correctly with Partition Schemes and bypass security checks.</p>
+                        <a href="#usb" class="btn btn-secondary btn-sm">View Guide</a>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="welcome-card">
+                        <div class="welcome-card-icon"><i class="fas fa-laptop-code"></i></div>
+                        <h3>3. Install OS</h3>
+                        <p>Clean format drive partitions and bypass Microsoft online account login.</p>
+                        <a href="#install" class="btn btn-secondary btn-sm">View Guide</a>
+                    </div>
+                    <!-- Step 4 -->
+                    <div class="welcome-card">
+                        <div class="welcome-card-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h3>4. MAS Activation</h3>
+                        <p>Activate Windows & Microsoft Office permanently using standard MAS scripts.</p>
+                        <a href="#activation" class="btn btn-secondary btn-sm">View Guide</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==========================================================================
+                 SECTION: WINDOWS ISO DOWNLOAD GUIDE
+                 ========================================================================== -->
+            <section id="iso" class="content-section">
+                <span class="badge"><i class="fas fa-arrow-down"></i> Step 1 of Guide</span>
+                <h1 class="page-title">Official Windows ISO <br><span class="gradient-text">Download Guide</span></h1>
+                <p class="page-subtitle">A step-by-step walkthrough to safely obtain untouched Windows 10 and Windows 11 ISO files directly from Microsoft's servers.</p>
+
+                <!-- OS Switcher Tab -->
+                <div class="os-switcher-card">
+                    <div class="os-switcher-info">
+                        <h3>Select Windows Version</h3>
+                        <p>Toggle to see download instructions for Windows 10 or Windows 11.</p>
+                    </div>
+                    <div class="tabs-container">
+                        <button class="tab-btn active iso-tab" id="iso-tab-win10" onclick="switchOS('iso', 'win10')">Windows 10</button>
+                        <button class="tab-btn iso-tab" id="iso-tab-win11" onclick="switchOS('iso', 'win11')">Windows 11</button>
+                    </div>
+                </div>
+
+                <!-- Windows 10 Content -->
+                <div id="iso-win10-content">
+                    <!-- Windows 10 Download Banner -->
+                    <div class="download-banner">
+                        <span class="banner-title"><i class="fab fa-windows"></i> Download Official Windows 10 Media Creation Tool</span>
+                        <a href="https://www.microsoft.com/en-us/software-download/windows10" target="_blank" class="btn btn-primary btn-sm"><i class="fas fa-download"></i> Official Microsoft Download Page</a>
+                    </div>
+
+                    <div class="steps-timeline">
+                        <!-- Step 1 -->
+                        <div class="step-card">
+                            <div class="step-badge">Step 1</div>
+                            <div class="step-content">
+                                <h3 class="step-title">Create Windows 10 Installation Media Download</h3>
+                                <p class="step-text">To get started, you will first need to have a license to install Windows 10. You can then download and run the media creation tool. For more information on how to use the tool, see the instructions below.</p>
+                                <div class="window-mock">
+                                    <div class="window-header">
+                                        <span class="dot dot-red"></span>
+                                        <span class="dot dot-yellow"></span>
+                                        <span class="dot dot-green"></span>
+                                        <span class="window-title-text">Microsoft Download Portal</span>
+                                    </div>
+                                    <div class="window-body">
+                                        <img src="https://i.postimg.cc/jdy6XFL5/image.png" alt="Create Windows 10 installation media download option" class="step-image" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="step-card">
+                            <div class="step-badge">Step 2</div>
+                            <div class="step-content">
+                                <h3 class="step-title">Run MediaCreationTool as Administrator</h3>
+                                <p class="step-text">Go to the folder where your downloaded file is located, right-click, and run the <strong>MediaCreationTool</strong> executable. If the <strong>User Account Control (UAC)</strong> window appears, click <strong>"Yes"</strong> to allow the tool to start.</p>
+                                <div class="window-mock">
+                                    <div class="window-header">
+                                        <span class="dot dot-red"></span>
+                                        <span class="dot dot-yellow"></span>
+                                        <span class="dot dot-green"></span>
+                                        <span class="window-title-text">Media Creation Tool Launcher</span>
+                                    </div>
+                                    <div class="window-body">
+                                        <img src="https://i.postimg.cc/xTmRYmpc/Screenshot-2026-05-22-070928.png" alt="Run MediaCreationTool as administrator" class="step-image" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="step-card">
+                            <div class="step-badge">Step 3</div>
+                            <div class="step-content">
+                                <h3 class="step-title">Accept License Terms</h3>
+                                <p class="step-text">The wizard will load the setup configurations. Carefully read the applicable notices and license terms, then click <strong>"Accept"</strong> to proceed.</p>
+                                <div class="window-mock">
+                                    <div class="window-header">
+                                        <span class="dot dot-red"></span>
+                                        <span class="dot dot-yellow"></span>
+                                        <span class="dot dot-green"></span>
+                                        <span class="window-title-text">Windows 10 Setup - License Terms</span>
+                                    </div>
+                                    <div class="window-body">
+                                        <img src="https://i.postimg.cc/2jJcr202/Iso-1.png" alt="Applicable notices and license terms" class="step-image" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="step-card">
+                            <div class="step-badge">Step 4</div>
+                            <div class="step-content">
+                                <h3 class="step-title">Choose What You Want to Do</h3>
+                                <p class="step-text">Select the option <strong>"Create installation media (USB flash drive, DVD, or ISO file) for another PC"</strong>. Do NOT choose "Upgrade this PC now" if you want a clean ISO file for bootable media. Click <strong>"Next"</strong>.</p>
+                                <div class="window-mock">
+                                    <div class="window-header">
+                                        <span class="dot dot-red"></span>
+                                        <span class="dot dot-yellow"></span>
+                                        <span class="dot dot-green"></span>
+                                        <span class="window-title-text">Windows 10 Setup - Options</span>
+                                    </div>
+                                    <div class="window-body">
+                                        <img src="https://i.postimg.cc/BvVYbpqG/Iso-2.png" alt="Create installation media for another PC" class="step-image" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 5 -->
+                        <div class="step-card">
+                            <div class="step-badge">Step 5</div>
+                            <div class="step-content">
+                                <h3 class="step-title">Select Language, Architecture & Edition</h3>
+                                <p class="step-text">Choose your preferred <strong>Language</strong>, <strong>Windows Edition</strong>, and <strong>Architecture</strong> (usually 64-bit (x64) is highly recommended for modern computers). After confirming, click <strong>"Next"</strong>.</p>
+                                <div class="window-mock">
+                                    <div class="window-header">
+                                        <span class="dot dot-red"></span>
+                                        <span class="dot dot-yellow"></span>
+                                        <span class="dot dot-green"></span>
+                                        <span class="window-title-text">Windows 10 Setup - Language & Architecture</span>
+                                    </div>
+                                    <div class="window-body">
+                                        <img src="https://i.postimg.cc/7L0GJY4b/Iso-3.png" alt="Select language architecture and edition" class="step-image" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 6 -->
+                        <div class="step-card">
+                            <div class="step-badge">Step 6</div>
+                            <div class="step-content">
+                                <h3 class="step-title">Choose Which Media to Use</h3>
+                                <p class="step-text">Choose <strong>"ISO file"</strong> as your media option and click <strong>"Next"</strong>. This downloads the official file containing the operating system, which you can burn to a USB later using Rufus or Ventoy.</p>
+                                <div class="step-alert warning">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                    <span>Note: If you were creating a direct bootable USB via this tool, it would erase the USB data. But by choosing "ISO file", nothing is erased on your storage devices yet.</span>
+                                </div>
+                                <div class="window-mock">
+                                    <div class="window-header">
+                                        <span class="dot dot-red"></span>
+                                        <span class="dot dot-yellow"></span>
+                                        <span class="dot dot-green"></span>
+                                        <span class="window-title-text">Windows 10 Setup - Select Media</span>
+                                    </div>
+                                    <div class="window-body">
+                                        <img src="https://i.postimg.cc/Hs8pkvHR/Iso-4.png" alt="Choose ISO file" class="step-image" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 7 -->
+                        <div class="step-card">
+                            <div class="step-badge">Step 7</div>
+                            <div class="step-content">
+                                <h3 class="step-title">Choose Download Folder</h3>
+                                <p class="step-text">A file explorer window will open. Select the folder (e.g. Downloads or Desktop) where you wish to save the Windows 10 ISO image, name the file, and click <strong>"Save"</strong>.</p>
+                                <div class="window-mock">
+                                    <div class="window-header">
+                                        <span class="dot dot-red"></span>
+                                        <span class="dot dot-yellow"></span>
+                                        <span class="dot dot-green"></span>
+                                        <span class="window-title-text">Windows 10 Setup - Save Path</span>
+                                    </div>
+                                    <div class="window-body">
+                                        <img src="https://i.postimg.cc/Dy82zqtx/Iso-5.png" alt="Select ISO download folder" class="step-image" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 8 -->
+                        <div class="step-card">
+                            <div class="step-badge">Step 8</div>
+                            <div class="step-content">
+                                <h3 class="step-title">Downloading Windows ISO File</h3>
+                                <p class="step-text">The tool will begin downloading the Windows 10 ISO file. This process may take some time depending on your internet connection speed. You can continue using your PC while the download runs in the background.</p>
+                                <div class="window-mock">
+                                    <div class="window-header">
+                                        <span class="dot dot-red"></span>
+                                        <span class="dot dot-yellow"></span>
+                                        <span class="dot dot-green"></span>
+                                        <span class="window-title-text">Windows 10 Setup - Download Progress</span>
+                                    </div>
+                                    <div class="window-body">
+                                        <img src="https://i.postimg.cc/Qd7ShySs/Iso-6.png" alt="Downloading Windows 10 ISO" class="step-image" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 9 -->
+                        <div class="step-card">
+                            <div class="step-badge">Step 9</div>
+                            <div class="step-content">
+                                <h3 class="step-title">Finish the Process</h3>
+                                <p class="step-text">Once the download is finished and the tool verifies the files, click <strong>"Finish"</strong> to close the Media Creation Tool safely.</p>
+                                <div class="window-mock">
+                                    <div class="window-header">
+                                        <span class="dot dot-red"></span>
+                                        <span class="dot dot-yellow"></span>
+                                        <span class="dot dot-green"></span>
+                                        <span class="window-title-text">Windows 10 Setup - Verification Complete</span>
+                                    </div>
+                                    <div class="window-body">
+                                        <img src="https://i.postimg.cc/xTpTns8x/Iso-7.png" alt="Completed ISO file download" class="step-image" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 10 -->
+                        <div class="step-card">
+                            <div class="step-badge">Step 10</div>
+                            <div class="step-content">
+                                <h3 class="step-title">Verify ISO File Download</h3>
+                                <p class="step-text">Open the target directory to verify that the <strong>Windows.iso</strong> file has been created successfully. Verify the size of the file (typically between 4GB and 6GB).</p>
+                                <div class="window-mock">
+                                    <div class="window-header">
+                                        <span class="dot dot-red"></span>
+                                        <span class="dot dot-yellow"></span>
+                                        <span class="dot dot-green"></span>
+                                        <span class="window-title-text">File Explorer - ISO Verified</span>
+                                    </div>
+                                    <div class="window-body">
+                                        <img src="https://i.postimg.cc/3x26nRsk/Iso-8.png" alt="ISO file downloaded successfully" class="step-image" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Windows 11 Content -->
+                <div id="iso-win11-content" style="display: none;">
+                    <!-- Windows 11 Download Banner -->
+                    <div class="download-banner">
+                        <span class="banner-title"><i class="fab fa-windows" style="color: #0078d4;"></i> Download Windows 11 Disk Image (ISO) Directly</span>
+                        <a href="https://www.microsoft.com/en-us/software-download/windows11" target="_blank" class="btn btn-primary btn-sm win11-bg"><i class="fas fa-download"></i> Official Microsoft Download Page</a>
+                    </div>
+
+                    <div class="steps-timeline">
+                        <!-- Step 1 -->
+                        <div class="step-card">
+                            <div class="step-badge">Step 1</div>
+                            <div class="step-content">
+                                <h3 class="step-title">Select Windows 11 Multi-Edition ISO</h3>
+                                <p class="step-text">On the Microsoft Windows 11 download page, scroll down to the section titled <strong>"Download Windows 11 Disk Image (ISO) for x64 Devices"</strong>. In the dropdown menu, select <strong>"Windows 11 (multi-edition ISO for x64 devices)"</strong>, then click <strong>"Download Now"</strong>.</p>
+                                <div class="window-mock">
+                                    <div class="window-header">
+                                        <span class="dot dot-red"></span>
+                                        <span class="dot dot-yellow"></span>
+                                        <span class="dot dot-green"></span>
+                                        <span class="window-title-text">Microsoft Edge - Choose Windows 11 ISO</span>
+                                    </div>
+                                    <div class="window-body">
+                                        <img src="https://i.postimg.cc/kgSyJCBz/win-11-1.png" alt="Select Windows 11 and Confirm" class="step-image" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="step-card">
+                            <div class="step-badge">Step 2</div>
+                            <div class="step-content">
+                                <h3 class="step-title">Select Product Language</h3>
+                                <p class="step-text">A new section will appear asking to select the product language. Choose your preferred language (e.g., <strong>English (United States)</strong> or <strong>English International</strong>) and click <strong>"Confirm"</strong>.</p>
+                                <div class="window-mock">
+                                    <div class="window-header">
+                                        <span class="dot dot-red"></span>
+                                        <span class="dot dot-yellow"></span>
+                                        <span class="dot dot-green"></span>
+                                        <span class="window-title-text">Microsoft Edge - Language Selection</span>
+                                    </div>
+                                    <div class="window-body">
+                                        <img src="https://i.postimg.cc/kgNtYgVb/win-11-2.png" alt="Select Windows 11 product language" class="step-image" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="step-card">
+                            <div class="step-badge">Step 3</div>
+                            <div class="step-content">
+                                <h3 class="step-title">Download Windows 11 ISO File</h3>
+                                <p class="step-text">A download link will be generated (valid for 24 hours). Click on the <strong>"64-bit Download"</strong> button to start downloading the Windows 11 ISO image file directly through your web browser.</p>
+                                <div class="window-mock">
+                                    <div class="window-header">
+                                        <span class="dot dot-red"></span>
+                                        <span class="dot dot-yellow"></span>
+                                        <span class="dot dot-green"></span>
+                                        <span class="window-title-text">Microsoft Edge - Direct Download Button</span>
+                                    </div>
+                                    <div class="window-body">
+                                        <img src="https://i.postimg.cc/59Z3Zj0M/win-11-3.png" alt="64-bit Download Windows 11 ISO file" class="step-image" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="step-card">
+                            <div class="step-badge">Step 4</div>
+                            <div class="step-content">
+                                <h3 class="step-title">Verify Downloaded ISO File</h3>
+                                <p class="step-text">Monitor your browser's download manager. Once finished, navigate to your download directory and verify the ISO file. It will typically be named similarly to <code>Win11_English_x64.iso</code> and have a size of around 5GB to 6.5GB.</p>
+                                <div class="window-mock">
+                                    <div class="window-header">
+                                        <span class="dot dot-red"></span>
+                                        <span class="dot dot-yellow"></span>
+                                        <span class="dot dot-green"></span>
+                                        <span class="window-title-text">Browser Downloads History</span>
+                                    </div>
+                                    <div class="window-body">
+                                        <img src="https://i.postimg.cc/tTV24RhD/win-11-4.png" alt="Verify Windows 11 ISO download" class="step-image" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Success Footer Card -->
+                <div class="success-footer-card">
+                    <i class="fas fa-check-circle success-icon" style="color: #10b981;"></i>
+                    <h3>ISO Download Complete!</h3>
+                    <p>Now that you have successfully downloaded the untouched Windows ISO file, proceed to the next step to create a bootable USB drive.</p>
+                    <a href="#usb" class="btn btn-primary btn-next-step">Proceed to USB Setup <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </section>
+
+            <!-- ==========================================================================
+                 SECTION: RUFUS BOOTABLE USB SETUP GUIDE
+                 ========================================================================== -->
+            <section id="usb" class="content-section">
+                <span class="badge"><i class="fas fa-compact-disc"></i> Step 2 of Guide</span>
+                <h1 class="page-title">Bootable USB Setup <br><span class="gradient-text">(Rufus Guide)</span></h1>
+                <p class="page-subtitle">A step-by-step walkthrough to flash your Windows ISO onto a USB drive and bypass installation hardware checks.</p>
+
+                <!-- Rufus Download Banner -->
+                <div class="download-banner">
+                    <span class="banner-title"><i class="fas fa-file-download"></i> Download Official Rufus Flashing Utility (Latest Version)</span>
+                    <a href="https://rufus.ie/en/" target="_blank" class="btn btn-primary btn-sm"><i class="fas fa-download"></i> Official Rufus Website</a>
+                </div>
+
+                <!-- OS Switcher Tab -->
+                <div class="os-switcher-card">
+                    <div class="os-switcher-info">
+                        <h3>Select Target Windows OS</h3>
+                        <p>Configure settings for Windows 10 or Windows 11.</p>
+                    </div>
+                    <div class="tabs-container">
+                        <button class="tab-btn active rufus-tab" id="rufus-tab-win10" onclick="switchOS('rufus', 'win10')">Windows 10</button>
+                        <button class="tab-btn rufus-tab" id="rufus-tab-win11" onclick="switchOS('rufus', 'win11')">Windows 11</button>
+                    </div>
+                </div>
+
+                <!-- Rufus Timeline -->
+                <div class="steps-timeline">
+                    <!-- Step 1 -->
+                    <div class="step-card">
+                        <div class="step-badge">Step 1</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Open Rufus Application</h3>
+                            <p class="step-text">Go to the directory where your downloaded <strong>Rufus</strong> utility is located, and double-click to launch it. If the UAC popup appears, click <strong>"Yes"</strong> to allow it to run.</p>
+                            <div class="window-mock">
+                                <div class="window-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="window-title-text">Rufus Launcher</span>
+                                </div>
+                                <div class="window-body">
+                                    <img src="https://i.postimg.cc/B6zKV2kT/Rufus-2.png" alt="Launch Rufus Application" class="step-image" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="step-card">
+                        <div class="step-badge">Step 2</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Insert and Detect USB Flash Drive</h3>
+                            <p class="step-text">Insert your USB flash drive (minimum 8 GB capacity) into a USB port on your PC or laptop. Rufus will automatically detect and list the drive under the <strong>"Device"</strong> field.</p>
+                            <div class="window-mock">
+                                <div class="window-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="window-title-text">Rufus - Device Selection</span>
+                                </div>
+                                <div class="window-body">
+                                    <img src="https://i.postimg.cc/Wbz24QDp/Rufus-3.png" alt="USB Device detected" class="step-image" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="step-card">
+                        <div class="step-badge">Step 3</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Configure Rufus Settings</h3>
+                            <p class="step-text">Select <strong>"Disk or ISO image"</strong> under Boot selection, click the <strong>"SELECT"</strong> button, and choose your downloaded Windows ISO file. Select <strong>GPT</strong> (UEFI standard) as the Partition scheme. Leave other settings at default and click <strong>"START"</strong>.</p>
+                            <div class="window-mock">
+                                <div class="window-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="window-title-text">Rufus - Setup Configuration</span>
+                                </div>
+                                <div class="window-body">
+                                    <img src="https://i.postimg.cc/7hZMdgxL/Rufus-4.png" alt="Configure Rufus Settings" class="step-image" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 (Dynamic content) -->
+                    <div class="step-card">
+                        <div class="step-badge">Step 4</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Windows Customization Settings</h3>
+                            <p class="step-text" id="rufus-step4-description">
+                                Windows 10 customization dialog appears. Select <strong>"Create a local account with username"</strong> and configure it if needed. Then click <strong>"OK"</strong>.
+                            </p>
+                            <div class="window-mock">
+                                <div class="window-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="window-title-text">Rufus - Windows User Customization</span>
+                                </div>
+                                <div class="window-body">
+                                    <img id="rufus-step4-img" src="https://i.postimg.cc/cHv01z1b/Rufus-5.png" alt="Windows Customization Dialog" class="step-image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 5 (Warning card) -->
+                    <div class="step-card">
+                        <div class="step-badge" style="border-color: var(--warning-yellow); color: var(--warning-yellow);"><i class="fas fa-exclamation-triangle"></i></div>
+                        <div class="step-content">
+                            <h3 class="step-title" style="color: var(--warning-yellow);">USB Drive Data Erasure Warning</h3>
+                            <div class="step-alert warning">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                <span><strong>WARNING:</strong> Formatting will permanently destroy all existing files stored on the USB drive. Back up your files before clicking OK.</span>
+                            </div>
+                            <p class="step-text">Confirm the format warning by clicking <strong>"OK"</strong> to begin writing files.</p>
+                            <div class="window-mock">
+                                <div class="window-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="window-title-text">Rufus - Formatting Warning Dialog</span>
+                                </div>
+                                <div class="window-body">
+                                    <img src="https://i.postimg.cc/X7GG12fJ/Rufus-6.png" alt="USB Format Warning Rufus" class="step-image" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 5 (Copying files) -->
+                    <div class="step-card">
+                        <div class="step-badge">Step 5</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Creating the Bootable USB Drive</h3>
+                            <p class="step-text">Rufus will format the drive and start writing the Windows files to the USB. The green progress bar at the bottom will track the process status. Do not unplug the USB drive.</p>
+                            <div class="window-mock">
+                                <div class="window-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="window-title-text">Rufus - Copying Files</span>
+                                </div>
+                                <div class="window-body">
+                                    <img src="https://i.postimg.cc/SxGMcnLQ/Rufus-7.png" alt="Copying Files to USB" class="step-image" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 6 (Dynamic content) -->
+                    <div class="step-card">
+                        <div class="step-badge">Step 6</div>
+                        <div class="step-content">
+                            <h3 class="step-title" id="rufus-step6-title">Step 6 — Bootable USB Complete</h3>
+                            <p class="step-text">Wait for the progress bar to reach 100%. Once the state changes to **READY**, your bootable USB is ready. Click **Close**.</p>
+                            <div class="window-mock">
+                                <div class="window-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="window-title-text">Rufus - Flash Process Complete</span>
+                                </div>
+                                <div class="window-body">
+                                    <img id="rufus-step6-img" src="https://i.postimg.cc/4xYD9cRH/Rufus-8.png" alt="Rufus Completed ready" class="step-image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Success Footer Card -->
+                <div class="success-footer-card">
+                    <i class="fas fa-check-circle success-icon" style="color: #10b981;"></i>
+                    <h3>Bootable USB Media Created!</h3>
+                    <p>Now that your bootable USB installer is prepared and customized, proceed to the installation guide to load Windows on your PC.</p>
+                    <a href="#install" class="btn btn-primary btn-next-step">Proceed to Windows Installation <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </section>
+
+            <!-- ==========================================================================
+                 SECTION: WINDOWS 11 INSTALLATION GUIDE
+                 ========================================================================== -->
+            <section id="install" class="content-section">
+                <span class="badge"><i class="fas fa-laptop-code"></i> Step 3 of Guide</span>
+                <h1 class="page-title">Windows 11 <br><span class="gradient-text">Installation Guide</span></h1>
+                <p class="page-subtitle">A detailed 24-step walkthrough to boot from your USB media, partition storage disks, and complete Windows 11 setup.</p>
+
+                <div class="steps-timeline">
+                    <!-- Step 1 -->
+                    <div class="step-card">
+                        <div class="step-badge">Step 1</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Open Motherboard Boot Menu</h3>
+                            <p class="step-text">
+                                Restart your PC and tap your motherboard's boot key continuously (e.g., **F12** on Gigabyte motherboard).
+                                <br>
+                                💡 <small>Search Google for your device model if you do not know its boot menu key.</small>
+                            </p>
+                            <div class="window-mock">
+                                <div class="window-header"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span><span class="window-title-text">Boot Menu Key</span></div>
+                                <div class="window-body"><img src="https://i.postimg.cc/5yyH7Bxd/IMG-20260524-092448.png" alt="Open boot menu" class="step-image" loading="lazy"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="step-card">
+                        <div class="step-badge">Step 2</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Select Boot Device</h3>
+                            <p class="step-text">Choose your bootable USB flash drive from the list. E.g., **UEFI: USB3.0 FLASH DRIVE PMAP, Partition 1**.</p>
+                            <div class="window-mock">
+                                <div class="window-header"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span><span class="window-title-text">Select USB Device</span></div>
+                                <div class="window-body"><img src="https://i.postimg.cc/05cW3LV7/IMG-20260519-090109.png" alt="Select USB device" class="step-image" loading="lazy"></div>
+                            </div>
+                            <div class="window-mock">
+                                <div class="window-header"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span><span class="window-title-text">Select USB Device Alt</span></div>
+                                <div class="window-body"><img src="https://i.postimg.cc/htKy4JZf/IMG-20260524-074822.png" alt="Select USB device alt" class="step-image" loading="lazy"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="step-card">
+                        <div class="step-badge">Step 3</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Select Language Settings</h3>
+                            <p class="step-text">Choose your language and regional parameters (English US is recommended). Click <strong>"Next"</strong>.</p>
+                            <div class="window-mock">
+                                <div class="window-header"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span><span class="window-title-text">Language Settings</span></div>
+                                <div class="window-body"><img src="https://i.postimg.cc/kMVLLtLF/IMG-20260524-074430.png" alt="Language settings" class="step-image" loading="lazy"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="step-card">
+                        <div class="step-badge">Step 4</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Select Keyboard Settings</h3>
+                            <p class="step-text">Choose your input layout (US layout). Click <strong>"Next"</strong>.</p>
+                            <div class="window-mock">
+                                <div class="window-header"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span><span class="window-title-text">Keyboard Setup</span></div>
+                                <div class="window-body"><img src="https://i.postimg.cc/rw6Tf9mm/IMG-20260524-080311.png" alt="Keyboard setup" class="step-image" loading="lazy"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 5 -->
+                    <div class="step-card">
+                        <div class="step-badge">Step 5</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Select Setup Option</h3>
+                            <p class="step-text">Select **"Install Windows 11"** and consent to files deletion. Click <strong>"Next"</strong>.</p>
+                            <div class="window-mock">
+                                <div class="window-header"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span><span class="window-title-text">Install Consent</span></div>
+                                <div class="window-body"><img src="https://i.postimg.cc/9FbS7t7v/IMG-20260524-081346.png" alt="Install consent" class="step-image" loading="lazy"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 6 -->
+                    <div class="step-card">
+                        <div class="step-badge">Step 6</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Product Key Verification</h3>
+                            <p class="step-text">Enter key or click **"I don't have a product key"** to proceed. Click <strong>"Next"</strong>.</p>
+                            <div class="window-mock">
+                                <div class="window-header"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span><span class="window-title-text">Product Key Setup</span></div>
+                                <div class="window-body"><img src="https://i.postimg.cc/DfHmKLZt/IMG-20260524-082414.png" alt="Product key" class="step-image" loading="lazy"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 7 -->
+                    <div class="step-card">
+                        <div class="step-badge">Step 7</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Select Windows Edition</h3>
+                            <p class="step-text">Choose the Windows edition (e.g. **Windows 11 Pro**). Click <strong>"Next"</strong>.</p>
+                            <div class="window-mock">
+                                <div class="window-header"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span><span class="window-title-text">Edition Selection</span></div>
+                                <div class="window-body"><img src="https://i.postimg.cc/3JZR0611/IMG-20260524-083120.png" alt="Select Edition" class="step-image" loading="lazy"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 8 -->
+                    <div class="step-card">
+                        <div class="step-badge">Step 8</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Accept License Terms</h3>
+                            <p class="step-text">Read licensing terms and check **Accept**. Click <strong>"Next"</strong>.</p>
+                            <div class="window-mock">
+                                <div class="window-header"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span><span class="window-title-text">License Agreement</span></div>
+                                <div class="window-body"><img src="https://i.postimg.cc/RCspCV5d/IMG-20260524-084251.png" alt="Accept License" class="step-image" loading="lazy"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 9 -->
+                    <div class="step-card">
+                        <div class="step-badge">Step 9</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Format Storage & Select Partition</h3>
+                            <p class="step-text">Set up partition drives for installation.</p>
+                            
+                            <!-- Sub 1 -->
+                            <div class="sub-step-wrapper">
+                                <h4 class="sub-step-title"><i class="fas fa-arrow-circle-right"></i> 1. Select Primary Partition</h4>
+                                <div class="window-mock">
+                                    <div class="window-header"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span><span class="window-title-text">Select Partition</span></div>
+                                    <div class="window-body"><img src="https://i.postimg.cc/fy8LYJXf/IMG-20260524-091130.png" alt="Select partition" class="step-image" loading="lazy"></div>
+                                </div>
+                            </div>
+                            
+                            <!-- Sub 2 -->
+                            <div class="sub-step-wrapper">
+                                <h4 class="sub-step-title"><i class="fas fa-arrow-circle-right"></i> 2. Format the Partition</h4>
+                                <div class="window-mock">
+                                    <div class="window-header"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span><span class="window-title-text">Format Tool</span></div>
+                                    <div class="window-body"><img src="https://i.postimg.cc/xdLF8HDR/IMG-20260524-093258.png" alt="Format partition" class="step-image" loading="lazy"></div>
+                                </div>
+                            </div>
+                            
+                            <!-- Sub 3 -->
+                            <div class="sub-step-wrapper">
+                                <h4 class="sub-step-title"><i class="fas fa-arrow-circle-right"></i> 3. Select Partition Again & Continue</h4>
+                                <div class="window-mock">
+                                    <div class="window-header"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span><span class="window-title-text">Continue Setup</span></div>
+                                    <div class="window-body"><img src="https://i.postimg.cc/Hs4NTbm5/IMG-20260524-095148.png" alt="Select and click Next" class="step-image" loading="lazy"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 10 -->
+                    <div class="step-card">
+                        <div class="step-badge">Step 10</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Review Installation Settings</h3>
+                            <p class="step-text">Verify settings (Keep Nothing). Click <strong>"Install"</strong>.</p>
+                            <div class="window-mock">
+                                <div class="window-header"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span><span class="window-title-text">Ready to Install</span></div>
+                                <div class="window-body"><img src="https://i.postimg.cc/T3Ph9qYj/IMG-20260524-101408.png" alt="Ready to install" class="step-image" loading="lazy"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 11 -->
+                    <div class="step-card">
+                        <div class="step-badge">Step 11</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Installing Windows 11</h3>
+                            <p class="step-text">Wait until progress reaches 100%. The computer may restart several times.</p>
+                            <div class="window-mock">
+                                <div class="window-header"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span><span class="window-title-text">Copying Files</span></div>
+                                <div class="window-body"><img src="https://i.postimg.cc/90Wqj3CW/IMG-20260524-102959.png" alt="Installation progress" class="step-image" loading="lazy"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 12 -->
+                    <div class="step-card">
+                        <div class="step-badge">Step 12</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Choose Windows 11 OS</h3>
+                            <p class="step-text">If prompted by a boot manager screen, click **"Windows 11"** to boot into the installation environment.</p>
+                            <div class="window-mock">
+                                <div class="window-header"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span><span class="window-title-text">OS Selector</span></div>
+                                <div class="window-body"><img src="https://i.postimg.cc/02720XsT/IMG-20260524-103508.jpg" alt="OS Selector" class="step-image" loading="lazy"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 13 -->
+                    <div class="step-card">
+                        <div class="step-badge">Step 13</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Windows Installation Finishing</h3>
+                            <p class="step-text">Windows will finalize settings. Keep the device powered on.</p>
+                            <div class="window-mock">
+                                <div class="window-header"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span><span class="window-title-text">Finishing Setup</span></div>
+                                <div class="window-body"><img src="https://i.postimg.cc/4xtttQ8w/IMG-20260524-104926.png" alt="Finishing Setup" class="step-image" loading="lazy"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 14 -->
+                    <div class="step-card">
+                        <div class="step-badge">Step 14</div>
+                        <div class="step-content">
+                            <h3 class="step-title">"Just a Moment" Loader Screen</h3>
+                            <p class="step-text">Wait while Windows prepares OOBE configurations.</p>
+                            <div class="window-mock">
+                                <div class="window-header"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span><span class="window-title-text">OOBE Loader</span></div>
+                                <div class="window-body"><img src="https://i.postimg.cc/rw3cr7n7/IMG-20260524-110527.png" alt="Just a moment" class="step-image" loading="lazy"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 15 -->
+                    <div class="step-card">
+                        <div class="step-badge">Step 15</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Windows Logo Screen</h3>
+                            <p class="step-text">Setup manager welcome logo loads.</p>
+                            <div class="window-mock">
+                                <div class="window-header"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span><span class="window-title-text">OOBE Welcome</span></div>
+                                <div class="window-body"><img src="https://i.postimg.cc/ZKDzG1hG/IMG-20260524-110707.png" alt="Windows Logo" class="step-image" loading="lazy"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 16 -->
+                    <div class="step-card">
+                        <div class="step-badge">Step 16</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Select Region</h3>
+                            <p class="step-text">Choose your region/country. Click <strong>"Yes"</strong>.</p>
+                            <div class="window-mock">
+                                <div class="window-header"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span><span class="window-title-text">Select Region</span></div>
+                                <div class="window-body"><img src="https://i.postimg.cc/QCvGTTSG/IMG-20260524-113247.png" alt="Select Region" class="step-image" loading="lazy"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 17 -->
+                    <div class="step-card">
+                        <div class="step-badge">Step 17</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Select Keyboard Layout</h3>
+                            <p class="step-text">Choose US Keyboard layout. Click <strong>"Yes"</strong>.</p>
+                            <div class="window-mock">
+                                <div class="window-header"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span><span class="window-title-text">Select Keyboard</span></div>
+                                <div class="window-body"><img src="https://i.postimg.cc/59LZ76Pz/IMG-20260524-114141.png" alt="Keyboard layout" class="step-image" loading="lazy"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 18 -->
+                    <div class="step-card">
+                        <div class="step-badge">Step 18</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Add Second Keyboard Layout</h3>
+                            <p class="step-text">Click <strong>"Skip"</strong>.</p>
+                            <div class="window-mock">
+                                <div class="window-header"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span><span class="window-title-text">Skip second layout</span></div>
+                                <div class="window-body"><img src="https://i.postimg.cc/nrNrhMDY/IMG-20260524-115320.png" alt="Skip second layout" class="step-image" loading="lazy"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 19 -->
+                    <div class="step-card">
+                        <div class="step-badge">Step 19</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Bypass Internet Connection Requirement</h3>
+                            <p class="step-text">Click <strong>"I don't have internet"</strong> to use local profile account setup.</p>
+                            <div class="window-mock">
+                                <div class="window-header"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span><span class="window-title-text">Bypass Internet</span></div>
+                                <div class="window-body"><img src="https://i.postimg.cc/qv4hhhFF/IMG-20260524-115907.png" alt="Bypass internet" class="step-image" loading="lazy"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 20 -->
+                    <div class="step-card">
+                        <div class="step-badge">Step 20</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Set Account Username</h3>
+                            <p class="step-text">Type your preferred local offline account name. Click <strong>"Next"</strong>.</p>
+                            <div class="window-mock">
+                                <div class="window-header"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span><span class="window-title-text">Account Username</span></div>
+                                <div class="window-body"><img src="https://i.postimg.cc/SKXyJmmW/IMG-20260524-120342.png" alt="Enter Username" class="step-image" loading="lazy"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 21 -->
+                    <div class="step-card">
+                        <div class="step-badge">Step 21</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Set Account Password</h3>
+                            <p class="step-text">Type your password. Click <strong>"Next"</strong>.</p>
+                            <div class="window-mock">
+                                <div class="window-header"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span><span class="window-title-text">Account Password</span></div>
+                                <div class="window-body"><img src="https://i.postimg.cc/dVVCNZ9v/IMG-20260524-121917.png" alt="Enter Password" class="step-image" loading="lazy"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 22 -->
+                    <div class="step-card">
+                        <div class="step-badge">Step 22</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Configure Device Privacy Settings</h3>
+                            <p class="step-text">Review and click <strong>"Accept"</strong>.</p>
+                            <div class="window-mock">
+                                <div class="window-header"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span><span class="window-title-text">Privacy Settings</span></div>
+                                <div class="window-body"><img src="https://i.postimg.cc/0jZQ7ZFf/IMG-20260524-122157.png" alt="Privacy configurations" class="step-image" loading="lazy"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 23 -->
+                    <div class="step-card">
+                        <div class="step-badge">Step 23</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Finalizing Configuration</h3>
+                            <p class="step-text">Wait while Windows configures the desktop.</p>
+                            
+                            <!-- Sub 1 -->
+                            <div class="sub-step-wrapper">
+                                <h4 class="sub-step-title"><i class="fas fa-dot-circle"></i> Hi</h4>
+                                <div class="window-mock">
+                                    <div class="window-header"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span><span class="window-title-text">Welcome Screen</span></div>
+                                    <div class="window-body"><img src="https://i.postimg.cc/h4yFHHLV/IMG-20260524-125736.png" alt="Hi" class="step-image" loading="lazy"></div>
+                                </div>
+                            </div>
+                            
+                            <!-- Sub 2 -->
+                            <div class="sub-step-wrapper">
+                                <h4 class="sub-step-title"><i class="fas fa-dot-circle"></i> Getting Things Ready for You</h4>
+                                <div class="window-mock">
+                                    <div class="window-header"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span><span class="window-title-text">Getting Ready</span></div>
+                                    <div class="window-body"><img src="https://i.postimg.cc/TwtSvDD2/IMG-20260524-125839.png" alt="Ready message" class="step-image" loading="lazy"></div>
+                                </div>
+                            </div>
+                            
+                            <!-- Sub 3 -->
+                            <div class="sub-step-wrapper">
+                                <h4 class="sub-step-title"><i class="fas fa-dot-circle"></i> This Might Take a Few Minutes</h4>
+                                <div class="window-mock">
+                                    <div class="window-header"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span><span class="window-title-text">Loading</span></div>
+                                    <div class="window-body"><img src="https://i.postimg.cc/ZRnH3DC1/IMG-20260524-130025.png" alt="Loading screen" class="step-image" loading="lazy"></div>
+                                </div>
+                            </div>
+                            
+                            <!-- Sub 4 -->
+                            <div class="sub-step-wrapper">
+                                <h4 class="sub-step-title"><i class="fas fa-dot-circle"></i> Almost There</h4>
+                                <div class="window-mock">
+                                    <div class="window-header"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span><span class="window-title-text">Almost Complete</span></div>
+                                    <div class="window-body"><img src="https://i.postimg.cc/pLB3J4LB/IMG-20260524-130212.png" alt="Almost done" class="step-image" loading="lazy"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 24 -->
+                    <div class="step-card">
+                        <div class="step-badge">Step 24</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Windows Installation Completed</h3>
+                            <p class="step-text">Congratulations! Windows 11 setup is fully complete and ready to use.</p>
+                            <div class="window-mock">
+                                <div class="window-header"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span><span class="window-title-text">Windows 11 Desktop</span></div>
+                                <div class="window-body"><img src="https://i.postimg.cc/TY0c76n5/IMG-20260524-130538.png" alt="Desktop home screen" class="step-image" loading="lazy"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Success Footer Card -->
+                <div class="success-footer-card">
+                    <i class="fas fa-check-circle success-icon" style="color: #10b981;"></i>
+                    <h3>Windows 11 Installed Successfully!</h3>
+                    <p>Now that Windows is running, proceed to the final step to activate licensing for Windows and Microsoft Office.</p>
+                    <a href="#activation" class="btn btn-primary btn-next-step">Proceed to Microsoft Activation <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </section>
+
+            <!-- ==========================================================================
+                 SECTION: MICROSOFT ACTIVATION SCRIPTS (MAS) GUIDE
+                 ========================================================================== -->
+            <section id="activation" class="content-section">
+                <span class="badge"><i class="fas fa-shield-alt"></i> Step 4 of Guide</span>
+                <h1 class="page-title">Microsoft Activation <br><span class="gradient-text">Scripts (MAS) Guide</span></h1>
+                <p class="page-subtitle">An open-source Windows and Office activator featuring HWID, Ohook, TSforge, and Online KMS activation methods.</p>
+
+                <!-- Method Selection Tab Bar -->
+                <div id="activation-methods" class="tabs-wrapper" style="margin-top: 2rem;">
+                  <div class="tabs-container" role="tablist" style="margin-bottom: 2rem; display: flex; justify-content: center; gap: 8px;">
+                    <button class="tab-btn active mas-tab" id="tab-ps" role="tab" aria-selected="true" aria-controls="content-ps" onclick="switchMASTab('ps')">
+                      PowerShell (Recommended)
+                    </button>
+                    <button class="tab-btn mas-tab" id="tab-trad" role="tab" aria-selected="false" aria-controls="content-trad" onclick="switchMASTab('trad')">
+                      Traditional Method
+                    </button>
+                  </div>
+
+                  <!-- TAB 1: PowerShell Method -->
+                  <div class="mas-tab-panel active" id="content-ps" role="tabpanel" aria-labelledby="tab-ps">
+                    <div class="method-card">
+                      <div class="method-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+                        <h3 class="method-title" style="margin: 0; font-size: 1.25rem;"><i class="fas fa-terminal" style="color: #10b981; margin-right: 8px;"></i> PowerShell Activation Method</h3>
+                        <span class="recommended-badge" style="background: rgba(16, 185, 129, 0.1); color: #10b981; padding: 4px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 700;">RECOMMENDED</span>
+                      </div>
+
+                      <div class="steps-timeline">
+                        <!-- Step 1 -->
+                        <div class="step-card">
+                          <div class="step-badge">Step 1</div>
+                          <div class="step-content">
+                            <h3 class="step-title">Open the Start Menu</h3>
+                            <p class="step-text">Click on the Windows Start menu or press the Windows key on your keyboard.</p>
+                          </div>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="step-card">
+                          <div class="step-badge">Step 2</div>
+                          <div class="step-content">
+                            <h3 class="step-title">Search for PowerShell</h3>
+                            <p class="step-text">Type <strong>PowerShell</strong> in the search bar. There is no strict requirement for Administrator privileges for the recommended method, but running it as Administrator yields the best compatibility.</p>
+                          </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="step-card">
+                           <div class="step-badge">Step 3</div>
+                           <div class="step-content">
+                             <h3 class="step-title">Execute the Command</h3>
+                             <p class="step-text">Copy and paste the command below into the PowerShell window, and then press <strong>Enter</strong>.</p>
+                             
+                              <!-- Code Block -->
+                              <div class="code-block-container" style="margin-top: 15px; margin-bottom: 20px;">
+                                <span class="code-block-content" id="cmd-main"><span class="code-keyword">irm</span> <span class="code-string">https://get.activated.win</span> | <span class="code-keyword">iex</span></span>
+                                <button class="btn-copy" onclick="copyCommand('cmd-main')">Copy</button>
+                              </div>
+  
+                              <!-- Alternative Command Drawer -->
+                              <div class="alt-cmd-wrapper" style="margin-bottom: 24px;">
+                                <button class="alt-toggle-btn" onclick="toggleAltCmd()">
+                                  <i class="fas fa-chevron-down"></i>
+                                  Alternative Command (If blocked by DNS/ISP)
+                                </button>
+                                <div class="alt-content" id="alt-cmd-container">
+                                  <p class="step-text" style="margin-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">This fallback command resolves DNS queries via Cloudflare over HTTPS if standard connections are restricted. Requires an updated Windows 10/11 system.</p>
+                                  <div class="code-block-container" style="margin-top: 10px;">
+                                    <span class="code-block-content" id="cmd-alt" style="font-size: 0.85rem;"><span class="code-keyword">iex</span> (<span class="code-keyword">curl.exe</span> -s --doh-url <span class="code-string">https://1.1.1.1/dns-query</span> <span class="code-string">https://get.activated.win</span> | <span class="code-function">Out-String</span>)</span>
+                                    <button class="btn-copy" onclick="copyCommand('cmd-alt')">Copy</button>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <!-- Screenshot -->
+                              <div class="window-mock">
+                                <div class="window-header">
+                                  <span class="dot dot-red"></span>
+                                  <span class="dot dot-yellow"></span>
+                                  <span class="dot dot-green"></span>
+                                  <span class="window-title-text">PowerShell</span>
+                                </div>
+                                <div class="window-body">
+                                  <img src="https://i.postimg.cc/3xRbg0Lc/Screenshot-2026-05-31-080557.png" class="step-image" alt="PowerShell Command Entry">
+                                </div>
+                              </div>
+                              <p style="margin-top: 12px; font-size: 0.9rem; color: var(--text-secondary); text-align: center; font-weight: 500;">
+                                <i class="fas fa-arrow-right" style="color: #10b981; margin-right: 6px;"></i> 1. PowerShell Command Entry
+                              </p>
+ 
+                           </div>
+                         </div>
+ 
+                         <!-- Step 4 -->
+                         <div class="step-card">
+                           <div class="step-badge">Step 4</div>
+                           <div class="step-content">
+                             <h3 class="step-title">Select Activation Option</h3>
+                             <p class="step-text">Once the terminal menu screen displays, input the numeric key corresponding to the desired <strong>Green</strong> activation method (e.g. 1 for HWID Windows Activation, 2 for Ohook Office Activation).</p>
+
+                             <!-- Screenshot 1: Menu selection -->
+                             <div class="window-mock" style="margin-bottom: 8px;">
+                               <div class="window-header">
+                                 <span class="dot dot-red"></span>
+                                 <span class="dot dot-yellow"></span>
+                                 <span class="dot dot-green"></span>
+                                 <span class="window-title-text">MAS Menu & Method Selection</span>
+                                </div>
+                                <div class="window-body">
+                                  <img src="https://i.postimg.cc/76dTQdDV/Screenshot-2026-05-31-081948.png" class="step-image" alt="Menu & Method Selection">
+                                </div>
+                             </div>
+                             <p style="margin-top: 10px; margin-bottom: 24px; font-size: 0.9rem; color: var(--text-secondary); text-align: center; font-weight: 500;">
+                               <i class="fas fa-arrow-right" style="color: #10b981; margin-right: 6px;"></i> 2. Menu & Method Selection
+                             </p>
+
+                             <!-- Screenshot 2: Progress -->
+                             <div class="window-mock" style="margin-bottom: 8px;">
+                               <div class="window-header">
+                                 <span class="dot dot-red"></span>
+                                 <span class="dot dot-yellow"></span>
+                                 <span class="dot dot-green"></span>
+                                 <span class="window-title-text">Activation Script Progress</span>
+                               </div>
+                               <div class="window-body">
+                                 <img src="https://i.postimg.cc/fb5L1F7c/Screenshot-2026-05-31-081629.png" class="step-image" alt="Activation Script Progress">
+                               </div>
+                             </div>
+                             <p style="margin-top: 10px; margin-bottom: 24px; font-size: 0.9rem; color: var(--text-secondary); text-align: center; font-weight: 500;">
+                               <i class="fas fa-arrow-right" style="color: #10b981; margin-right: 6px;"></i> 3. Activation Script Progress
+                             </p>
+
+                             <!-- Screenshot 3: Successful Activation -->
+                             <div class="window-mock" style="margin-bottom: 8px;">
+                               <div class="window-header">
+                                 <span class="dot dot-red"></span>
+                                 <span class="dot dot-yellow"></span>
+                                 <span class="dot dot-green"></span>
+                                 <span class="window-title-text">Successful Activation</span>
+                               </div>
+                               <div class="window-body">
+                                 <img src="https://i.postimg.cc/ZnWC8cdr/Screenshot-2026-05-31-081500.png" class="step-image" alt="Successful Activation">
+                               </div>
+                             </div>
+                             <p style="margin-top: 10px; font-size: 0.9rem; color: var(--text-secondary); text-align: center; font-weight: 500;">
+                               <i class="fas fa-arrow-right" style="color: #10b981; margin-right: 6px;"></i> 4. Successful Activation
+                             </p>
+                           </div>
+                         </div>
+
+                    </div>
+                  </div>
+
+                  <!-- TAB 2: Traditional Method -->
+                  <div class="mas-tab-panel" id="content-trad" style="display: none;" role="tabpanel" aria-labelledby="tab-trad">
+                    <div class="method-card">
+                      <div class="method-header" style="margin-bottom: 1.5rem;">
+                        <h3 class="method-title" style="margin: 0; font-size: 1.25rem;"><i class="fas fa-download" style="color: #10b981; margin-right: 8px;"></i> Traditional Script Method</h3>
+                      </div>
+
+                      <div class="steps-timeline">
+                        <!-- Step 1 -->
+                        <div class="step-card">
+                          <div class="step-badge">Step 1</div>
+                          <div class="step-content">
+                            <h3 class="step-title">Download the Script File</h3>
+                            <p class="step-text">If the PowerShell method is blocked or fails on your system, download the script files directly.</p>
+                            
+                            <div class="download-grid">
+                              <!-- Download Option 1 -->
+                              <div class="download-card">
+                                <div class="download-info">
+                                  <div class="download-icon-wrapper">
+                                    <i class="fas fa-file-code"></i>
+                                  </div>
+                                  <div class="download-details">
+                                    <h4>MAS_AIO.cmd</h4>
+                                    <p>Standalone command script containing the entire activation tool suite.</p>
+                                  </div>
+                                </div>
+                                <a href="https://dev.azure.com/massgrave/Microsoft-Activation-Scripts/_apis/git/repositories/Microsoft-Activation-Scripts/items?path=/MAS/All-In-One-Version-KL/MAS_AIO.cmd&download=true" target="_blank" class="download-btn">
+                                  <i class="fas fa-download"></i>
+                                  Download Script (.cmd)
+                                </a>
+                              </div>
+
+                              <!-- Download Option 2 -->
+                              <div class="download-card">
+                                <div class="download-info">
+                                  <div class="download-icon-wrapper">
+                                    <i class="fas fa-file-archive"></i>
+                                  </div>
+                                  <div class="download-details">
+                                    <h4>MAS_AIO.zip</h4>
+                                    <p>Compressed ZIP archive. Recommended if your web browser blocks the direct .cmd script download.</p>
+                                  </div>
+                                </div>
+                                <a href="https://dev.azure.com/massgrave/Microsoft-Activation-Scripts/_apis/git/repositories/Microsoft-Activation-Scripts/items?$format=zip" target="_blank" class="download-btn">
+                                  <i class="fas fa-download"></i>
+                                  Download Archive (.zip)
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="step-card">
+                          <div class="step-badge">Step 2</div>
+                          <div class="step-content">
+                            <h3 class="step-title">Run the Script</h3>
+                            <p class="step-text">Extract the ZIP file if downloaded, then right-click the <strong>MAS_AIO.cmd</strong> script and select <strong>Run as Administrator</strong>.</p>
+                          </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="step-card">
+                          <div class="step-badge">Step 3</div>
+                          <div class="step-content">
+                            <h3 class="step-title">Select Activation Method</h3>
+                            <p class="step-text">When the interactive menu script window pops up, enter the option number that correlates to one of the **Green** options matching your activation needs.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Key Features Section -->
+                <h2 style="font-family: var(--font-header); font-size: 1.4rem; font-weight: 700; margin-top: 3rem; margin-bottom: 20px; color: var(--text-primary);">Key Features</h2>
+                <div class="details-grid">
+                  <div class="detail-card">
+                    <div class="detail-icon"><i class="fas fa-key"></i></div>
+                    <h3>HWID Digital License</h3>
+                    <p>Permanently activate supported Windows 10/11 editions bound to your hardware.</p>
+                  </div>
+                  <div class="detail-card">
+                    <div class="detail-icon"><i class="fas fa-file-signature"></i></div>
+                    <h3>Office Ohook</h3>
+                    <p>Permanently activate Microsoft Office suites locally without subscription checks.</p>
+                  </div>
+                  <div class="detail-card">
+                    <div class="detail-icon"><i class="fas fa-server"></i></div>
+                    <h3>Flexible KMS Activation</h3>
+                    <p>Standard 180-day activation for Windows &amp; Office with automated renewal tasks.</p>
+                  </div>
+                  <div class="detail-card">
+                    <div class="detail-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Open Source &amp; Clean</h3>
+                    <p>100% transparent batch script structure resulting in fewer antivirus detections.</p>
+                  </div>
+                </div>
+
+                <!-- Activations Summary Section -->
+                <h2 style="font-family: var(--font-header); font-size: 1.4rem; font-weight: 700; margin-top: 3rem; margin-bottom: 20px; color: var(--text-primary); display: flex; align-items: center; gap: 10px;">
+                  <i class="far fa-file-alt" style="color: #10b981;"></i> Activations Summary
+                </h2>
+                <div class="table-responsive">
+                  <table class="summary-table">
+                    <thead>
+                      <tr>
+                        <th>Activation Type</th>
+                        <th>Supported Products</th>
+                        <th>Activation Period</th>
+                        <th>Requires Internet?</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>HWID</strong></td>
+                        <td>Windows 10, Windows 11</td>
+                        <td><span class="badge-status permanent">PERMANENT</span></td>
+                        <td>Yes</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Ohook</strong></td>
+                        <td>Microsoft Office</td>
+                        <td><span class="badge-status permanent">PERMANENT</span></td>
+                        <td>No</td>
+                      </tr>
+                      <tr>
+                        <td><strong>TSforge</strong></td>
+                        <td>Windows, ESU, Office</td>
+                        <td><span class="badge-status permanent">PERMANENT</span></td>
+                        <td>Only for StaticCID (build 26100+)</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Online KMS</strong></td>
+                        <td>Windows, Office</td>
+                        <td><span class="badge-status temporary">180 DAYS</span><span class="note-sub">(Auto-renew option)</span></td>
+                        <td>Yes</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <!-- Notes & Tips Grid -->
+                <div class="details-grid" style="margin-top: 3rem; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
+                  <!-- Important Notes -->
+                  <div class="detail-card" style="border-left: 4px solid var(--accent-blue);">
+                    <h3 style="display: flex; align-items: center; gap: 8px;"><i class="fas fa-info-circle" style="color: var(--accent-blue);"></i> Important Notes</h3>
+                    <ul style="margin-top: 15px; margin-left: 20px; display: flex; flex-direction: column; gap: 8px; font-size: 0.9rem; color: var(--text-secondary); list-style-type: disc;">
+                      <li>An active internet connection is mandatory to connect to the digital license validation endpoints.</li>
+                      <li>Some antivirus software might flag the script due to heuristic signatures. Temporarily disable protection if the script is blocked.</li>
+                      <li>Running PowerShell or MAS_AIO with administrator privileges resolves permissions issues.</li>
+                      <li>Ensure system versions and editions match the chosen activation algorithms (HWID, Ohook, KMS, ESU).</li>
+                    </ul>
+                  </div>
+
+                  <!-- Pro Tips -->
+                  <div class="detail-card" style="border-left: 4px solid #10b981;">
+                    <h3 style="display: flex; align-items: center; gap: 8px;"><i class="fas fa-lightbulb" style="color: #10b981;"></i> Pro Tips</h3>
+                    <ul style="margin-top: 15px; margin-left: 20px; display: flex; flex-direction: column; gap: 8px; font-size: 0.9rem; color: var(--text-secondary); list-style-type: disc;">
+                      <li><strong>HWID</strong> (Hardware ID) method is recommended for permanent activation of supported Windows editions.</li>
+                      <li>Use the <strong>Ohook</strong> method specifically for stable and permanent Microsoft Office suite activations.</li>
+                      <li>Restart your machine after the activation reports success to ensure core system policies reload correctly.</li>
+                      <li>Verify your system properties in Windows Settings or Office Account settings to confirm successful status.</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Reference Links -->
+                <h2 style="font-family: var(--font-header); font-size: 1.4rem; font-weight: 700; margin-top: 3rem; margin-bottom: 20px; color: var(--text-primary);">Official Resources</h2>
+                <div class="download-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+                  <!-- Link 1 -->
+                  <a href="https://massgrave.dev/" target="_blank" rel="noopener" class="download-card" style="text-decoration: none; color: inherit;">
+                    <div class="download-info">
+                      <div class="download-icon-wrapper" style="background: rgba(var(--accent-blue-rgb), 0.1); color: var(--accent-blue);">
+                        <i class="fas fa-home"></i>
+                      </div>
+                      <div class="download-details">
+                        <h4>Official Website</h4>
+                        <p>Access the main documentation, command references, and guides at massgrave.dev.</p>
+                      </div>
+                    </div>
+                  </a>
+
+                  <!-- Link 2 -->
+                  <a href="https://github.com/massgravel/Microsoft-Activation-Scripts" target="_blank" rel="noopener" class="download-card" style="text-decoration: none; color: inherit;">
+                    <div class="download-info">
+                      <div class="download-icon-wrapper">
+                        <i class="fab fa-github"></i>
+                      </div>
+                      <div class="download-details">
+                        <h4>GitHub Repository</h4>
+                        <p>Inspect scripts, check changelogs, review commits, or star the project on GitHub.</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+            </section>
+        </main>
+
+        <!-- Main Footer -->
+        <footer class="main-footer">
+            <div class="container footer-content">
+                <p>&copy; 2026 Windows Installation Guide. Documentation & Educational Reference.</p>
+                <p>Made for beginners. Visit the workspace on <a href="https://github.com/Shariar-Ahamed/Windows-Installation-Guide" target="_blank" class="footer-link">GitHub</a>.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div id="image-modal" class="modal" onclick="closeLightbox(event)">
+      <button class="modal-close" onclick="closeLightbox(event)" aria-label="Close image preview">
+        <i class="fas fa-times"></i>
+      </button>
+      
+      <!-- Previous Button -->
+      <button id="modal-prev" class="modal-nav-btn prev-btn" aria-label="Previous image">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      
+      <!-- Slider Container (stops click event propagation to prevent background close) -->
+      <div class="modal-slider-container" onclick="event.stopPropagation()">
+        <div id="modal-slider-track" class="modal-slider-track">
+          <img class="modal-slide" src="https://i.postimg.cc/3xRbg0Lc/Screenshot-2026-05-31-080557.png" alt="Step 1: PowerShell Command Entry">
+          <img class="modal-slide" src="https://i.postimg.cc/76dTQdDV/Screenshot-2026-05-31-081948.png" alt="Step 2: Menu & Method Selection">
+          <img class="modal-slide" src="https://i.postimg.cc/fb5L1F7c/Screenshot-2026-05-31-081629.png" alt="Step 3: Activation Script Progress">
+          <img class="modal-slide" src="https://i.postimg.cc/ZnWC8cdr/Screenshot-2026-05-31-081500.png" alt="Step 4: Successful Activation">
+        </div>
+      </div>
+      
+      <!-- Next Button -->
+      <button id="modal-next" class="modal-nav-btn next-btn" aria-label="Next image">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+
+    <!-- JS Logic for Tabs switching on MAS Page and Copy command -->
+    <script src="app.js"></script>
+</body>
+</html>
