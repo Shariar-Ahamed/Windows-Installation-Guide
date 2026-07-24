@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Official Windows ISO Download Guide | Step-by-Step</title>
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="A premium, step-by-step interactive landing page guiding you on how to download official Windows 10 and Windows 11 ISO files directly from Microsoft.">
+    <meta name="keywords" content="Windows 10, Windows 11, Download ISO, Official Windows ISO, Media Creation Tool, Microsoft, Guide">
+    <meta name="author" content="Shariar-Ahamed">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Glow Blobs -->
+    <div class="glow-wrapper" aria-hidden="true">
+        <div class="glow-blob blob-1"></div>
+        <div class="glow-blob blob-2"></div>
+    </div>
+
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="#" class="logo-link">
+                <div class="logo">
+                    <i class="fab fa-windows logo-icon"></i>
+                    <span>WinGuide</span>
+                </div>
+            </a>
+            <nav class="nav-links">
+                <button class="theme-toggle-btn" id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+                    <i class="fas fa-sun" id="theme-icon"></i>
+                </button>
+                <a href="https://github.com/Shariar-Ahamed/Windows-Installation-Guide" target="_blank" class="github-btn" id="header-github-link">
+                    <i class="fab fa-github"></i> <span>GitHub Repository</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="container hero-container">
+                <span class="badge"><i class="fas fa-compact-disc"></i> Phase 1 of Installation</span>
+                <h1 class="hero-title">Official Windows ISO <br><span class="gradient-text">Download Guide</span></h1>
+                <p class="hero-subtitle">
+                    A clean, beginner-friendly step-by-step walkthrough to safely obtain official, untouched Windows 10 and Windows 11 ISO files directly from Microsoft's servers.
+                </p>
+                <div class="hero-actions">
+                    <a href="#guide-selector" class="btn btn-primary" id="cta-start-guide">
+                        <i class="fas fa-chevron-circle-down"></i> Get Started
+                    </a>
+                    <a href="#important-notes" class="btn btn-secondary" id="cta-important-notes">
+                        <i class="fas fa-exclamation-triangle"></i> Key Requirements
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- OS Selector & Toggle Section -->
+        <section class="selector-section" id="guide-selector">
+            <div class="container">
+                <div class="selector-card">
+                    <h2 class="selector-title">Select Your Operating System</h2>
+                    <p class="selector-desc">Choose the version of Windows you wish to download. The step-by-step interactive guide will adjust instantly.</p>
+                    
+                    <div class="tabs-wrapper">
+                        <div class="tab-slider-bg">
+                            <button class="tab-btn active" id="tab-win10" onclick="switchOS('win10')">
+                                <i class="fab fa-windows"></i> Windows 10
+                            </button>
+                            <button class="tab-btn" id="tab-win11" onclick="switchOS('win11')">
+                                <i class="fab fa-windows blue-accent"></i> Windows 11
+                            </button>
+                            <div class="tab-slider" id="tab-slider"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Windows 10 Step-by-Step Guide Section -->
+        <section class="guide-container active" id="win10-guide-content">
+            <div class="container">
+                <div class="guide-header">
+                    <div class="guide-info-badge">Windows 10 Download</div>
+                    <h2>Windows 10 ISO Download Process</h2>
+                    <p>Requires the official Microsoft Media Creation Tool to safely download and pack the ISO file.</p>
+                    <a href="https://www.microsoft.com/en-us/software-download/windows10" target="_blank" class="official-download-btn" id="win10-official-link">
+                        <i class="fas fa-external-link-alt"></i> Official Microsoft Download Page <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Process Steps -->
+                <div class="steps-timeline">
+                    <!-- Step 1 -->
+                    <div class="step-card" id="w10-step-1">
+                        <div class="step-badge">Step 1</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Run MediaCreationTool as Administrator</h3>
+                            <p class="step-text">
+                                Go to the folder where your downloaded file is located, right-click, and run the <strong>MediaCreationTool</strong> executable. If the <strong>User Account Control (UAC)</strong> window appears, click <strong>"Yes"</strong> to allow the tool to start.
+                            </p>
+                            <div class="window-mock">
+                                <div class="window-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="window-title-text">Media Creation Tool Launcher</span>
+                                </div>
+                                <div class="window-body">
+                                    <img src="https://i.postimg.cc/xTmRYmpc/Screenshot-2026-05-22-070928.png" alt="Run MediaCreationTool as administrator" class="step-image" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="step-card" id="w10-step-2">
+                        <div class="step-badge">Step 2</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Accept License Terms</h3>
+                            <p class="step-text">
+                                The wizard will load the setup configurations. Carefully read the applicable notices and license terms, then click <strong>"Accept"</strong> to proceed.
+                            </p>
+                            <div class="window-mock">
+                                <div class="window-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="window-title-text">Windows 10 Setup - License Terms</span>
+                                </div>
+                                <div class="window-body">
+                                    <img src="https://i.postimg.cc/2jJcr202/Iso-1.png" alt="Applicable notices and license terms" class="step-image" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="step-card" id="w10-step-3">
+                        <div class="step-badge">Step 3</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Choose What You Want to Do</h3>
+                            <p class="step-text">
+                                Select the option <strong>"Create installation media (USB flash drive, DVD, or ISO file) for another PC"</strong>. Do NOT choose "Upgrade this PC now" if you want a clean ISO file for bootable media. Click <strong>"Next"</strong>.
+                            </p>
+                            <div class="window-mock">
+                                <div class="window-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="window-title-text">Windows 10 Setup - Options</span>
+                                </div>
+                                <div class="window-body">
+                                    <img src="https://i.postimg.cc/BvVYbpqG/Iso-2.png" alt="Create installation media for another PC" class="step-image" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="step-card" id="w10-step-4">
+                        <div class="step-badge">Step 4</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Select Language, Architecture & Edition</h3>
+                            <p class="step-text">
+                                Choose your preferred <strong>Language</strong>, <strong>Windows Edition</strong>, and <strong>Architecture</strong> (usually 64-bit (x64) is highly recommended for modern computers). After confirming, click <strong>"Next"</strong>.
+                            </p>
+                            <div class="window-mock">
+                                <div class="window-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="window-title-text">Windows 10 Setup - Language & Architecture</span>
+                                </div>
+                                <div class="window-body">
+                                    <img src="https://i.postimg.cc/7L0GJY4b/Iso-3.png" alt="Select language architecture and edition" class="step-image" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 5 -->
+                    <div class="step-card" id="w10-step-5">
+                        <div class="step-badge">Step 5</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Choose Which Media to Use</h3>
+                            <p class="step-text">
+                                Choose <strong>"ISO file"</strong> as your media option and click <strong>"Next"</strong>. This downloads the official file containing the operating system, which you can burn to a USB later using Rufus or Ventoy.
+                            </p>
+                            <div class="step-alert warning">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                <span>Note: If you were creating a direct bootable USB via this tool, it would erase the USB data. But by choosing "ISO file", nothing is erased on your storage devices yet.</span>
+                            </div>
+                            <div class="window-mock">
+                                <div class="window-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="window-title-text">Windows 10 Setup - Select Media</span>
+                                </div>
+                                <div class="window-body">
+                                    <img src="https://i.postimg.cc/Hs8pkvHR/Iso-4.png" alt="Choose ISO file" class="step-image" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 6 -->
+                    <div class="step-card" id="w10-step-6">
+                        <div class="step-badge">Step 6</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Choose Download Folder</h3>
+                            <p class="step-text">
+                                A file explorer window will open. Select the folder (e.g. Downloads or Desktop) where you wish to save the Windows 10 ISO image, name the file, and click <strong>"Save"</strong>.
+                            </p>
+                            <div class="window-mock">
+                                <div class="window-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="window-title-text">Windows 10 Setup - Save Path</span>
+                                </div>
+                                <div class="window-body">
+                                    <img src="https://i.postimg.cc/Dy82zqtx/Iso-5.png" alt="Select ISO download folder" class="step-image" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 7 -->
+                    <div class="step-card" id="w10-step-7">
+                        <div class="step-badge">Step 7</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Downloading Windows ISO File</h3>
+                            <p class="step-text">
+                                The tool will begin downloading the Windows 10 ISO file. This process may take some time depending on your internet connection speed. You can continue using your PC while the download runs in the background.
+                            </p>
+                            <div class="window-mock">
+                                <div class="window-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="window-title-text">Windows 10 Setup - Download Progress</span>
+                                </div>
+                                <div class="window-body">
+                                    <img src="https://i.postimg.cc/Qd7ShySs/Iso-6.png" alt="Downloading Windows 10 ISO" class="step-image" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 8 -->
+                    <div class="step-card" id="w10-step-8">
+                        <div class="step-badge">Step 8</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Finish the Process</h3>
+                            <p class="step-text">
+                                Once the download is finished and the tool verifies the files, click <strong>"Finish"</strong> to close the Media Creation Tool safely.
+                            </p>
+                            <div class="window-mock">
+                                <div class="window-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="window-title-text">Windows 10 Setup - Verification Complete</span>
+                                </div>
+                                <div class="window-body">
+                                    <img src="https://i.postimg.cc/xTpTns8x/Iso-7.png" alt="Completed ISO file download" class="step-image" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 9 -->
+                    <div class="step-card" id="w10-step-9">
+                        <div class="step-badge">Step 9</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Verify ISO File Download</h3>
+                            <p class="step-text">
+                                Open the target directory to verify that the <strong>Windows.iso</strong> file has been created successfully. Verify the size of the file (typically between 4GB and 6GB).
+                            </p>
+                            <div class="window-mock">
+                                <div class="window-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="window-title-text">File Explorer - ISO Verified</span>
+                                </div>
+                                <div class="window-body">
+                                    <img src="https://i.postimg.cc/3x26nRsk/Iso-8.png" alt="ISO file downloaded successfully" class="step-image" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="success-footer-card">
+                    <div class="success-icon"><i class="fas fa-check-circle"></i></div>
+                    <h3>Windows 10 ISO Download Completed!</h3>
+                    <p>You have successfully downloaded the official ISO image file. Ready to proceed?</p>
+                    <a href="../02-Bootable-USB-Setup/README.md" class="btn btn-primary btn-next-step" id="w10-next-step-link">
+                        Create Bootable USB (Rufus) <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Windows 11 Step-by-Step Guide Section -->
+        <section class="guide-container" id="win11-guide-content">
+            <div class="container">
+                <div class="guide-header">
+                    <div class="guide-info-badge win11-badge">Windows 11 Download</div>
+                    <h2>Windows 11 ISO Download Process</h2>
+                    <p>Windows 11 ISO files can be downloaded directly from the browser without needing a Media Creation Tool.</p>
+                    <a href="https://www.microsoft.com/en-us/software-download/windows11" target="_blank" class="official-download-btn win11-btn" id="win11-official-link">
+                        <i class="fas fa-external-link-alt"></i> Official Microsoft Download Page <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Process Steps -->
+                <div class="steps-timeline">
+                    <!-- Step 1 -->
+                    <div class="step-card" id="w11-step-1">
+                        <div class="step-badge win11-bg">Step 1</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Select Windows 11 Multi-Edition ISO</h3>
+                            <p class="step-text">
+                                On the Microsoft Windows 11 download page, scroll down to the section titled <strong>"Download Windows 11 Disk Image (ISO) for x64 Devices"</strong>. In the dropdown menu, select <strong>"Windows 11 (multi-edition ISO for x64 devices)"</strong>, then click <strong>"Download Now"</strong>.
+                            </p>
+                            <div class="window-mock">
+                                <div class="window-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="window-title-text">Microsoft Edge - Choose Windows 11 ISO</span>
+                                </div>
+                                <div class="window-body">
+                                    <img src="https://i.postimg.cc/kgSyJCBz/win-11-1.png" alt="Select Windows 11 and Confirm" class="step-image" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="step-card" id="w11-step-2">
+                        <div class="step-badge win11-bg">Step 2</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Select Product Language</h3>
+                            <p class="step-text">
+                                A new section will appear asking to select the product language. Choose your preferred language (e.g., <strong>English (United States)</strong> or <strong>English International</strong>) and click <strong>"Confirm"</strong>.
+                            </p>
+                            <div class="window-mock">
+                                <div class="window-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="window-title-text">Microsoft Edge - Language Selection</span>
+                                </div>
+                                <div class="window-body">
+                                    <img src="https://i.postimg.cc/kgNtYgVb/win-11-2.png" alt="Select Windows 11 product language" class="step-image" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="step-card" id="w11-step-3">
+                        <div class="step-badge win11-bg">Step 3</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Download Windows 11 ISO File</h3>
+                            <p class="step-text">
+                                A download link will be generated (valid for 24 hours). Click on the <strong>"64-bit Download"</strong> button to start downloading the Windows 11 ISO image file directly through your web browser.
+                            </p>
+                            <div class="window-mock">
+                                <div class="window-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="window-title-text">Microsoft Edge - Direct Download Button</span>
+                                </div>
+                                <div class="window-body">
+                                    <img src="https://i.postimg.cc/59Z3Zj0M/win-11-3.png" alt="64-bit Download Windows 11 ISO file" class="step-image" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="step-card" id="w11-step-4">
+                        <div class="step-badge win11-bg">Step 4</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Verify Downloaded ISO File</h3>
+                            <p class="step-text">
+                                Monitor your browser's download manager. Once finished, navigate to your download directory and verify the ISO file. It will typically be named similarly to <code>Win11_25H2_English_x64_v2.iso</code> (depending on the release version) and have a size of around 5GB to 6.5GB.
+                            </p>
+                            <div class="window-mock">
+                                <div class="window-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="window-title-text">Browser Downloads History</span>
+                                </div>
+                                <div class="window-body">
+                                    <img src="https://i.postimg.cc/tTV24RhD/win-11-4.png" alt="Verify Windows 11 ISO download" class="step-image" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="success-footer-card">
+                    <div class="success-icon win11-text"><i class="fas fa-check-circle"></i></div>
+                    <h3>Windows 11 ISO Download Completed!</h3>
+                    <p>You have successfully downloaded the official Windows 11 ISO file. Ready to proceed?</p>
+                    <a href="../02-Bootable-USB-Setup/README.md" class="btn btn-primary win11-bg btn-next-step" id="w11-next-step-link">
+                        Create Bootable USB (Rufus) <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Important Notes Section -->
+        <section class="notes-section" id="important-notes">
+            <div class="container">
+                <div class="notes-card">
+                    <div class="notes-header">
+                        <i class="fas fa-exclamation-triangle warning-icon"></i>
+                        <h2>Important Notes & Prerequisites</h2>
+                    </div>
+                    <div class="notes-grid">
+                        <div class="note-item">
+                            <div class="note-icon"><i class="fas fa-shield-alt"></i></div>
+                            <div class="note-info">
+                                <h4>Official Sources Only</h4>
+                                <p>Always download ISO files from official Microsoft links. Unofficial copies might contain malware, bloatware, or licensing security issues.</p>
+                            </div>
+                        </div>
+                        <div class="note-item">
+                            <div class="note-icon"><i class="fas fa-wifi"></i></div>
+                            <div class="note-info">
+                                <h4>Stable Network Connection</h4>
+                                <p>A high-speed and stable connection is required since ISO files are large (4.5GB - 6.5GB). A download manager can help resume interrupted downloads.</p>
+                            </div>
+                        </div>
+                        <div class="note-item">
+                            <div class="note-icon"><i class="fas fa-hdd"></i></div>
+                            <div class="note-info">
+                                <h4>Free Disk Space</h4>
+                                <p>Ensure you have at least 8 GB of free disk space on your local computer drive (C: drive or target location) to save the downloaded ISO image.</p>
+                            </div>
+                        </div>
+                        <div class="note-item">
+                            <div class="note-icon"><i class="fas fa-usb"></i></div>
+                            <div class="note-info">
+                                <h4>Preparing for Next Step</h4>
+                                <p>Back up any important files from your USB flash drive beforehand. The USB must have at least 8 GB capacity for the bootable setup.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Windows Installation Guide. Documentation & Educational Reference.</p>
+            <p>Made with <i class="fas fa-heart" style="color: #ef4444;"></i> for beginners. Check the repository on <a href="https://github.com/Shariar-Ahamed/Windows-Installation-Guide" target="_blank" class="footer-link">GitHub</a>.</p>
+        </div>
+    </footer>
+
+    <!-- JS Logic for Tabs Switching -->
+    <script>
+        function switchOS(os) {
+            // Get elements
+            const tabWin10 = document.getElementById('tab-win10');
+            const tabWin11 = document.getElementById('tab-win11');
+            const slider = document.getElementById('tab-slider');
+            const win10Content = document.getElementById('win10-guide-content');
+            const win11Content = document.getElementById('win11-guide-content');
+
+            if (os === 'win10') {
+                // Set active tab
+                tabWin10.classList.add('active');
+                tabWin11.classList.remove('active');
+                slider.style.left = '4px';
+                
+                // Show content
+                win10Content.classList.add('active');
+                win11Content.classList.remove('active');
+            } else if (os === 'win11') {
+                // Set active tab
+                tabWin11.classList.add('active');
+                tabWin10.classList.remove('active');
+                
+                // Calculate width to position the slider thumb on Windows 11
+                const btnWidth = tabWin10.offsetWidth;
+                slider.style.left = (btnWidth + 4) + 'px';
+
+                // Show content
+                win11Content.classList.add('active');
+                win10Content.classList.remove('active');
+            }
+        }
+
+        // Adjust tab slider position on window resize
+        window.addEventListener('resize', () => {
+            const activeTab = document.querySelector('.tab-btn.active');
+            if (activeTab && activeTab.id === 'tab-win11') {
+                switchOS('win11');
+            } else {
+                switchOS('win10');
+            }
+        });
+
+        // Theme Toggling Logic
+        function initTheme() {
+            const currentTheme = localStorage.getItem('theme') || 'dark';
+            const themeIcon = document.getElementById('theme-icon');
+            
+            if (currentTheme === 'light') {
+                document.body.classList.add('light-mode');
+                themeIcon.className = 'fas fa-moon';
+            } else {
+                document.body.classList.remove('light-mode');
+                themeIcon.className = 'fas fa-sun';
+            }
+        }
+
+        function toggleTheme() {
+            const themeIcon = document.getElementById('theme-icon');
+            if (document.body.classList.contains('light-mode')) {
+                document.body.classList.remove('light-mode');
+                localStorage.setItem('theme', 'dark');
+                themeIcon.className = 'fas fa-sun';
+            } else {
+                document.body.classList.add('light-mode');
+                localStorage.setItem('theme', 'light');
+                themeIcon.className = 'fas fa-moon';
+            }
+        }
+
+        // Initialize theme on load
+        window.addEventListener('DOMContentLoaded', initTheme);
+    </script>
+</body>
+</html>
