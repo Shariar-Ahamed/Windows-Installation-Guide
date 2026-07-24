@@ -174,17 +174,17 @@ function switchOS(guide, os) {
         if (os === 'win10') {
             document.getElementById('rufus-step4-description').innerHTML = 
                 'Windows 10 customization dialog appears. Select <strong>"Create a local account with username"</strong> and configure it if needed. Then click <strong>"OK"</strong>.';
-            if (step4Img) step4Img.src = 'https://i.postimg.cc/cHv01z1b/Rufus-5.png';
+            if (step4Img) step4Img.src = '02-Bootable-USB-Setup/Rufus-5.png';
             
             if (step6Title) step6Title.innerText = 'Step 6 — Bootable USB Complete';
-            if (step6Img) step6Img.src = 'https://i.postimg.cc/4xYD9cRH/Rufus-8.png';
+            if (step6Img) step6Img.src = '02-Bootable-USB-Setup/Rufus-8.png';
         } else {
             document.getElementById('rufus-step4-description').innerHTML = 
                 'Windows 11 customization dialog appears. Make sure you check <strong>"Remove requirement for 4GB+ RAM, Secure Boot and TPM 2.0"</strong> and <strong>"Remove requirement for an online Microsoft account"</strong>. Then click <strong>"OK"</strong>.';
-            if (step4Img) step4Img.src = 'https://i.postimg.cc/5NK0J8m5/Rufus-9.png';
+            if (step4Img) step4Img.src = '02-Bootable-USB-Setup/Rufus-9.png';
             
             if (step6Title) step6Title.innerText = 'Step 6 — Windows 11 Bootable USB Ready';
-            if (step6Img) step6Img.src = 'https://i.postimg.cc/jSwCB68S/Screenshot-2026-05-20-213258.png';
+            if (step6Img) step6Img.src = '02-Bootable-USB-Setup/Rufus-10.png';
         }
     }
 }
