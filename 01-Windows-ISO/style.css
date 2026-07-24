@@ -282,8 +282,8 @@ body {
    Hero Section
    ========================================================================== */
 .hero-section {
-    padding-top: 140px;
-    padding-bottom: 60px;
+    padding-top: 155px;
+    padding-bottom: 70px;
     text-align: center;
     position: relative;
 }
@@ -305,26 +305,26 @@ body {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
     transition: var(--transition-smooth);
 }
 
 .hero-title {
     font-family: var(--font-header);
-    font-size: clamp(2rem, 4.5vw, 3rem);
-    font-weight: 700;
+    font-size: clamp(2rem, 5vw, 3.4rem);
+    font-weight: 800;
     line-height: 1.15;
     letter-spacing: -1px;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
     color: var(--text-primary);
 }
 
 .hero-subtitle {
     color: var(--text-secondary);
-    font-size: clamp(0.95rem, 1.5vw, 1.05rem);
+    font-size: clamp(1rem, 1.8vw, 1.12rem);
     font-weight: 400;
-    max-width: 620px;
-    margin: 0 auto 30px auto;
+    max-width: 650px;
+    margin: 0 auto 36px auto;
 }
 
 .hero-actions {
@@ -339,8 +339,8 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    padding: 12px 24px;
-    border-radius: 10px;
+    padding: 13px 26px;
+    border-radius: 11px;
     font-size: 1rem;
     font-weight: 600;
     text-decoration: none;
