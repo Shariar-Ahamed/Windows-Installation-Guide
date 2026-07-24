@@ -38,7 +38,7 @@
 
 # 📚 What This Guide Covers
 
-This repository is organized into 3 simple steps:
+This repository is organized into 4 simple steps:
 
 ## 1️⃣ Windows ISO
 📂 Folder:  
@@ -55,6 +55,12 @@ This repository is organized into 3 simple steps:
 ## 3️⃣ Install Windows
 📂 Folder:  
 **03-Windows-Installation**
+
+---
+
+## 4️⃣ Microsoft Activation
+📂 Folder:  
+**04-Microsoft-Activation-Scripts**
 
 ---
 
