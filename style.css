@@ -338,6 +338,47 @@ body {
     transform: translateY(-1px);
 }
 
+/* GitHub Premium Star Button */
+.github-star-btn {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: var(--transition-smooth);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    background: var(--btn-bg);
+    color: var(--text-primary);
+}
+
+.github-star-btn:hover {
+    border-color: var(--border-hover);
+    background: var(--btn-bg-hover);
+    transform: translateY(-1px);
+}
+
+.star-btn-main {
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+}
+
+.star-btn-count {
+    padding: 8px 12px;
+    background: rgba(255, 255, 255, 0.05);
+    border-left: 1px solid var(--border-color);
+    display: inline-flex;
+    align-items: center;
+    color: var(--text-secondary);
+    font-weight: 600;
+}
+
+body.light-mode .star-btn-count {
+    background: rgba(0, 0, 0, 0.03);
+}
+
 /* ==========================================================================
    Sidebar Navigation Panel (Fixed Left)
    ========================================================================== */

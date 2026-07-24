@@ -386,4 +386,24 @@ window.addEventListener('DOMContentLoaded', () => {
             navigateLightbox('next');
         }
     });
+
+    // 7. Fetch GitHub Stars Count
+    fetchGithubStars();
 });
+
+// Fetch and display stargazers count from GitHub API
+async function fetchGithubStars() {
+    try {
+        const response = await fetch('https://api.github.com/repos/Shariar-Ahamed/Windows-Installation-Guide');
+        if (response.ok) {
+            const data = await response.json();
+            const starCountElement = document.getElementById('github-star-count');
+            if (starCountElement && data.stargazers_count !== undefined) {
+                starCountElement.textContent = data.stargazers_count;
+                starCountElement.style.display = 'inline-flex';
+            }
+        }
+    } catch (error) {
+        console.error('Error fetching GitHub stars:', error);
+    }
+}
