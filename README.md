@@ -47,10 +47,9 @@
 
 ## 🌐 Combined Interactive Web Guide (Live Preview)
 
-For a premium, step-by-step interactive experience containing all 4 phases of the Windows Installation Guide in a unified documentation layout (sidebar navigation and dark/light modes), please visit either of the live websites:
+For a premium, step-by-step interactive experience containing all 4 phases of the Windows Installation Guide in a unified documentation layout (sidebar navigation and dark/light modes), please visit:
 
-👉 **[Launch on Vercel (Fast Preview)](https://windows-installation.vercel.app/)**  
-👉 **[Launch on GitHub Pages](https://shariar-ahamed.github.io/Windows-Installation-Guide/)**
+<strong>🔗 Live Website: <a href="https://windows-installation.vercel.app/">windows-installation.vercel.app</a></strong>
 
 ---
 
