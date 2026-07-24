@@ -1,169 +1,56 @@
-<h1 align="center">🚀 Rufus Bootable USB Setup Guide</h1>
+# 🚀 Rufus Bootable USB Setup Guide
 
 <p align="center">
-A step-by-step guide for preparing Windows bootable installation media using Rufus.
+  <a href="https://shariar-ahamed.github.io/Windows-Installation-Guide/02-Bootable-USB-Setup/">
+    <img src="https://img.shields.io/badge/Live-Preview-success?style=for-the-badge&logo=github&logoColor=white" alt="Live Preview">
+  </a>
+  <img src="https://img.shields.io/badge/Windows-10%20%2F%2011-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows Support">
+  <img src="https://img.shields.io/badge/Step-2-blue?style=for-the-badge" alt="Step 2">
 </p>
 
 ---
 
-# 📖 Overview
+## 🌐 Interactive Web Guide (Live Preview)
 
-This guide explains how to use **Rufus** to prepare a bootable Windows USB drive from an existing Windows ISO image.
+For a premium, step-by-step interactive experience with screenshots, dynamic Windows 10/11 customization switchers, dark/light theme options, and full responsiveness, please visit the live webpage:
 
-It covers:
-
-- Launching Rufus
-- Selecting the Windows ISO
-- Configuring bootable media
-- Preparing the USB drive
-- Verifying the completed bootable media
+👉 **[Launch Live Web Guide](https://shariar-ahamed.github.io/Windows-Installation-Guide/02-Bootable-USB-Setup/)**
 
 ---
 
-## 🔧 About Rufus
+## 📖 Overview
 
-**Rufus** is a lightweight utility used for preparing bootable USB drives for operating system installation and recovery.
+This directory contains the documentation and web source code for creating a bootable Windows USB flash drive using the lightweight and powerful utility **Rufus**. A bootable USB is required to install Windows 10 or Windows 11 onto a clean drive or unsupported system.
 
-It supports a variety of bootable media, including Windows installation media.
-
-<p align="center">
-  <img src="https://i.postimg.cc/g0kLcMPL/Rufus-1.png" alt="Rufus">
-</p>
-
-<p align="center">
-<i>Rufus interface</i>
-</p>
+### What is covered in this guide:
+1. **Drive Detection:** Connecting and automatically detecting the USB drive in Rufus.
+2. **Boot Selection & ISO Load:** Selecting the downloaded Windows ISO file.
+3. **Partition Scheme Configuration:** Selecting **GPT** (UEFI standard) or **MBR** (Legacy BIOS standard).
+4. **Windows Installation Customization:** Dynamic configurations for Windows 10 and Windows 11 customizations.
+5. **USB Formatting Warning:** Understanding the formatting warning and data backup requirements.
+6. **Creation and Ready Status:** Writing files onto the USB and verifying the completed "READY" state.
 
 ---
 
-# ⚙️ Preparing a Bootable USB Drive
+## 📂 File Directory
 
-## ✅ Step 1 — Launch Rufus
-
-Open the Rufus application.
-
-<p align="center">
-<img src="https://i.postimg.cc/B6zKV2kT/Rufus-2.png" alt="Launch Rufus">
-</p>
+- **`index.html`**: The interactive landing page showcasing Rufus step-by-step instructions.
+- **`style.css`**: The stylesheet powering the modern user interface with theme variables and responsive elements.
 
 ---
 
-## ✅ Step 2 — Connect a USB Flash Drive
+## 📌 Important Notes & Requirements
 
-Insert a USB flash drive into your computer.
-
-Rufus should automatically detect the connected device.
-
-### Example
-
-> **Device:** ESD ISO (H:) [8 GB]
-
-<p align="center">
-<img src="https://i.postimg.cc/Wbz24QDp/Rufus-3.png" alt="USB Device">
-</p>
+- **USB Drive Capacity:** Your USB flash drive must have a capacity of at least **8 GB** to store all Windows setup files.
+- **Data Deletion Warning:** The creation process completely formats the USB drive. Ensure all important files are backed up on your PC before starting the process.
+- **Official Utility:** Download Rufus only from its official platform to prevent corrupted or malware-compromised files.
+- **Partition Selection:** Carefully choose the Partition Scheme (**GPT** for modern UEFI motherboard systems, **MBR** for older Legacy BIOS motherboard systems).
+- **Keep Defaults:** Keep advanced parameters at default unless you have specific, custom boot configuration requirements.
 
 ---
 
-## ✅ Step 3 — Configure Rufus
-
-Configure the required options before starting the process.
-
-### Recommended Settings
-
-- **Boot selection:** Disk or ISO image
-- Select your Windows ISO image.
-- **Partition scheme:** Choose GPT or MBR according to your system.
-
-General guidance:
-
-- Modern UEFI systems typically use **GPT**.
-- Legacy BIOS systems typically use **MBR**.
-
-Leave the remaining settings at their default values unless you have specific requirements.
-
-<p align="center">
-<img src="https://i.postimg.cc/7hZMdgxL/Rufus-4.png" alt="Rufus Configuration">
-</p>
-
----
-
-## ✅ Step 4 — Windows Installation Options
-
-### Windows 10
-
-Review the available options and continue using the configuration appropriate for your installation.
-
-<p align="center">
-<img src="https://i.postimg.cc/cHv01z1b/Rufus-5.png" alt="Windows 10 Options">
-</p>
-
----
-
-### Windows 11
-
-Review the available options and continue using the configuration appropriate for your installation.
-
-<p align="center">
-<img src="https://i.postimg.cc/5NK0J8m5/Rufus-9.png" alt="Windows 11 Options">
-</p>
-
----
-
-## ⚠️ USB Preparation Notice
-
-Preparing the USB drive will erase existing data stored on it.
-
-Ensure important files have been backed up before continuing.
-
-<p align="center">
-<img src="https://i.postimg.cc/X7GG12fJ/Rufus-6.png" alt="USB Warning">
-</p>
-
----
-
-## ✅ Step 5 — Prepare the Bootable USB
-
-Rufus will prepare the Windows installation media on the USB drive.
-
-<p align="center">
-<img src="https://i.postimg.cc/SxGMcnLQ/Rufus-7.png" alt="Preparing Bootable USB">
-</p>
-
----
-
-## ✅ Step 6 — Verify the Bootable USB
-
-After the preparation process is complete, verify that the bootable USB drive has been created successfully.
-
-### Windows 10
-
-<p align="center">
-<img src="https://i.postimg.cc/4xYD9cRH/Rufus-8.png" alt="Windows 10 Bootable USB">
-</p>
-
----
-
-### Windows 11
-
-<p align="center">
-<img src="https://i.postimg.cc/jSwCB68S/Screenshot-2026-05-20-213258.png" alt="Windows 11 Bootable USB">
-</p>
-
----
-
-> ## ➜ Next Step
+> ## 🚀 Next Step — Windows Installation Guide
 >
-> Continue to **03-Windows-Installation** for the Windows installation process.
-
----
-
-# 📌 Notes
-
-- A USB drive with at least **8 GB** capacity is recommended.
-- Existing data on the USB drive will be erased during preparation.
-- Use the appropriate partition scheme (GPT or MBR) for your system.
-- Review your configuration before starting the preparation process.
-
----
-
-<h2 align="center">📚 Bootable USB Preparation Guide Completed</h2>
+> Once your bootable USB drive is successfully created, proceed to the next phase to boot from the USB and install Windows.
+>
+> 👉 **[Go to Step 3: Windows Installation Guide](../03-Windows-Installation/README.md)**

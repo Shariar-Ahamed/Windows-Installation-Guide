@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rufus Bootable USB Setup Guide | Step-by-Step</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect x='9' y='1' width='6' height='5' rx='1' fill='%2300c6ff'/%3E%3Crect x='10.5' y='2.5' width='1' height='1.5' fill='%230b0f19'/%3E%3Crect x='12.5' y='2.5' width='1' height='1.5' fill='%230b0f19'/%3E%3Crect x='6' y='6' width='12' height='16' rx='2' fill='%230072ff'/%3E%3Cpath d='M12 9v8M10 13l2-2 2 2' stroke='%23ffffff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E">
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="A premium, step-by-step interactive landing page guiding you on how to create a bootable Windows 10 and Windows 11 USB drive using Rufus.">
+    <meta name="keywords" content="Rufus, Bootable USB, Windows 10 USB, Windows 11 USB, GPT, MBR, ISO, Guide">
+    <meta name="author" content="Shariar-Ahamed">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Glow Blobs -->
+    <div class="glow-wrapper" aria-hidden="true">
+        <div class="glow-blob blob-1"></div>
+        <div class="glow-blob blob-2"></div>
+    </div>
+
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="#" class="logo-link">
+                <div class="logo">
+                    <i class="fab fa-windows logo-icon"></i>
+                    <span>WinGuide</span>
+                </div>
+            </a>
+            <nav class="nav-links">
+                <button class="theme-toggle-btn" id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+                    <i class="fas fa-sun" id="theme-icon"></i>
+                </button>
+                <a href="https://github.com/Shariar-Ahamed/Windows-Installation-Guide" target="_blank" class="github-btn" id="header-github-link">
+                    <i class="fab fa-github"></i> <span>GitHub Repository</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="container hero-container">
+                <span class="badge"><i class="fas fa-tools"></i> Phase 2 of Installation</span>
+                <h1 class="hero-title">Rufus Bootable <br><span class="gradient-text">USB Setup Guide</span></h1>
+                <p class="hero-subtitle">
+                    Complete step-by-step walkthrough to download Rufus and safely create a bootable Windows 10 or Windows 11 USB flash drive easily.
+                </p>
+                <div class="hero-actions">
+                    <a href="#selector" class="btn btn-primary">Get Started <i class="fas fa-arrow-down"></i></a>
+                    <a href="#notes" class="btn btn-secondary">Key Requirements</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- OS Selector Section -->
+        <section class="selector-section" id="selector">
+            <div class="container">
+                <div class="selector-card">
+                    <h2 class="selector-title">Select Your Operating System</h2>
+                    <p class="selector-desc">
+                        Choose the Windows version you want to load. The installation customization settings and final setup screens will adjust instantly.
+                    </p>
+                    <div class="tabs-wrapper">
+                        <div class="tab-slider-bg">
+                            <div class="tab-slider" id="tab-slider"></div>
+                            <button class="tab-btn active" id="tab-win10" onclick="switchOS('win10')">
+                                <i class="fab fa-windows blue-accent"></i> Windows 10
+                            </button>
+                            <button class="tab-btn" id="tab-win11" onclick="switchOS('win11')">
+                                <i class="fab fa-windows" style="color: #10b981;"></i> Windows 11
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Windows 10 Step-by-Step Guide Section -->
+        <section class="guide-container active" id="win10-guide-content">
+            <div class="container">
+                <div class="guide-header">
+                    <div class="guide-info-badge">Windows 10 USB</div>
+                    <h2>Windows 10 Bootable USB Process</h2>
+                    <p>Rufus helps you easily write your downloaded Windows 10 ISO image into a USB flash drive.</p>
+                    <a href="https://rufus.ie/en/" target="_blank" class="official-download-btn" id="win10-official-link">
+                        <i class="fas fa-external-link-alt"></i> Official Rufus Website <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Process Steps -->
+                <div class="steps-timeline">
+                    <!-- Step 1 -->
+                    <div class="step-card" id="w10-step-1">
+                        <div class="step-badge">Step 1</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Open Rufus Application</h3>
+                            <p class="step-text">
+                                Go to the directory where your downloaded <strong>Rufus</strong> utility is located, and double-click to launch it. If the UAC popup appears, click <strong>"Yes"</strong> to allow it to run.
+                            </p>
+                            <div class="window-mock">
+                                <div class="window-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="window-title-text">Rufus Launcher</span>
+                                </div>
+                                <div class="window-body">
+                                    <img src="https://i.postimg.cc/B6zKV2kT/Rufus-2.png" alt="Launch Rufus Application" class="step-image" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="step-card" id="w10-step-2">
+                        <div class="step-badge">Step 2</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Insert and Detect USB Flash Drive</h3>
+                            <p class="step-text">
+                                Insert your USB flash drive (minimum 8 GB capacity) into a USB port on your PC or laptop. Rufus will automatically detect and list the drive under the <strong>"Device"</strong> field.
+                            </p>
+                            <div class="window-mock">
+                                <div class="window-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="window-title-text">Rufus - Device Selection</span>
+                                </div>
+                                <div class="window-body">
+                                    <img src="https://i.postimg.cc/Wbz24QDp/Rufus-3.png" alt="USB Device detected" class="step-image" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="step-card" id="w10-step-3">
+                        <div class="step-badge">Step 3</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Configure Rufus Settings</h3>
+                            <p class="step-text">
+                                Select <strong>"Disk or ISO image"</strong> under Boot selection, click the <strong>"SELECT"</strong> button, and choose your downloaded Windows 10 ISO file. Select <strong>GPT</strong> (or MBR for older BIOS systems) as the Partition scheme. Leave other settings at default and click <strong>"START"</strong>.
+                            </p>
+                            <div class="window-mock">
+                                <div class="window-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="window-title-text">Rufus - Setup Configuration</span>
+                                </div>
+                                <div class="window-body">
+                                    <img src="https://i.postimg.cc/7hZMdgxL/Rufus-4.png" alt="Configure Rufus Settings" class="step-image" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="step-card" id="w10-step-4">
+                        <div class="step-badge">Step 4</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Windows 10 Installation Customization</h3>
+                            <p class="step-text">
+                                A customization window will appear. For Windows 10, do not select or modify any additional checkboxes. Simply click <strong>"OK"</strong> to proceed.
+                            </p>
+                            <div class="window-mock">
+                                <div class="window-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="window-title-text">Rufus - Windows User Experience (Win 10)</span>
+                                </div>
+                                <div class="window-body">
+                                    <img src="https://i.postimg.cc/cHv01z1b/Rufus-5.png" alt="Windows 10 Customization Settings" class="step-image" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 5 (Warning) -->
+                    <div class="step-card" id="w10-step-warning">
+                        <div class="step-badge" style="border-color: var(--warning-yellow); color: var(--warning-yellow);"><i class="fas fa-exclamation-triangle"></i></div>
+                        <div class="step-content">
+                            <h3 class="step-title" style="color: var(--warning-yellow);">USB Drive Data Erasure Warning</h3>
+                            <p class="step-text">
+                                Rufus will pop up a warning message alerting you that all data on the selected USB drive will be permanently destroyed during formatting. Make sure you have backed up any important data, then click <strong>"OK"</strong>.
+                            </p>
+                            <div class="window-mock">
+                                <div class="window-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="window-title-text">Rufus - Warning Dialog</span>
+                                </div>
+                                <div class="window-body">
+                                    <img src="https://i.postimg.cc/X7GG12fJ/Rufus-6.png" alt="Data Erasure Warning Popup" class="step-image" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 6 -->
+                    <div class="step-card" id="w10-step-5">
+                        <div class="step-badge">Step 5</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Creating the Bootable USB Drive</h3>
+                            <p class="step-text">
+                                Rufus will format the drive and start writing the Windows 10 files to the USB. The green progress bar at the bottom will track the process status. Do not unplug the USB drive.
+                            </p>
+                            <div class="window-mock">
+                                <div class="window-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="window-title-text">Rufus - Copying Files</span>
+                                </div>
+                                <div class="window-body">
+                                    <img src="https://i.postimg.cc/SxGMcnLQ/Rufus-7.png" alt="Copying Windows 10 Files to USB" class="step-image" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 7 -->
+                    <div class="step-card" id="w10-step-6">
+                        <div class="step-badge">Step 6</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Windows 10 Bootable USB Ready</h3>
+                            <p class="step-text">
+                                When the progress bar shows <strong>"READY"</strong>, the bootable drive creation is complete. You can safely close Rufus and eject your new bootable Windows 10 USB drive.
+                            </p>
+                            <div class="window-mock">
+                                <div class="window-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="window-title-text">Rufus - Process Completed</span>
+                                </div>
+                                <div class="window-body">
+                                    <img src="https://i.postimg.cc/4xYD9cRH/Rufus-8.png" alt="Windows 10 Bootable USB Ready" class="step-image" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Success Footer Card -->
+                <div class="success-footer-card">
+                    <i class="fas fa-check-circle success-icon"></i>
+                    <h3>Windows 10 Bootable USB Created!</h3>
+                    <p>Your bootable Windows 10 USB drive has been created successfully. Proceed to the next phase to start the Windows installation process.</p>
+                    <a href="../03-Windows-Installation/README.md" class="btn btn-primary btn-next-step">Proceed to Installation Guide <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Windows 11 Step-by-Step Guide Section -->
+        <section class="guide-container" id="win11-guide-content">
+            <div class="container">
+                <div class="guide-header">
+                    <div class="guide-info-badge win11-badge">Windows 11 USB</div>
+                    <h2 class="win11-text">Windows 11 Bootable USB Process</h2>
+                    <p>Rufus helps you easily write your downloaded Windows 11 ISO image into a USB flash drive.</p>
+                    <a href="https://rufus.ie/en/" target="_blank" class="win11-btn" id="win11-official-link">
+                        <i class="fas fa-external-link-alt"></i> Official Rufus Website <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Process Steps -->
+                <div class="steps-timeline">
+                    <!-- Step 1 -->
+                    <div class="step-card" id="w11-step-1">
+                        <div class="step-badge">Step 1</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Open Rufus Application</h3>
+                            <p class="step-text">
+                                Go to the directory where your downloaded <strong>Rufus</strong> utility is located, and double-click to launch it. If the UAC popup appears, click <strong>"Yes"</strong> to allow it to run.
+                            </p>
+                            <div class="window-mock">
+                                <div class="window-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="window-title-text">Rufus Launcher</span>
+                                </div>
+                                <div class="window-body">
+                                    <img src="https://i.postimg.cc/B6zKV2kT/Rufus-2.png" alt="Launch Rufus Application" class="step-image" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="step-card" id="w11-step-2">
+                        <div class="step-badge">Step 2</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Insert and Detect USB Flash Drive</h3>
+                            <p class="step-text">
+                                Insert your USB flash drive (minimum 8 GB capacity) into a USB port on your PC or laptop. Rufus will automatically detect and list the drive under the <strong>"Device"</strong> field.
+                            </p>
+                            <div class="window-mock">
+                                <div class="window-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="window-title-text">Rufus - Device Selection</span>
+                                </div>
+                                <div class="window-body">
+                                    <img src="https://i.postimg.cc/Wbz24QDp/Rufus-3.png" alt="USB Device detected" class="step-image" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="step-card" id="w11-step-3">
+                        <div class="step-badge">Step 3</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Configure Rufus Settings</h3>
+                            <p class="step-text">
+                                Select <strong>"Disk or ISO image"</strong> under Boot selection, click the <strong>"SELECT"</strong> button, and choose your downloaded Windows 11 ISO file. Select <strong>GPT</strong> (UEFI standard for Windows 11) as the Partition scheme. Leave other settings at default and click <strong>"START"</strong>.
+                            </p>
+                            <div class="window-mock">
+                                <div class="window-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="window-title-text">Rufus - Setup Configuration</span>
+                                </div>
+                                <div class="window-body">
+                                    <img src="https://i.postimg.cc/7hZMdgxL/Rufus-4.png" alt="Configure Rufus Settings" class="step-image" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="step-card" id="w11-step-4">
+                        <div class="step-badge">Step 4</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Windows 11 Installation Customization</h3>
+                            <p class="step-text">
+                                A customization window will appear. For Windows 11, keep the default selected options unchanged (like removing the TPM 2.0 / Secure Boot requirements if running on unsupported hardware). Do not check any additional options. Simply click <strong>"OK"</strong>.
+                            </p>
+                            <div class="window-mock">
+                                <div class="window-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="window-title-text">Rufus - Windows User Experience (Win 11)</span>
+                                </div>
+                                <div class="window-body">
+                                    <img src="https://i.postimg.cc/5NK0J8m5/Rufus-9.png" alt="Windows 11 Customization Settings" class="step-image" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 5 (Warning) -->
+                    <div class="step-card" id="w11-step-warning">
+                        <div class="step-badge" style="border-color: var(--warning-yellow); color: var(--warning-yellow);"><i class="fas fa-exclamation-triangle"></i></div>
+                        <div class="step-content">
+                            <h3 class="step-title" style="color: var(--warning-yellow);">USB Drive Data Erasure Warning</h3>
+                            <p class="step-text">
+                                Rufus will pop up a warning message alerting you that all data on the selected USB drive will be permanently destroyed during formatting. Make sure you have backed up any important data, then click <strong>"OK"</strong>.
+                            </p>
+                            <div class="window-mock">
+                                <div class="window-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="window-title-text">Rufus - Warning Dialog</span>
+                                </div>
+                                <div class="window-body">
+                                    <img src="https://i.postimg.cc/X7GG12fJ/Rufus-6.png" alt="Data Erasure Warning Popup" class="step-image" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 6 -->
+                    <div class="step-card" id="w11-step-5">
+                        <div class="step-badge">Step 5</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Creating the Bootable USB Drive</h3>
+                            <p class="step-text">
+                                Rufus will format the drive and start writing the Windows 11 files to the USB. The green progress bar at the bottom will track the process status. Do not unplug the USB drive.
+                            </p>
+                            <div class="window-mock">
+                                <div class="window-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="window-title-text">Rufus - Copying Files</span>
+                                </div>
+                                <div class="window-body">
+                                    <img src="https://i.postimg.cc/SxGMcnLQ/Rufus-7.png" alt="Copying Windows 11 Files to USB" class="step-image" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 7 -->
+                    <div class="step-card" id="w11-step-6">
+                        <div class="step-badge">Step 6</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Windows 11 Bootable USB Ready</h3>
+                            <p class="step-text">
+                                When the progress bar shows <strong>"READY"</strong>, the bootable drive creation is complete. You can safely close Rufus and eject your new bootable Windows 11 USB drive.
+                            </p>
+                            <div class="window-mock">
+                                <div class="window-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="window-title-text">Rufus - Process Completed</span>
+                                </div>
+                                <div class="window-body">
+                                    <img src="https://i.postimg.cc/jSwCB68S/Screenshot-2026-05-20-213258.png" alt="Windows 11 Bootable USB Ready" class="step-image" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Success Footer Card -->
+                <div class="success-footer-card">
+                    <i class="fas fa-check-circle success-icon" style="color: #10b981;"></i>
+                    <h3 class="win11-text">Windows 11 Bootable USB Created!</h3>
+                    <p>Your bootable Windows 11 USB drive has been created successfully. Proceed to the next phase to start the Windows installation process.</p>
+                    <a href="../03-Windows-Installation/README.md" class="btn btn-primary win11-bg btn-next-step">Proceed to Installation Guide <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Important Notes Section -->
+        <section class="notes-section" id="notes">
+            <div class="container">
+                <div class="notes-card">
+                    <div class="notes-header">
+                        <i class="fas fa-exclamation-triangle warning-icon"></i>
+                        <h2>Important Notes & Rules</h2>
+                    </div>
+                    <div class="notes-grid">
+                        <div class="note-item">
+                            <div class="note-icon"><i class="fas fa-hdd"></i></div>
+                            <div class="note-info">
+                                <h4>Minimum 8 GB USB Drive</h4>
+                                <p>Ensure your USB flash drive has at least 8 GB storage capacity. Rufus requires this space to successfully write the complete Windows installation files.</p>
+                            </div>
+                        </div>
+                        <div class="note-item">
+                            <div class="note-icon"><i class="fas fa-trash-alt"></i></div>
+                            <div class="note-info">
+                                <h4>Data Will Be Erased</h4>
+                                <p>The creation process will completely format your USB drive. Back up all vital files on it to your computer before launching the writing procedure.</p>
+                            </div>
+                        </div>
+                        <div class="note-item">
+                            <div class="note-icon"><i class="fas fa-shield-alt"></i></div>
+                            <div class="note-info">
+                                <h4>Official Utility Download</h4>
+                                <p>Always acquire Rufus only from its official platform. Avoid secondary hosts to prevent downloading corrupted, compromised, or malware-injected versions.</p>
+                            </div>
+                        </div>
+                        <div class="note-item">
+                            <div class="note-icon"><i class="fas fa-sliders-h"></i></div>
+                            <div class="note-info">
+                                <h4>Select Correct Partition Scheme</h4>
+                                <p>Choose GPT for modern computer hardware (UEFI based) or select MBR if you are creating media for legacy motherboard systems (BIOS based).</p>
+                            </div>
+                        </div>
+                        <div class="note-item">
+                            <div class="note-icon"><i class="fas fa-info-circle"></i></div>
+                            <div class="note-info">
+                                <h4>Keep Defaults Intact</h4>
+                                <p>Leave all other advanced settings in Rufus untouched unless you have a specific, custom boot configuration requirements.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Windows Installation Guide. Documentation & Educational Reference.</p>
+            <p>Made for beginners. Check the repository on <a href="https://github.com/Shariar-Ahamed/Windows-Installation-Guide" target="_blank" class="footer-link">GitHub</a>.</p>
+        </div>
+    </footer>
+
+    <!-- JS Logic for Tabs Switching & Themes -->
+    <script>
+        function switchOS(os) {
+            // Get elements
+            const tabWin10 = document.getElementById('tab-win10');
+            const tabWin11 = document.getElementById('tab-win11');
+            const slider = document.getElementById('tab-slider');
+            const win10Content = document.getElementById('win10-guide-content');
+            const win11Content = document.getElementById('win11-guide-content');
+
+            if (os === 'win10') {
+                // Set active tab
+                tabWin10.classList.add('active');
+                tabWin11.classList.remove('active');
+                slider.style.left = '4px';
+                
+                // Show content
+                win10Content.classList.add('active');
+                win11Content.classList.remove('active');
+            } else if (os === 'win11') {
+                // Set active tab
+                tabWin11.classList.add('active');
+                tabWin10.classList.remove('active');
+                
+                // Calculate width to position the slider thumb on Windows 11
+                const btnWidth = tabWin10.offsetWidth;
+                slider.style.left = (btnWidth + 4) + 'px';
+
+                // Show content
+                win11Content.classList.add('active');
+                win10Content.classList.remove('active');
+            }
+        }
+
+        // Adjust tab slider position on window resize
+        window.addEventListener('resize', () => {
+            const activeTab = document.querySelector('.tab-btn.active');
+            if (activeTab && activeTab.id === 'tab-win11') {
+                switchOS('win11');
+            } else {
+                switchOS('win10');
+            }
+        });
+
+        // Theme Toggling Logic
+        function initTheme() {
+            const currentTheme = localStorage.getItem('theme') || 'dark';
+            const themeIcon = document.getElementById('theme-icon');
+            
+            if (currentTheme === 'light') {
+                document.body.classList.add('light-mode');
+                themeIcon.className = 'fas fa-moon';
+            } else {
+                document.body.classList.remove('light-mode');
+                themeIcon.className = 'fas fa-sun';
+            }
+        }
+
+        function toggleTheme() {
+            const themeIcon = document.getElementById('theme-icon');
+            if (document.body.classList.contains('light-mode')) {
+                document.body.classList.remove('light-mode');
+                localStorage.setItem('theme', 'dark');
+                themeIcon.className = 'fas fa-sun';
+            } else {
+                document.body.classList.add('light-mode');
+                localStorage.setItem('theme', 'light');
+                themeIcon.className = 'fas fa-moon';
+            }
+        }
+
+        // Initialize theme on load
+        window.addEventListener('DOMContentLoaded', initTheme);
+    </script>
+</body>
+</html>
