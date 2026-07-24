@@ -29,8 +29,11 @@
 </p>
 
 <p align="center">
-  <a href="https://shariar-ahamed.github.io/Windows-Installation-Guide/">
-    <img src="https://img.shields.io/badge/Live-Preview-success?style=for-the-badge&logo=github&logoColor=white" alt="Live Preview">
+  <a href="https://windows-installation.vercel.app/" target="_blank">
+    <img src="https://img.shields.io/badge/Vercel-Live%20Preview-black?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel Live Preview">
+  </a>
+  <a href="https://shariar-ahamed.github.io/Windows-Installation-Guide/" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub%20Pages-Live%20Preview-success?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Pages Live Preview">
   </a>
 </p>
 
@@ -44,9 +47,10 @@
 
 ## 🌐 Combined Interactive Web Guide (Live Preview)
 
-For a premium, step-by-step interactive experience containing all 4 phases of the Windows Installation Guide in a unified documentation layout (sidebar navigation and dark/light modes), please visit the live website:
+For a premium, step-by-step interactive experience containing all 4 phases of the Windows Installation Guide in a unified documentation layout (sidebar navigation and dark/light modes), please visit either of the live websites:
 
-👉 **[Launch Combined Live Web Guide](https://shariar-ahamed.github.io/Windows-Installation-Guide/)**
+👉 **[Launch on Vercel (Fast Preview)](https://windows-installation.vercel.app/)**  
+👉 **[Launch on GitHub Pages](https://shariar-ahamed.github.io/Windows-Installation-Guide/)**
 
 ---
 
