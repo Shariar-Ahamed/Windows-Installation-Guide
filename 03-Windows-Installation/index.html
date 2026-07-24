@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows 11 Installation Guide | Step-by-Step</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%230072ff' d='M21 2H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h7l-2 3v1h8v-1l-2-3h7c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z'/%3E%3Cpath fill='%2300c6ff' d='M6 6.5l3.5-.5v3.5H6V6.5zm0 4H9.5V14L6 13.5v-3zm4.5-4.5L18 5v5h-7.5V6zm0 5H18v5l-7.5-.7v-4.3z'/%3E%3C/svg%3E">
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="A premium, step-by-step interactive landing page guiding you on how to cleanly install Windows 11 using a bootable USB flash drive.">
+    <meta name="keywords" content="Windows 11, Windows Installation, Boot Menu, Format Partition, OOBE, Bypass Internet, Guide">
+    <meta name="author" content="Shariar-Ahamed">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Glow Blobs -->
+    <div class="glow-wrapper" aria-hidden="true">
+        <div class="glow-blob blob-1"></div>
+        <div class="glow-blob blob-2"></div>
+    </div>
+
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="#" class="logo-link">
+                <div class="logo">
+                    <i class="fab fa-windows logo-icon"></i>
+                    <span>WinGuide</span>
+                </div>
+            </a>
+            <nav class="nav-links">
+                <button class="theme-toggle-btn" id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+                    <i class="fas fa-sun" id="theme-icon"></i>
+                </button>
+                <a href="https://github.com/Shariar-Ahamed/Windows-Installation-Guide" target="_blank" class="github-btn" id="header-github-link">
+                    <i class="fab fa-github"></i> <span>GitHub Repository</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="container hero-container">
+                <span class="badge"><i class="fas fa-compact-disc"></i> Phase 3 of Installation</span>
+                <h1 class="hero-title">Windows 11 <br><span class="gradient-text">Installation Guide</span></h1>
+                <p class="hero-subtitle">
+                    Complete step-by-step walkthrough to boot from your USB drive, format partitions, and safely install a clean copy of Windows 11.
+                </p>
+                <div class="hero-actions">
+                    <a href="#guide" class="btn btn-primary">Get Started <i class="fas fa-arrow-down"></i></a>
+                    <a href="#notes" class="btn btn-secondary">Key Requirements</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Step-by-Step Guide Section -->
+        <section class="guide-container" id="guide">
+            <div class="container">
+                <div class="guide-header">
+                    <div class="guide-info-badge win11-badge" style="background: rgba(16, 185, 129, 0.1); color: #10b981;">Windows 11 Setup</div>
+                    <h2 style="color: #10b981;">Windows 11 Installation Full Process</h2>
+                    <p>Follow this detailed walkthrough containing 24 chronological steps to install and set up Windows 11.</p>
+                </div>
+
+                <!-- Process Steps -->
+                <div class="steps-timeline" id="win11-guide-content">
+                    <!-- Step 1 -->
+                    <div class="step-card" id="step-1">
+                        <div class="step-badge">Step 1</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Open Motherboard Boot Menu</h3>
+                            <p class="step-text">
+                                Restart your PC or laptop and continuously tap your motherboard's boot menu key to open the Boot Menu. 
+                                <br><br>
+                                <em>Example Motherboard:</em> <strong>Gigabyte B450 AORUS PRO WIFI</strong>. The Boot Menu Key is <strong>F12</strong>. 
+                                <br>
+                                💡 <small>Note: If you don't know your boot key, search Google using your motherboard or laptop model name.</small>
+                            </p>
+                            <div class="window-mock">
+                                <div class="window-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="window-title-text">Motherboard Boot Menu Launcher</span>
+                                </div>
+                                <div class="window-body">
+                                    <img src="https://i.postimg.cc/5yyH7Bxd/IMG-20260524-092448.png" alt="Open motherboard boot menu" class="step-image" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="step-card" id="step-2">
+                        <div class="step-badge">Step 2</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Select Bootable USB Flash Drive</h3>
+                            <p class="step-text">
+                                Choose your bootable USB flash drive from the boot selection list. Look for options labeled with <strong>UEFI</strong> followed by your flash drive model name.
+                                <br><br>
+                                <em>Example Option:</em> <strong>UEFI: USB3.0 FLASH DRIVE PMAP, Partition 1</strong>
+                            </p>
+                            <div class="window-mock">
+                                <div class="window-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="window-title-text">Boot Device Selection</span>
+                                </div>
+                                <div class="window-body">
+                                    <img src="https://i.postimg.cc/05cW3LV7/IMG-20260519-090109.png" alt="Select bootable USB device" class="step-image" loading="lazy">
+                                </div>
+                            </div>
+                            <div class="window-mock">
+                                <div class="window-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="window-title-text">Boot Device Selection alternate</span>
+                                </div>
+                                <div class="window-body">
+                                    <img src="https://i.postimg.cc/htKy4JZf/IMG-20260524-074822.png" alt="Select bootable USB device" class="step-image" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="step-card" id="step-3">
+                        <div class="step-badge">Step 3</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Configure Language & Regional Settings</h3>
+                            <p class="step-text">
+                                Select your installation language, time, and regional currency settings.
+                                <br><br>
+                                <strong>Language to install:</strong> English (United States) <br>
+                                <strong>Time and currency format:</strong> English (United States) <br><br>
+                                Click <strong>"Next"</strong> once they are configured correctly.
+                            </p>
+                            <div class="window-mock">
+                                <div class="window-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="window-title-text">Windows Setup - Regional Configuration</span>
+                                </div>
+                                <div class="window-body">
+                                    <img src="https://i.postimg.cc/kMVLLtLF/IMG-20260524-074430.png" alt="Select language and regional settings" class="step-image" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="step-card" id="step-4">
+                        <div class="step-badge">Step 4</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Select Keyboard input layout</h3>
+                            <p class="step-text">
+                                Select your keyboard or input layout configuration.
+                                <br><br>
+                                <strong>Keyboard or input method:</strong> US <br><br>
+                                Click <strong>"Next"</strong>.
+                            </p>
+                            <div class="window-mock">
+                                <div class="window-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="window-title-text">Windows Setup - Keyboard Layout</span>
+                                </div>
+                                <div class="window-body">
+                                    <img src="https://i.postimg.cc/rw6Tf9mm/IMG-20260524-080311.png" alt="Select keyboard layout settings" class="step-image" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 5 -->
+                    <div class="step-card" id="step-5">
+                        <div class="step-badge">Step 5</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Select Windows 11 Installation Option</h3>
+                            <p class="step-text">
+                                Choose <strong>"Install Windows 11"</strong>. Make sure you check the consent box stating: <em>"I agree everything will be deleted including files, apps, and settings"</em> to prepare a clean disk setup. Then click <strong>"Next"</strong>.
+                            </p>
+                            <div class="window-mock">
+                                <div class="window-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="window-title-text">Windows Setup - Installation Consent</span>
+                                </div>
+                                <div class="window-body">
+                                    <img src="https://i.postimg.cc/9FbS7t7v/IMG-20260524-081346.png" alt="Select Windows 11 installation option" class="step-image" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 6 -->
+                    <div class="step-card" id="step-6">
+                        <div class="step-badge">Step 6</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Product Key Verification</h3>
+                            <p class="step-text">
+                                If you possess a product activation key, type it in the text box. Otherwise, click on <strong>"I don't have a product key"</strong> to proceed and activate Windows later. Click <strong>"Next"</strong>.
+                            </p>
+                            <div class="window-mock">
+                                <div class="window-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="window-title-text">Windows Setup - Product Key Input</span>
+                                </div>
+                                <div class="window-body">
+                                    <img src="https://i.postimg.cc/DfHmKLZt/IMG-20260524-082414.png" alt="Windows 11 product key setup" class="step-image" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 7 -->
+                    <div class="step-card" id="step-7">
+                        <div class="step-badge">Step 7</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Select Windows 11 Edition</h3>
+                            <p class="step-text">
+                                Choose the specific edition of Windows 11 you intend to install. 
+                                <br><br>
+                                <strong>Preferred Edition:</strong> Windows 11 Pro <br><br>
+                                Click <strong>"Next"</strong>.
+                            </p>
+                            <div class="window-mock">
+                                <div class="window-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="window-title-text">Windows Setup - Edition Selection</span>
+                                </div>
+                                <div class="window-body">
+                                    <img src="https://i.postimg.cc/3JZR0611/IMG-20260524-083120.png" alt="Select Windows 11 edition" class="step-image" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 8 -->
+                    <div class="step-card" id="step-8">
+                        <div class="step-badge">Step 8</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Accept License Terms</h3>
+                            <p class="step-text">
+                                Read through the licensing terms and notices carefully. Click the checkbox or option to **Accept** the agreement, then click <strong>"Next"</strong>.
+                            </p>
+                            <div class="window-mock">
+                                <div class="window-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="window-title-text">Windows Setup - License Agreement</span>
+                                </div>
+                                <div class="window-body">
+                                    <img src="https://i.postimg.cc/RCspCV5d/IMG-20260524-084251.png" alt="Accept Windows 11 license terms" class="step-image" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 9 -->
+                    <div class="step-card" id="step-9">
+                        <div class="step-badge">Step 9</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Partition Configuration & Drive Formatting</h3>
+                            <p class="step-text">
+                                Select and format the partition where Windows 11 will be cleanly installed.
+                            </p>
+
+                            <!-- Sub-step 9.1 -->
+                            <div class="sub-step-wrapper">
+                                <h4 class="sub-step-title"><i class="fas fa-arrow-circle-right"></i> 1. Select Primary Partition</h4>
+                                <p class="step-text">Choose the target primary disk partition where you want to load the new operating system files.</p>
+                                <div class="window-mock">
+                                    <div class="window-header">
+                                        <span class="dot dot-red"></span>
+                                        <span class="dot dot-yellow"></span>
+                                        <span class="dot dot-green"></span>
+                                        <span class="window-title-text">Windows Setup - Partition Selector</span>
+                                    </div>
+                                    <div class="window-body">
+                                        <img src="https://i.postimg.cc/fy8LYJXf/IMG-20260524-091130.png" alt="Select primary partition" class="step-image" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Sub-step 9.2 -->
+                            <div class="sub-step-wrapper">
+                                <h4 class="sub-step-title"><i class="fas fa-arrow-circle-right"></i> 2. Format the Partition</h4>
+                                <p class="step-text">Click the <strong>"Format"</strong> action button. This will format the drive and clear previous system remnants to allow a clean setup.</p>
+                                <div class="window-mock">
+                                    <div class="window-header">
+                                        <span class="dot dot-red"></span>
+                                        <span class="dot dot-yellow"></span>
+                                        <span class="dot dot-green"></span>
+                                        <span class="window-title-text">Windows Setup - Format Tool</span>
+                                    </div>
+                                    <div class="window-body">
+                                        <img src="https://i.postimg.cc/xdLF8HDR/IMG-20260524-093258.png" alt="Format partition" class="step-image" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Sub-step 9.3 -->
+                            <div class="sub-step-wrapper">
+                                <h4 class="sub-step-title"><i class="fas fa-arrow-circle-right"></i> 3. Select Partition Again & Continue</h4>
+                                <p class="step-text">After formatting completes, highlight that same formatted partition again and click <strong>"Next"</strong>.</p>
+                                <div class="window-mock">
+                                    <div class="window-header">
+                                        <span class="dot dot-red"></span>
+                                        <span class="dot dot-yellow"></span>
+                                        <span class="dot dot-green"></span>
+                                        <span class="window-title-text">Windows Setup - Continue Installation</span>
+                                    </div>
+                                    <div class="window-body">
+                                        <img src="https://i.postimg.cc/Hs4NTbm5/IMG-20260524-095148.png" alt="Select formatted partition and continue" class="step-image" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 10 -->
+                    <div class="step-card" id="step-10">
+                        <div class="step-badge">Step 10</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Review Settings Summary</h3>
+                            <p class="step-text">
+                                Review the final summary configuration before executing the installer.
+                                <br><br>
+                                <strong>Selected Action:</strong> Install Windows 11 Pro — Keep nothing <br><br>
+                                Click <strong>"Install"</strong>.
+                            </p>
+                            <div class="window-mock">
+                                <div class="window-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="window-title-text">Windows Setup - Ready to Install</span>
+                                </div>
+                                <div class="window-body">
+                                    <img src="https://i.postimg.cc/T3Ph9qYj/IMG-20260524-101408.png" alt="Ready to install Windows 11" class="step-image" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 11 -->
+                    <div class="step-card" id="step-11">
+                        <div class="step-badge">Step 11</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Installing Windows 11</h3>
+                            <p class="step-text">
+                                The file copying and extraction process will now launch. Please wait until progress reaches 100%. 
+                                <br><br>
+                                ⚡ <strong>Warning:</strong> Keep your computer powered on. Your PC may restart automatically several times.
+                            </p>
+                            <div class="window-mock">
+                                <div class="window-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="window-title-text">Windows Setup - Writing Files</span>
+                                </div>
+                                <div class="window-body">
+                                    <img src="https://i.postimg.cc/90Wqj3CW/IMG-20260524-102959.png" alt="Installing Windows 11 progress" class="step-image" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 12 -->
+                    <div class="step-card" id="step-12">
+                        <div class="step-badge">Step 12</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Select Operating System</h3>
+                            <p class="step-text">
+                                If a boot select window listing multiple operating systems appears after restarting, click <strong>"Windows 11"</strong> to boot into the newly installed environment.
+                            </p>
+                            <div class="window-mock">
+                                <div class="window-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="window-title-text">Boot OS Selection</span>
+                                </div>
+                                <div class="window-body">
+                                    <img src="https://i.postimg.cc/02720XsT/IMG-20260524-103508.jpg" alt="Choose Windows 11 operating system" class="step-image" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 13 -->
+                    <div class="step-card" id="step-13">
+                        <div class="step-badge">Step 13</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Windows Installation Finishing Process</h3>
+                            <p class="step-text">
+                                Windows will continue setting up your device settings. Your computer may reboot several times. Ensure it remains plugged in.
+                            </p>
+                            <div class="window-mock">
+                                <div class="window-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="window-title-text">Windows Setup - Finalizing Configuration</span>
+                                </div>
+                                <div class="window-body">
+                                    <img src="https://i.postimg.cc/4xtttQ8w/IMG-20260524-104926.png" alt="Windows installation finishing process" class="step-image" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 14 -->
+                    <div class="step-card" id="step-14">
+                        <div class="step-badge">Step 14</div>
+                        <div class="step-content">
+                            <h3 class="step-title">"Just a Moment" Screen</h3>
+                            <p class="step-text">
+                                The system will boot into the setup assistant and display the <strong>"Just a moment"</strong> loading screen.
+                            </p>
+                            <div class="window-mock">
+                                <div class="window-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="window-title-text">OOBE Loader</span>
+                                </div>
+                                <div class="window-body">
+                                    <img src="https://i.postimg.cc/rw3cr7n7/IMG-20260524-110527.png" alt="Windows 11 just a moment screen" class="step-image" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 15 -->
+                    <div class="step-card" id="step-15">
+                        <div class="step-badge">Step 15</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Windows Logo Screen</h3>
+                            <p class="step-text">
+                                The Windows setup assistant logo screen will load.
+                            </p>
+                            <div class="window-mock">
+                                <div class="window-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="window-title-text">OOBE Startup Logo</span>
+                                </div>
+                                <div class="window-body">
+                                    <img src="https://i.postimg.cc/ZKDzG1hG/IMG-20260524-110707.png" alt="Windows 11 startup logo" class="step-image" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 16 -->
+                    <div class="step-card" id="step-16">
+                        <div class="step-badge">Step 16</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Select Region</h3>
+                            <p class="step-text">
+                                Choose your correct country or region from the listing, and click <strong>"Yes"</strong>.
+                            </p>
+                            <div class="window-mock">
+                                <div class="window-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="window-title-text">OOBE Region Selector</span>
+                                </div>
+                                <div class="window-body">
+                                    <img src="https://i.postimg.cc/QCvGTTSG/IMG-20260524-113247.png" alt="Select Windows region settings" class="step-image" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 17 -->
+                    <div class="step-card" id="step-17">
+                        <div class="step-badge">Step 17</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Select Keyboard Layout</h3>
+                            <p class="step-text">
+                                Select your keyboard layout.
+                                <br><br>
+                                <strong>Selected Layout:</strong> US <br><br>
+                                Click <strong>"Yes"</strong>.
+                            </p>
+                            <div class="window-mock">
+                                <div class="window-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="window-title-text">OOBE Keyboard Layout</span>
+                                </div>
+                                <div class="window-body">
+                                    <img src="https://i.postimg.cc/59LZ76Pz/IMG-20260524-114141.png" alt="Select Windows keyboard layout" class="step-image" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 18 -->
+                    <div class="step-card" id="step-18">
+                        <div class="step-badge">Step 18</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Add Second Keyboard Layout</h3>
+                            <p class="step-text">
+                                If you do not require a secondary typing layout, click <strong>"Skip"</strong>.
+                            </p>
+                            <div class="window-mock">
+                                <div class="window-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="window-title-text">OOBE Secondary Keyboard Layout</span>
+                                </div>
+                                <div class="window-body">
+                                    <img src="https://i.postimg.cc/nrNrhMDY/IMG-20260524-115320.png" alt="Skip second keyboard layout" class="step-image" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 19 -->
+                    <div class="step-card" id="step-19">
+                        <div class="step-badge">Step 19</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Bypass Internet Connection Requirement</h3>
+                            <p class="step-text">
+                                To bypass linking a Microsoft Account and continue with a local user setup, select <strong>"I don't have internet"</strong>.
+                            </p>
+                            <div class="window-mock">
+                                <div class="window-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="window-title-text">OOBE Network Connection Bypass</span>
+                                </div>
+                                <div class="window-body">
+                                    <img src="https://i.postimg.cc/qv4hhhFF/IMG-20260524-115907.png" alt="Skip internet connection during setup" class="step-image" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 20 -->
+                    <div class="step-card" id="step-20">
+                        <div class="step-badge">Step 20</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Set Account Username</h3>
+                            <p class="step-text">
+                                Input your preferred name for the primary offline computer user account, then click <strong>"Next"</strong>.
+                            </p>
+                            <div class="window-mock">
+                                <div class="window-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="window-title-text">OOBE Account Creation</span>
+                                </div>
+                                <div class="window-body">
+                                    <img src="https://i.postimg.cc/SKXyJmmW/IMG-20260524-120342.png" alt="Create Windows user account" class="step-image" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 21 -->
+                    <div class="step-card" id="step-21">
+                        <div class="step-badge">Step 21</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Set Account Password</h3>
+                            <p class="step-text">
+                                Set a security password to protect your user profile, then click <strong>"Next"</strong>.
+                            </p>
+                            <div class="window-mock">
+                                <div class="window-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="window-title-text">OOBE Password Setup</span>
+                                </div>
+                                <div class="window-body">
+                                    <img src="https://i.postimg.cc/dVVCNZ9v/IMG-20260524-121917.png" alt="Create Windows account password" class="step-image" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 22 -->
+                    <div class="step-card" id="step-22">
+                        <div class="step-badge">Step 22</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Configure Device Privacy Settings</h3>
+                            <p class="step-text">
+                                Leave privacy options at default or customize location, diagnostics, and ads tracking toggles. Click <strong>"Accept"</strong>.
+                            </p>
+                            <div class="window-mock">
+                                <div class="window-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="window-title-text">OOBE Privacy Settings</span>
+                                </div>
+                                <div class="window-body">
+                                    <img src="https://i.postimg.cc/0jZQ7ZFf/IMG-20260524-122157.png" alt="Windows privacy settings" class="step-image" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 23 -->
+                    <div class="step-card" id="step-23">
+                        <div class="step-badge">Step 23</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Finalizing Configuration Screen</h3>
+                            <p class="step-text">
+                                The OS will finalize setup settings and display the loading sequence screens.
+                            </p>
+
+                            <!-- Sub-step 23.1 -->
+                            <div class="sub-step-wrapper">
+                                <h4 class="sub-step-title"><i class="fas fa-dot-circle"></i> Hi</h4>
+                                <div class="window-mock">
+                                    <div class="window-header">
+                                        <span class="dot dot-red"></span>
+                                        <span class="dot dot-yellow"></span>
+                                        <span class="dot dot-green"></span>
+                                        <span class="window-title-text">OOBE Welcoming Screen</span>
+                                    </div>
+                                    <div class="window-body">
+                                        <img src="https://i.postimg.cc/h4yFHHLV/IMG-20260524-125736.png" alt="Windows setup hi message" class="step-image" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Sub-step 23.2 -->
+                            <div class="sub-step-wrapper">
+                                <h4 class="sub-step-title"><i class="fas fa-dot-circle"></i> Getting Things Ready for You</h4>
+                                <div class="window-mock">
+                                    <div class="window-header">
+                                        <span class="dot dot-red"></span>
+                                        <span class="dot dot-yellow"></span>
+                                        <span class="dot dot-green"></span>
+                                        <span class="window-title-text">OOBE Preparation Screen</span>
+                                    </div>
+                                    <div class="window-body">
+                                        <img src="https://i.postimg.cc/TwtSvDD2/IMG-20260524-125839.png" alt="Getting things ready for you message" class="step-image" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Sub-step 23.3 -->
+                            <div class="sub-step-wrapper">
+                                <h4 class="sub-step-title"><i class="fas fa-dot-circle"></i> This Might Take a Few Minutes</h4>
+                                <p class="step-text">Do not turn off your computer during this stage.</p>
+                                <div class="window-mock">
+                                    <div class="window-header">
+                                        <span class="dot dot-red"></span>
+                                        <span class="dot dot-yellow"></span>
+                                        <span class="dot dot-green"></span>
+                                        <span class="window-title-text">OOBE Wait Screen</span>
+                                    </div>
+                                    <div class="window-body">
+                                        <img src="https://i.postimg.cc/ZRnH3DC1/IMG-20260524-130025.png" alt="Windows setup loading process" class="step-image" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Sub-step 23.4 -->
+                            <div class="sub-step-wrapper">
+                                <h4 class="sub-step-title"><i class="fas fa-dot-circle"></i> Almost There</h4>
+                                <div class="window-mock">
+                                    <div class="window-header">
+                                        <span class="dot dot-red"></span>
+                                        <span class="dot dot-yellow"></span>
+                                        <span class="dot dot-green"></span>
+                                        <span class="window-title-text">OOBE Completion Screen</span>
+                                    </div>
+                                    <div class="window-body">
+                                        <img src="https://i.postimg.cc/pLB3J4LB/IMG-20260524-130212.png" alt="Windows setup almost complete" class="step-image" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 24 -->
+                    <div class="step-card" id="step-24">
+                        <div class="step-badge">Step 24</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Installation Completed Successfully</h3>
+                            <p class="step-text">
+                                Congratulations! Windows 11 installation is now fully completed. You will now see your Windows desktop home screen.
+                            </p>
+                            <div class="window-mock">
+                                <div class="window-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="window-title-text">Windows 11 Desktop Home Screen</span>
+                                </div>
+                                <div class="window-body">
+                                    <img src="https://i.postimg.cc/TY0c76n5/IMG-20260524-130538.png" alt="Windows 11 desktop home screen" class="step-image" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Success Footer Card -->
+                <div class="success-footer-card">
+                    <i class="fas fa-check-circle success-icon" style="color: #10b981;"></i>
+                    <h3 class="win11-text">Windows 11 Installation Completed!</h3>
+                    <p>Congratulations! Your operating system installation is now complete. Proceed to the next phase to activate your copy using Microsoft Activation Scripts (MAS).</p>
+                    <a href="../04-Microsoft-Activation-Scripts/README.md" class="btn btn-primary win11-bg btn-next-step">Proceed to Activation Guide <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Important Notes Section -->
+        <section class="notes-section" id="notes">
+            <div class="container">
+                <div class="notes-card">
+                    <div class="notes-header">
+                        <i class="fas fa-exclamation-triangle warning-icon"></i>
+                        <h2>Important Notes & Requirements</h2>
+                    </div>
+                    <div class="notes-grid">
+                        <div class="note-item">
+                            <div class="note-icon"><i class="fas fa-key"></i></div>
+                            <div class="note-info">
+                                <h4>Know Your Motherboard Boot Key</h4>
+                                <p>Each manufacturer defines a different boot key (like F12, F11, Esc, F8). Search Google with your motherboard/laptop model if you do not know yours.</p>
+                            </div>
+                        </div>
+                        <div class="note-item">
+                            <div class="note-icon"><i class="fas fa-exclamation-circle"></i></div>
+                            <div class="note-info">
+                                <h4>Warning: Data Deletion</h4>
+                                <p>Formatting partitions in Step 9 will permanently wipe all previously stored data on that drive partition. Ensure your backups are ready.</p>
+                            </div>
+                        </div>
+                        <div class="note-item">
+                            <div class="note-icon"><i class="fas fa-plug"></i></div>
+                            <div class="note-info">
+                                <h4>Keep PC Plugged In</h4>
+                                <p>Make sure your PC or laptop has a stable power supply and is kept powered on during the entire installation process to prevent file corruption.</p>
+                            </div>
+                        </div>
+                        <div class="note-item">
+                            <div class="note-icon"><i class="fas fa-wifi"></i></div>
+                            <div class="note-info">
+                                <h4>Bypass Microsoft Account Setup</h4>
+                                <p>If you don't have internet or want to use a local account, click "I don't have internet" in Step 19 to bypass the Microsoft Account requirement.</p>
+                            </div>
+                        </div>
+                        <div class="note-item">
+                            <div class="note-icon"><i class="fas fa-shield-alt"></i></div>
+                            <div class="note-info">
+                                <h4>Next Step: Activation Scripts</h4>
+                                <p>After completing installation, proceed to the Microsoft Activation Scripts (MAS) folder to activate Windows, Office, and ESU updates.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Windows Installation Guide. Documentation & Educational Reference.</p>
+            <p>Made for beginners. Check the repository on <a href="https://github.com/Shariar-Ahamed/Windows-Installation-Guide" target="_blank" class="footer-link">GitHub</a>.</p>
+        </div>
+    </footer>
+
+    <!-- JS Logic for Themes -->
+    <script>
+        // Theme Toggling Logic
+        function initTheme() {
+            const currentTheme = localStorage.getItem('theme') || 'dark';
+            const themeIcon = document.getElementById('theme-icon');
+            
+            if (currentTheme === 'light') {
+                document.body.classList.add('light-mode');
+                themeIcon.className = 'fas fa-moon';
+            } else {
+                document.body.classList.remove('light-mode');
+                themeIcon.className = 'fas fa-sun';
+            }
+        }
+
+        function toggleTheme() {
+            const themeIcon = document.getElementById('theme-icon');
+            if (document.body.classList.contains('light-mode')) {
+                document.body.classList.remove('light-mode');
+                localStorage.setItem('theme', 'dark');
+                themeIcon.className = 'fas fa-sun';
+            } else {
+                document.body.classList.add('light-mode');
+                localStorage.setItem('theme', 'light');
+                themeIcon.className = 'fas fa-moon';
+            }
+        }
+
+        // Initialize theme on load
+        window.addEventListener('DOMContentLoaded', initTheme);
+    </script>
+</body>
+</html>
