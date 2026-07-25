@@ -1,6 +1,12 @@
 # 🖥️ Microsoft Activation Scripts (MAS)
 
 <p align="center">
+  <a href="https://shariar-ahamed.github.io/Windows-Installation-Guide/04-Microsoft-Activation-Scripts/" target="_blank">
+    <img src="https://img.shields.io/badge/Live-Preview-success?style=for-the-badge&logo=github&logoColor=white" alt="Live Preview">
+  </a>
+</p>
+
+<p align="center">
   <img src="https://img.shields.io/badge/Windows-Documentation-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows Documentation">
   <img src="https://img.shields.io/badge/Microsoft-Reference-23c55e?style=for-the-badge&logo=microsoft&logoColor=white" alt="Microsoft Reference">
 </p>
@@ -12,6 +18,10 @@
 ---
 
 # 📖 Overview
+
+For a premium, step-by-step interactive experience containing the Microsoft Activation Scripts (MAS) guide in a unified documentation layout, please visit the live website:
+
+👉 **[Launch Live Web Guide](https://shariar-ahamed.github.io/Windows-Installation-Guide/04-Microsoft-Activation-Scripts/)**
 
 This repository is intended for documentation and educational reference related to **Microsoft Activation Scripts (MAS)**.
 
